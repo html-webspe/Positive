@@ -63,6 +63,8 @@
    &__text {
       color: #fff;
       font-weight: 500;
+      position: relative;
+      z-index: 2;
 
       @media (max-width:$md3+px) {
          text-align: center;

@@ -1106,7 +1106,9 @@ body {
         margin-bottom: 36px; } }
   .feedback__text {
     color: #fff;
-    font-weight: 500; }
+    font-weight: 500;
+    position: relative;
+    z-index: 2; }
     @media (max-width: 767.98px) {
       .feedback__text {
         text-align: center;
