@@ -1541,6 +1541,9 @@ body {
   .cases__item-btn {
     margin-left: 43px;
     padding: 11px 48px; }
+    @media (max-width: 360px) {
+      .cases__item-btn {
+        margin-right: 0; } }
     @media (min-width: 1199.98px) {
       .cases__item-btn {
         padding: 22px 88px; } }
