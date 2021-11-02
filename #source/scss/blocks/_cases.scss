@@ -20,10 +20,11 @@
    &__body {}
 
    &__title {
-      text-align: center;
+      text-align: left;
 
       @media (max-width:$md3+px) {
          margin-bottom: 25px;
+         text-align: center;
       }
    }
 
