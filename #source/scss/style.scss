@@ -1,0 +1,129 @@
+//<МИКСИНЫ>===============================================================================================
+@import "ui/_mixins";
+//</МИКСИНЫ>===============================================================================================
+
+//<Подключаем шрифты>=======================================================================================
+@import "ui/_fonts";
+//</Подключаем шрифты>=======================================================================================
+
+//<Подключаем переменные>=======================================================================================
+@import "_vars";
+//</Подключаем переменные>=======================================================================================
+
+//</ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+  font-size: 12px;
+}
+
+
+
+body {
+  font-family: $fontfamily;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  font-weight: normal;
+  color: $Boulder;
+
+  @media (min-width:$md1+px) {
+    font-size: 18px;
+  }
+}
+
+//<ОБОЛОЧКА>===========================================================================================================
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+
+  &.loaded {}
+}
+
+
+
+
+
+//</ОБОЛОЧКА>===========================================================================================================
+
+//<ОСНОВНАЯ СЕТКА>===========================================================================================================
+.container {
+
+  @media (max-width:$md3+px) {
+    padding-left: $containerPadding;
+    padding-right: $containerPadding;
+  }
+
+  @media (min-width:$md3+px) {
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+
+  @media (min-width:$md1+px) {
+    max-width: $containerMaxWidth;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+//</ОСНОВНАЯ СЕТКА>===========================================================================================================
+
+
+//</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
+@import "ui/_btn";
+@import "ui/_title";
+
+
+
+@import "blocks/_header";
+@import "blocks/_hero";
+@import "blocks/_about";
+@import "blocks/_test";
+@import "blocks/_reviews";
+@import "blocks/_feedback";
+@import "blocks/_print";
+@import "blocks/_cases";
+
+
+@import "blocks/_footer";

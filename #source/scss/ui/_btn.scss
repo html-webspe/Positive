@@ -1,0 +1,37 @@
+//<BUTTONS>====================================================================================================
+.btn {
+   display: inline-flex;
+   padding: 11px 35px;
+   line-height: 13px;
+   font-weight: bold;
+   letter-spacing: 0.05em;
+   color: #fff;
+   border-radius: 64px;
+
+   &:hover {}
+
+   @media (min-width:$md1+px) {
+      padding-top: 18px;
+      padding-bottom: 18px;
+   }
+
+   @media (min-width:1600px) {
+      font-size: 20px;
+      line-height: 25px;
+      padding: 22px 70px;
+   }
+
+   &-amethyst {
+      background-color: $acentColor1;
+   }
+
+   &-orange {
+      background-color: $acentColor2;
+   }
+
+   &.fw {
+      width: 100%;
+   }
+}
+
+//</BUTTONS>====================================================================================================

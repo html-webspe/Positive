@@ -1,0 +1,66 @@
+.reviews {
+   @media (max-width:$md3+px) {
+      margin-bottom: 64px;
+   }
+
+   @media (min-width:$md3+px) {
+      margin-bottom: 88px;
+   }
+
+   &__body {
+      @media (min-width:$md4+px) {
+         display: flex;
+         justify-content: space-around;
+      }
+   }
+
+   &__title {
+      text-align: center;
+   }
+
+   &__item {
+      @media (max-width:$md4+px) {
+         &:not(:last-child) {
+            margin-bottom: 24px;
+         }
+      }
+   }
+
+   &__item-inner {
+      position: relative;
+      background-image: url(../img/reviews/reviews-bg.png);
+      background-repeat: no-repeat;
+      background-position: center;
+
+      @media (max-width:$md2+px) {
+         width: 154px;
+         height: 298px;
+         background-size: 154px;
+         padding: 24px 16px;
+         margin: 0 auto;
+         margin-bottom: 12px;
+      }
+
+      @media (min-width:$md2+px) {
+         background-size: 260px;
+         width: 260px;
+         height: 505px;
+         padding: 44px 26px;
+         margin-bottom: 24px;
+      }
+   }
+
+   &__item-name {
+      font-family: 'Montserrat';
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 24px;
+      color: #000000;
+      text-align: center;
+
+      @media (max-width:$md2+px) {
+         font-size: 12px;
+         line-height: 14px;
+      }
+   }
+}
