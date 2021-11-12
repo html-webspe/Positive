@@ -6,10 +6,18 @@
 
    &__main {
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      padding-top: 15px;
-      padding-bottom: 16px;
+      justify-content: space-between;
+      transition: all 0.5s;
+
+      @media (max-width:$md1+px) {
+         padding-top: 15px;
+         padding-bottom: 16px;
+      }
+
+      @media (min-width:$md1+px) {
+         padding: 25px 0;
+      }
 
       &:after {
          content: '';
@@ -17,58 +25,64 @@
          top: 0;
          left: 0;
          width: 100%;
-         height: 59px;
          background-color: $wildSand;
          z-index: -1;
+
+         @media (max-width:$md1+px) {
+            height: 60px;
+         }
+
+         @media (min-width:$md1+px) {
+            height: 100px;
+         }
       }
 
-      @media (min-width:$md1+px) {
-         padding-top: 23px;
-         padding-bottom: 27px;
+      &.sticky {
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 100%;
+         z-index: 100;
+         padding-left: 16px;
+         padding-right: 16px;
 
-         &:after {
-            height: 100px;
+         @media (min-width:$md1+px) {
+            padding-left: 100px;
+            padding-right: 100px;
          }
       }
    }
 
    &__bottom {
-      padding: 14px 38px;
-
       @media (max-width:$md3+px) {
          display: none;
       }
-
-      @media (min-width:$md2+px) {
-         max-width: 1006px;
-         margin: 0 auto;
-      }
-
-      @media (min-width:$md1+px) {
-         padding: 28px 0px 22px 0px;
-      }
-
    }
 
    &__logo {
+      display: inline-block;
+
       @media (max-width:$md1+px) {
          height: 28px;
+         width: 124px;
       }
 
       @media (min-width:$md1+px) {
+         width: 221px;
          height: 50px;
-
-         img {
-            height: 100%;
-         }
       }
+
+
    }
 
    &__search {
       flex: 1;
 
+      @media (max-width:$md3+px) {
+         display: none;
+      }
 
-      @media (max-width:$md1+px) {
+      @media (min-width:$md3+px) and (max-width:$md1+px) {
          margin: 0px 18px 0px 22px;
       }
 
@@ -78,162 +92,96 @@
    }
 
    &__action {
+      display: flex;
+      align-items: center;
+
       @media (max-width:$md3+px) {
-         margin-right: 34px;
+         margin-left: auto;
+      }
+   }
+
+   &__action-shop {
+
+      @media (max-width:$md3+px) {
+         height: 20px;
+         margin-right: 33px;
       }
 
-      @media (min-width:$md3+px) {
-         display: flex;
-         align-items: center;
-         margin-right: 21px;
+      @media (min-width:$md3+px) and (max-width:$md1+px) {
+         height: 15px;
+         margin-right: 23px;
       }
 
       @media (min-width:$md1+px) {
+         margin-right: 38px;
+         height: 30px;
+      }
+
+      img {
+         height: 100%;
+      }
+   }
+
+   &__action-tel {
+      font-weight: bold;
+      color: #000000;
+      padding: 8px 11px;
+      background-color: $Cararra;
+      margin-right: 20px;
+
+      @media (max-width:$md3+px) {
+         display: none;
+      }
+
+      @media (min-width:$md1+px) {
+         font-size: 20px;
+         line-height: 24px;
+         padding: 8px 20px;
          margin-right: 50px;
-      }
-
-      &-shop {
-         display: inline-block;
-
-         @media (min-width:$md3+px) {
-            margin-right: 19px;
-
-            img {
-               width: 15px;
-               height: auto;
-            }
-         }
-
-         @media (min-width:$md1+px) {
-            margin-right: 40px;
-
-            img {
-               width: 30px;
-            }
-         }
-      }
-
-      &-tel {
-         font-weight: bold;
-         color: #000000;
-         padding: 8px 12px;
-         background-color: $Cararra;
-
-         @media (max-width:$md3+px) {
-            display: none;
-         }
-
-         @media (min-width:$md1+px) {
-            font-size: 20px;
-            padding: 8px 20px;
-         }
       }
    }
 
    &__navigation {
-      position: fixed;
-      top: 0;
-      right: -100%;
-      width: 100%;
-      height: 100%;
-      background-color: #fff;
-      z-index: 100;
-      transition: right 0.3s ease 0s;
-
-      @media (min-width:$md3+px) {
-         width: 235px;
-      }
-
-      @media (min-width:$md1+px) {
-         width: 415px;
-      }
-
-      &-item {
-         &:first-child {
-            padding-top: 18px;
-
-            @media (min-width:$md3+px) {
-               padding-top: 34px;
-            }
-
-            @media (min-width:$md1+px) {
-               padding-top: 87px;
-            }
-         }
-
-
-         padding: 27px 20px 23px 32px;
-
-         &:not(:last-child) {
-            border-bottom: 1px solid #E6E6E6;
-         }
-
-      }
-
-      &.show-menu {
-         right: 0;
-      }
-
-      &-shop {
-         display: flex;
-         align-items: center;
-         margin-top: 0;
-
-         img {
-            width: 27px;
-
-            @media (min-width:$md3+px) and (max-width:$md1+px) {
-               width: 17px;
-            }
-         }
-
-         span {
-            font-weight: normal;
-            font-size: 18px;
-            color: #000000;
-            margin-left: 17px;
-
-            @media (min-width:$md3+px) and (max-width:$md1+px) {
-               font-size: 12px;
-               line-height: 15px;
-            }
-         }
-      }
-   }
-}
-
-.search-form {
-   position: relative;
-
-   @media (max-width:$md3+px) {
       display: none;
    }
 
+   &__navigation-item {}
+
+   &__menu {}
+
+   &__navigation-shop {}
+
+   &__bottom {}
+
+   &__menu-desktop {}
+}
+
+
+
+.search-form {
+
    &__item {
       display: flex;
-
-      @media (max-width:$md1+px) {
-         height: 28px;
-      }
-
-      @media (min-width:$md1+px) {
-         height: 50px;
-      }
-
+      position: relative;
    }
 
    &__icon {
       position: absolute;
-      top: 9px;
-      left: 10px;
 
-      &:before {
-         font-size: 15px;
-         color: $acentColor2;
+
+
+      @media (min-width:$md3+px) {
+         top: 7px;
+         left: 10px;
+
+         &:before {
+            font-size: 15px;
+            color: $acentColor2;
+         }
       }
 
       @media (min-width:$md1+px) {
-         top: 11px;
+         top: 10px;
          left: 17px;
 
          &:before {
@@ -244,162 +192,77 @@
 
    &__input {
       width: 100%;
-      background-color: #fff;
-      border: none;
-      letter-spacing: 0.3px;
-      line-height: 12px;
+      font-family: 'Montserrat';
+      font-weight: normal;
       color: #9E9E9E;
 
-      @media (max-width:$md1+px) {
-         padding-left: 35px;
+      @media (min-width:$md3+px) {
+         padding: 8px 8px 8px 35px;
+
       }
 
       @media (min-width:$md1+px) {
-         padding-left: 60px;
+         font-size: 18px;
+         line-height: 22px;
+         padding: 15px 16px 13px 60px;
+      }
+
+      &::placeholder {
+         font-family: 'Montserrat';
+         color: #9E9E9E;
       }
    }
 
    &__button {
-      min-width: 90px;
-      background-color: #000;
-      color: #fff;
       font-weight: 500;
-      line-height: 13px;
+      color: #fff;
+      background-color: #000;
+
+      @media (min-width:$md3+px) {
+         padding: 0px 28px;
+      }
 
       @media (min-width:$md1+px) {
-         min-width: 160px;
          font-size: 20px;
-         line-height: 25px;
+         line-height: 24px;
+         padding: 0 45px;
       }
    }
 }
 
+.icon-search {}
+
 .menu {
-   &__item {
-      position: relative;
 
-      &:not(:last-child) {
-         margin-bottom: 17px;
-      }
+   &__body {}
 
-      @media (min-width:$md3+px) and (max-width:$md1+px) {
-         &:not(:last-child) {
-            margin-bottom: 10px;
-         }
-      }
-   }
+   &__list {}
 
-   &__link {
-      font-weight: normal;
-      font-size: 18px;
-      text-transform: uppercase;
-      color: #000000;
-      transition: font 0.2s;
+   &__item {}
 
-      @media (min-width:$md3+px) and (max-width:$md1+px) {
-         font-size: 12px;
-         line-height: 15px;
-      }
+   &__link {}
 
-      &:hover,
-      &:focus {
-         font-weight: bold;
-      }
-   }
+   &__dropdown {}
 }
 
 .header-contacts {
 
-   &__item {
-      &:not(:last-child) {
-         margin-bottom: 20px;
-         max-width: 226px;
-      }
-
-      span {
-         display: block;
-         font-weight: normal;
-         font-size: 16px;
-         color: #C4C4C4;
-         margin-bottom: 4px;
-
-         @media (min-width:$md3+px) and (max-width:$md1+px) {
-            font-size: 10px;
-            line-height: 13px;
-         }
-      }
-
-      p,
-      a {
-         font-weight: bold;
-         font-size: 18px;
-         line-height: 23px;
-         color: #000000;
-
-         @media (min-width:$md3+px) and (max-width:$md1+px) {
-            font-size: 12px;
-            line-height: 15px;
-         }
-      }
-   }
+   &__item {}
 }
 
+.header-social {}
 
 .social {
-   display: flex;
-   align-items: center;
 
-   &__item {
-      display: flex;
+   &__item {}
 
-      &:not(:last-child) {
-         margin-right: 24px;
-      }
+   &__item-inst {}
 
-      @media (min-width:$md3+px) and (max-width:$md1+px) {
-         width: 18px;
-      }
+   &__item-facebook {}
 
-   }
+   &__item-vk {}
 }
 
-
-.desktop-menu {
-
-   &__list {
-      display: flex;
-      justify-content: space-between;
-   }
-
-   &__item {
-      position: relative;
-
-      &:hover {
-         .dropdown-menu {
-            display: block;
-         }
-      }
-   }
-
-   &__link {
-      font-weight: normal;
-      text-transform: uppercase;
-      color: #000000;
-
-      &:hover,
-      &:focus {
-         text-shadow: 0 0 0.75px #000000, 0 0 0.75px #000000;
-      }
-
-      @media (min-width:$md1+px) {
-         font-size: 20px;
-         line-height: 25px;
-      }
-   }
-}
-
-
-/*  -------------  HEADER ICON -----------  */
 .icon-menu {
    position: relative;
    width: 20px;
@@ -461,6 +324,52 @@
          }
       }
 
+   }
+}
+
+
+.desktop-menu {
+   max-width: 1006px;
+   width: 100%;
+   margin: 0 auto;
+
+   @media (min-width:$md3+px) {
+      padding: 12px 38px 13px 38px;
+   }
+
+   @media (min-width:$md1+px) {
+      padding: 28px 0px 22px 0px;
+   }
+
+   &__list {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   &__item {
+      position: relative;
+
+      &:hover {
+         .dropdown-menu {
+            display: block;
+         }
+      }
+   }
+
+   &__link {
+      font-weight: normal;
+      text-transform: uppercase;
+      color: #000000;
+
+      @media (min-width:$md1+px) {
+         font-size: 20px;
+         line-height: 25px;
+      }
+
+      &:hover,
+      &:focus {
+         text-shadow: 0 0 0.75px #000000, 0 0 0.75px #000000;
+      }
    }
 }
 

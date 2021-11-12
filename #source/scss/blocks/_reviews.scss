@@ -1,10 +1,15 @@
 .reviews {
-   @media (max-width:$md3+px) {
-      margin-bottom: 64px;
-   }
 
-   @media (min-width:$md3+px) {
-      margin-bottom: 88px;
+   &__title {
+      text-align: center;
+
+      @media (max-width:$md3+px) {
+         margin-bottom: 14px;
+      }
+
+      @media (min-width:$md3+px) {
+         margin-bottom: 45px;
+      }
    }
 
    &__body {
@@ -14,14 +19,10 @@
       }
    }
 
-   &__title {
-      text-align: center;
-   }
-
    &__item {
       @media (max-width:$md4+px) {
          &:not(:last-child) {
-            margin-bottom: 24px;
+            margin-bottom: 26px;
          }
       }
    }
@@ -46,21 +47,23 @@
          width: 260px;
          height: 505px;
          padding: 44px 26px;
-         margin-bottom: 24px;
+         margin-bottom: 32px;
       }
    }
 
    &__item-name {
       font-family: 'Montserrat';
-      font-weight: normal;
-      font-size: 20px;
-      line-height: 24px;
-      color: #000000;
       text-align: center;
+      color: #000000;
 
       @media (max-width:$md2+px) {
          font-size: 12px;
          line-height: 14px;
+      }
+
+      @media (min-width:$md2+px) {
+         font-size: 20px;
+         line-height: 24px;
       }
    }
 }

@@ -1,4 +1,27 @@
-/*==================== SHOW MENU ====================*/
+//====================  <!-- Fixed -->========================//
+const topOffset = document.querySelector('.wrapper');
+
+const positionFixed = (element, poinst) => {
+   window.addEventListener('scroll', () => {
+      let scrollDistens = window.scrollY;
+
+      const headerHeight = document.getElementById(element).offsetHeight,
+         scrollPos = poinst,
+         elements = document.getElementById(element);
+
+      if (scrollDistens >= scrollPos) {
+         elements.classList.add('sticky');
+         topOffset.style.paddingTop = `${headerHeight}px`;
+      } else {
+         elements.classList.remove('sticky');
+         topOffset.style.paddingTop = null;
+      }
+   });
+}
+positionFixed('header-sticky', 1);
+//====================  <!-- Header-Fixed -->========================//
+
+/*==================== <-- SHOW MENU -->  ====================*/
 const showMenu = (toggleId, navId) => {
    const toggle = document.getElementById(toggleId),
       nav = document.getElementById(navId)
@@ -12,14 +35,17 @@ const showMenu = (toggleId, navId) => {
    }
 }
 showMenu('nav-toggle', 'nav-menu');
+/*==================== <!-- SHOW MENU --> ====================*/
 
 
-
-const swiper = new Swiper('.print__container', {
+/*==================== <-- PRINT SWIPE --> ====================*/
+const printSlider = new Swiper('.slider-print__container', {
    slidesPerView: 1,
+   allowTouchMove: false,
+   speed: 1000,
    navigation: {
-      nextEl: ".print__control-next",
-      prevEl: ".print__control-prev",
+      nextEl: ".slider-print__control-next",
+      prevEl: ".slider-print__control-prev",
    },
    pagination: {
       el: ".print__pagination",
@@ -28,48 +54,63 @@ const swiper = new Swiper('.print__container', {
          return ('0' + current).slice(-2) + ' / ' + ('0' + total).slice(-2);
       }
    },
+   parallax: true
 });
 
+const printSliderImg = new Swiper('.slider-img__container', {
+   slidesPerView: 1,
+   navigation: {
+      nextEl: ".slider-img__control-next",
+      prevEl: ".slider-img__control-prev",
+   },
+});
+/*==================== <!-- PRINT SWIPE -->  ====================*/
 
 
+/*==================== <-- REMOVE MENU MOBILE --> ====================*/
+/*const navLink = document.querySelectorAll('.menu__link')
 
-if ($('.swiper-container').length > 0) { //some-slider-wrap-in
-   let swiperInstances = [];
-   $(".swiper-container").each(function (index, element) { //some-slider-wrap-in
-      const $this = $(this);
-      $this.addClass("instance-" + index); //instance need to be unique (ex: some-slider)
-      $this.parent().find(".cases__controls").addClass("cases__controls-" + index);
-      $this.parent().find(".cases__control-prev").addClass("prev-" + index); //prev must be unique (ex: some-slider-prev)
-      $this.parent().find(".cases__control-next").addClass("next-" + index); //next must be unique (ex: some-slider-next)
-      swiperInstances[index] = new Swiper(".instance-" + index, { //instance need to be unique (ex: some-slider)
-         observer: true,
-         observeParents: true,
-         navigation: {
-            prevEl: ".prev-" + index,  //prev must be unique (ex: some-slider-prev)
-            nextEl: ".next-" + index, //next must be unique (ex: some-slider-next)
-         },
-      });
-   });
+function linkAction() {
+   const navMenu = document.getElementById('nav-menu'),
+      navToggle = document.getElementById('nav-toggle');
 
-   // Now you can call the update on a specific instance in the "swiperInstances" object
-   // e.g.
-   swiperInstances[3].update();
-   //or all of them
-   setTimeout(function () {
-      for (const slider of swiperInstances) {
-         slider.update();
-      }
-   }, 50);
+   Goto();
+
+   navMenu.classList.remove('show-menu');
+   navToggle.classList.remove('active');
 }
+navLink.forEach(n => n.addEventListener('click', linkAction))
+*/
+/*==================== <!-- REMOVE MENU MOBILE --> ====================*/
 
 
 
+//====================  <!-- GoTO -->  ========================//
+/*
+function Goto() {
+   const links = document.querySelectorAll('.scroll-to');
+
+   for (let i = 0; i < links.length; i++) {
+      links[i].addEventListener('click', (e) => {
+         e.preventDefault();
+
+         const blockId = e.target.getAttribute('href').substring(1);
+
+         document.getElementById(blockId).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+         });
+      });
+   }
+}*/
+//====================  <!-- GoTO -->  ========================//
+
+//====================   <-- TABS -->   ========================//
 const tabsBtn = document.querySelectorAll('.cases__navigation-item'),
    tabsItem = document.querySelectorAll('.cases__item');
 
-
-
 tabsBtn.forEach((item) => {
+
    item.addEventListener("click", () => {
       let currentBtn = item,
          tabId = currentBtn.getAttribute('data-tab'),
@@ -86,3 +127,82 @@ tabsBtn.forEach((item) => {
       currentTab.classList.add('active');
    })
 })
+//====================   <!-- TABS -->   ========================//
+
+
+//====================   <-- CASES-SLIDER -->   ========================//
+const swiperItem = document.querySelectorAll('.cases__slider');
+
+if (swiperItem.length > 0) {
+
+   let swiperInstances = [];
+
+   swiperItem.forEach((element, index) => {
+
+      element.classList.add("instance-" + index);
+
+      let parent = element.closest('.cases__block');
+
+      parent.querySelector(".cases__controls").classList.add("cases__controls-" + index);
+      parent.querySelector(".cases__control-prev").classList.add("prev-" + index);
+      parent.querySelector(".cases__control-next").classList.add("next-" + index);
+
+
+      swiperInstances[index] = new Swiper(".instance-" + index, {
+         observer: true,
+         observeParents: true,
+         navigation: {
+            prevEl: ".prev-" + index,
+            nextEl: ".next-" + index,
+         },
+      });
+   });
+
+   swiperInstances[2].update();
+
+   setTimeout(function () {
+      for (const slider of swiperInstances) {
+         slider.update();
+      }
+   }, 50);
+}
+//====================   <!-- CASES-SLIDER -->   ========================//
+
+
+//====================   <-- FORMS -->   ========================//
+let selector = document.querySelector('input[type="tel"]'),
+   im = new Inputmask('+7 (999) 999-99-99');
+im.mask(selector);
+
+let validateForms = function (selector, rules, successModal, yaGoal) {
+   new window.JustValidate(selector, {
+      rules: rules,
+      submitHandler: function (form) {
+         let formData = new FormData(form);
+
+         let xhr = new XMLHttpRequest();
+
+         xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4) {
+               if (xhr.status === 200) {
+                  console.log('Отправлено');
+               }
+            }
+         }
+
+         xhr.open('POST', 'mail.php', true);
+         xhr.send(formData);
+
+         form.reset();
+      }
+   });
+}
+
+validateForms('.form-callback',
+   {
+      email: { required: true, email: true },
+      tel: { required: true },
+      name: { required: true },
+   }
+);
+//====================   <!-- FORMS -->   ========================//

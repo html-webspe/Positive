@@ -1,24 +1,24 @@
-//<BUTTONS>====================================================================================================
 .btn {
-   display: inline-flex;
-   padding: 11px 35px;
-   line-height: 13px;
+   display: inline-block;
+   font-family: 'Montserrat';
+   font-size: 20px;
+   line-height: 24px;
    font-weight: bold;
+   text-align: center;
+   color: #FFFFFF;
+   padding: 21px 0px 20px 0px;
+   border-radius: 100px;
    letter-spacing: 0.05em;
-   color: #fff;
-   border-radius: 64px;
+   transition: transform 0.3s;
 
-   &:hover {}
-
-   @media (min-width:$md1+px) {
-      padding-top: 18px;
-      padding-bottom: 18px;
+   @media (max-width:$md2+px) {
+      font-size: 10px;
+      line-height: 13px;
+      padding: 10px 0 11px 0;
    }
 
-   @media (min-width:1600px) {
-      font-size: 20px;
-      line-height: 25px;
-      padding: 22px 70px;
+   &:hover {
+      transform: scale(1.05);
    }
 
    &-amethyst {
@@ -34,4 +34,36 @@
    }
 }
 
-//</BUTTONS>====================================================================================================
+/*
+//<BUTTONS>====================================================================================================
+.btn {
+   display: inline-flex;
+   padding: 11px 35px;
+   line-height: 13px;
+   font-weight: bold;
+   letter-spacing: 0.05em;
+   color: #fff;
+   border-radius: 64px;
+   transition: transform 0.3s;
+
+   &:hover {
+      transform: scale(1.05);
+   }
+
+   @media (min-width:$md1+px) {
+      padding-top: 18px;
+      padding-bottom: 18px;
+   }
+
+   @media (min-width:1600px) {
+      font-size: 20px;
+      line-height: 25px;
+      padding: 22px 70px;
+   }
+
+   
+
+ 
+}
+
+//</BUTTONS>====================================================================================================*/

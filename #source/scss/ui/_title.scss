@@ -1,9 +1,56 @@
 .title {
-   font-size: 28px;
-   line-height: 1.35;
    font-weight: bold;
    text-transform: uppercase;
    color: #000000;
+
+   @media (max-width:$md1+px) {
+      font-size: 20px;
+      line-height: 28px;
+      margin-bottom: 16px;
+   }
+
+   @media (min-width:$md3+px) {
+      margin-bottom: 19px;
+   }
+
+   @media (min-width:$md1+px) {
+      font-size: 40px;
+      line-height: 55px;
+      margin-bottom: 30px;
+   }
+}
+
+.section-title {
+
+   font-weight: 500;
+   text-align: left;
+   text-transform: uppercase;
+   color: #000000;
+
+   @media (max-width:$md3+px) {
+      font-size: 28px;
+      line-height: 35px;
+   }
+
+   @media (min-width:$md3+px) {
+      font-size: 30px;
+      line-height: 48px;
+   }
+
+   @media (min-width:$md1+px) {
+      font-size: 50px;
+      line-height: 82px;
+   }
+}
+
+/*
+.title {
+   font-size: 28px;
+   line-height: 38px;
+   font-weight: bold;
+   text-transform: uppercase;
+   color: #000000;
+   margin-bottom: 17px;
 
    @media (max-width:$md3+px) {
       margin-bottom: 20px;
@@ -16,6 +63,7 @@
 
    @media (min-width:1200px) {
       font-size: 54px;
+      line-height: 62px;
       margin-bottom: 24px;
       letter-spacing: inherit;
    }
@@ -26,12 +74,13 @@
 }
 
 .section-title {
+   position: relative;
    font-weight: 500;
    font-size: 27px;
+   line-height: 35px;
    text-transform: uppercase;
    color: #000000;
    letter-spacing: 0.4px;
-   margin-bottom: 41px;
 
    @media (min-width:$md3+px) {
       text-align: center;
@@ -42,6 +91,5 @@
       font-size: 50px;
       line-height: 82px;
       letter-spacing: 0;
-      margin-bottom: 74px;
    }
-}
+}*/

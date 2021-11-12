@@ -20,18 +20,16 @@
 	<div class="wrapper">
 		<header class="header">
    <div class='container header__container'>
-      <div class="header__main">
+      <div id="header-sticky" class="header__main">
          <a href="/" class="header__logo logo"><img src="img/logo.png" alt="Логотип" /></a>
 
          <!--   search     -->
-         <div class="header__search">
-            <div class="search-form">
-               <form action="#" class="search-form__item">
-                  <span class="search-form__icon icon-search"></span>
-                  <input type="text" placeholder="Найди свое" class="search-form__input">
-                  <button class="search-form__button">Искать</button>
-               </form>
-            </div>
+         <div class="header__search search-form">
+            <form action="#" class="search-form__item">
+               <span class="search-form__icon icon-search"></span>
+               <input type="text" placeholder="Найди свое" class="search-form__input">
+               <button class="search-form__button">Искать</button>
+            </form>
          </div>
          <!--   end search    -->
 
@@ -40,7 +38,7 @@
             <a href="#" class="header__action-shop">
                <img src="img/shop.png" alt="shop" />
             </a>
-            <a href="tel:+79168300297" class="header__action-tel">+7 (916) 830-02-97 </a>
+            <a href="tel:+74997693728" class="header__action-tel">+7 (499) 769-37-28 </a>
          </div>
          <!--   end action    -->
 
@@ -71,7 +69,6 @@
             <div class="header__navigation-item">
                <a href="#" class="header__navigation-shop">
                   <img src="img/shop.png" alt="shop" />
-
                   <span>Корзина</span>
                </a>
             </div>
@@ -81,7 +78,7 @@
                <div class="header-contacts">
                   <div class="header-contacts__item">
                      <span>Телефон</span>
-                     <a href="tel:+79168300297">+7 (916) 830-02-97 </a>
+                     <a href="tel:+74997693728">+7 (499) 769-37-28 </a>
                   </div>
                   <div class="header-contacts__item">
                      <span>E-mail</span>
@@ -126,7 +123,6 @@
          </button>
 
       </div>
-
       <div class="header__bottom">
          <div class="header__menu-desktop desktop-menu">
             <ul class="desktop-menu__list">
@@ -159,8 +155,10 @@
 		<section class="section hero">
    <div class='container hero__container'>
       <div class="hero__content">
-         <h1 class="title hero__title">Принты на одежде, <span>товарах под заказ</span> </h1>
 
+         <h1 class="title hero__title">Производство и брендирование промо, корпоративной одежды <span>и сувенирной
+               продукции</span>
+         </h1>
          <p class="hero__text">Полный цикл производства промо <span>и&nbsp;корпоративной одежды</span> </p>
 
          <a href="#" class="btn hero__btn btn-amethyst">Сделать заказ</a>
@@ -177,7 +175,7 @@
 		<section class="section about">
    <div class='container'>
       <div class="about__body">
-         <h2 class="section-title">Чем мы занимаемся</h2>
+         <h2 class="section-title about__title">Чем мы занимаемся</h2>
 
          <div class="about__wrapper">
             <div class="about__item item-about">
@@ -205,55 +203,133 @@
       </div>
    </div>
 </section>
-		<section class="section print">
+		<section id="print" class="section print">
    <div class='container'>
       <div class="print__body">
          <h2 class="section-title print__title">Виды печати</h2>
 
-         <div class="print__block">
-            <div class="print__container swiper-container">
-               <div class="print__wrapper swiper-wrapper">
-                  <div class="print__item swiper-slide">
-                     <img src="img/print/01.jpg" alt="" />
+
+         <div class="print__sliders">
+
+            <div class="print__slider slider-print">
+               <div class="slider-print__container swiper-container">
+                  <div class="slider-print__wrapper swiper-wrapper">
+
+                     <div class="slider-print__slide swiper-slide">
+                        <div class="print__slider-img slider-img">
+
+                           <div class="slider-img__container swiper-container">
+                              <div class="slider-img__wrapper swiper-wrapper">
+                                 <div class="slider-img__item swiper-slide">
+                                    <img src="img/print/02.jpg" alt="" />
+                                 </div>
+                                 <div class="slider-img__item swiper-slide">
+                                    <img src="img/print/01.jpg" alt="" />
+                                 </div>
+                                 <div class="slider-img__item swiper-slide">
+                                    <img src="img/print/01.jpg" alt="" />
+                                 </div>
+                                 <div class="slider-img__item swiper-slide">
+                                    <img src="img/print/01.jpg" alt="" />
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="slider-img__controls">
+                              <button class="slider-img__control slider-img__control-prev icon-arrow"></button>
+                              <button class="slider-img__control slider-img__control-next icon-arrow"></button>
+                           </div>
+
+                        </div>
+                        <div class="print__info" data-swiper-parallax-opacity="0" data-swiper-parallax-x="-100%">
+                           <h3 class="print__info-title">Термопечать</h3>
+
+                           <p class="print__info-desc">
+                              Печать производится полиуретановой пленкой. Пленка состоит из двух слоёв лицевая и
+                              рабочая.
+                              Лицевая сторона защищена специальной прозрачной подложкой (удаляется после печати) Рабочая
+                              сторона покрыта тонким слоем клея, который при нагревании с помощью термопресса принимает
+                              вязкую
+                              консистенцию и под давлением впитывается в поверхность ткани и при остывании принимает
+                              прежние
+                              свойства. Пленкой можно печатать как полноцветные красочные картинки, так и аппликации
+                              собранные
+                              из разноцветных пленок. Печатать таким способом можно почти на любых материалах,
+                              синтетика,
+                              х/б,
+                              ткани с водоотталкивающей пропиткой. Пленки бывают светоотражающие, глиттерные,
+                              люминесцентные,
+                              хамелеон, неоновые, металлики различных цветов (серебро, золото, бронза, зеркальные), с
+                              имитацией под фольгу, резину и с объемным эффектом.
+                           </p>
+                        </div>
+                     </div>
+
+                     <div class="slider-print__slide swiper-slide">
+                        <div class="print__slider-img slider-img">
+
+                           <div class="slider-img__container swiper-container">
+                              <div class="slider-img__wrapper swiper-wrapper">
+                                 <div class="slider-img__item swiper-slide">
+                                    <img src="img/print/01.jpg" alt="" />
+                                 </div>
+                                 <div class="slider-img__item swiper-slide">
+                                    <img src="img/print/01.jpg" alt="" />
+                                 </div>
+                                 <div class="slider-img__item swiper-slide">
+                                    <img src="img/print/01.jpg" alt="" />
+                                 </div>
+                                 <div class="slider-img__item swiper-slide">
+                                    <img src="img/print/01.jpg" alt="" />
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="slider-img__controls">
+                              <button class="slider-img__control slider-img__control-prev icon-arrow"></button>
+                              <button class="slider-img__control slider-img__control-next icon-arrow"></button>
+                           </div>
+
+                        </div>
+                        <div class="print__info" data-swiper-parallax-opacity="0" data-swiper-parallax-x="-100%">
+                           <h3 class="print__info-title">Термопечать</h3>
+
+                           <p class="print__info-desc">
+                              Печать производится полиуретановой пленкой. Пленка состоит из двух слоёв лицевая и
+                              рабочая.
+                              Лицевая сторона защищена специальной прозрачной подложкой (удаляется после печати) Рабочая
+                              сторона покрыта тонким слоем клея, который при нагревании с помощью термопресса принимает
+                              вязкую
+                              консистенцию и под давлением впитывается в поверхность ткани и при остывании принимает
+                              прежние
+                              свойства. Пленкой можно печатать как полноцветные красочные картинки, так и аппликации
+                              собранные
+                              из разноцветных пленок. Печатать таким способом можно почти на любых материалах,
+                              синтетика,
+                              х/б,
+                              ткани с водоотталкивающей пропиткой. Пленки бывают светоотражающие, глиттерные,
+                              люминесцентные,
+                              хамелеон, неоновые, металлики различных цветов (серебро, золото, бронза, зеркальные), с
+                              имитацией под фольгу, резину и с объемным эффектом.
+                           </p>
+                        </div>
+                     </div>
+
                   </div>
-                  <div class="print__item swiper-slide">
-                     <img src="img/print/01.jpg" alt="" />
+               </div>
+
+               <div class="print__action">
+                  <a href="#" class="btn btn-orange print__btn">Подробнее</a>
+
+                  <div class="slider-print__controls">
+                     <button class="slider-print__control slider-print__control-prev icon-arrow"></button>
+                     <button class="slider-print__control slider-print__control-next icon-arrow"></button>
                   </div>
                </div>
-            </div>
-            <div class="print__content">
-               <div class="print__item-info">
-                  <h3 class="print__item-title">Термопечать</h3>
-
-                  <p class="print__item-desc">
-                     Печать производится полиуретановой пленкой. Пленка состоит из двух слоёв лицевая и рабочая.
-                     Лицевая сторона защищена специальной прозрачной подложкой (удаляется после печати) Рабочая
-                     сторона покрыта тонким слоем клея, который при нагревании с помощью термопресса принимает
-                     вязкую
-                     консистенцию и под давлением впитывается в поверхность ткани и при остывании принимает
-                     прежние
-                     свойства. Пленкой можно печатать как полноцветные красочные картинки, так и аппликации
-                     собранные
-                     из разноцветных пленок. Печатать таким способом можно почти на любых материалах, синтетика,
-                     х/б,
-                     ткани с водоотталкивающей пропиткой. Пленки бывают светоотражающие, глиттерные,
-                     люминесцентные,
-                     хамелеон, неоновые, металлики различных цветов (серебро, золото, бронза, зеркальные), с
-                     имитацией под фольгу, резину и с объемным эффектом.
-                  </p>
-               </div>
-
-               <a href="#" class="btn btn-orange print__item-btn">Подробнее</a>
-
-               <div class="print__controls">
-                  <button class="print__control print__control-prev icon-arrow"></button>
-                  <button class="print__control print__control-next icon-arrow"></button>
-               </div>
-
                <div class="print__pagination"></div>
             </div>
-         </div>
 
+         </div>
       </div>
    </div>
 </section>
@@ -275,34 +351,34 @@
                      <h3 class="cases__item-title">Яндекс Маркет</h3>
 
                      <div class="cases__item-desc">
-                        <p>Клиент обратился к нам со срочным и неоднозначным запросом- брендирование водолазных костюмов
-                           для Яндекс Маркета.</p>
+                        <p> Клиент обратился к&nbsp;нам со&nbsp;срочным и&nbsp;неоднозначным запросом- брендирование
+                           водолазных
+                           костюмов для Яндекс Маркета.</p>
 
                         <p> Данное нанесение считается довольно сложным, так как логотип должен выдерживать
                            многочисленные
-                           погружения на большую глубину и растяжение ткани с водоотталкивающей пропиткой. Большинство
-                           компаний не могли предоставить нашему клиенту печать данного качества и отказывались от
-                           заказа.
-                           Мы же подобрали подходящие термотрансферные пленки и смогли удовлетворить запрос клиента за 2
-                           часа. Клиент остался доволен, логотип идеально лег и отвечал всем требованиям заказчика.
+                           погружения на&nbsp;большую глубину и&nbsp;растяжение ткани с&nbsp;водоотталкивающей
+                           пропиткой.
+                           Большинство компаний не&nbsp;могли предоставить нашему клиенту печать данного качества
+                           и&nbsp;отказывались от&nbsp;заказа. Мы&nbsp;же подобрали подходящие термотрансферные пленки
+                           и&nbsp;смогли удовлетворить запрос клиента за&nbsp;2&nbsp;часа. Клиент остался доволен,
+                           логотип
+                           идеально лег и&nbsp;отвечал всем требованиям заказчика.
                         </p>
                      </div>
                   </div>
-
-                  <a href="#" class="btn btn-orange cases__item-btn">Подробнее</a>
-
                   <div class="cases__controls">
                      <button class="cases__control cases__control-prev icon-arrow"></button>
                      <button class="cases__control cases__control-next icon-arrow"></button>
                   </div>
 
                </div>
-               <div class="cases__container swiper-container">
-                  <div class="cases__wrapper swiper-wrapper">
-                     <div class="cases__item-slider swiper-slide">
+               <div class="cases__slider swiper-container">
+                  <div class="cases__slider-wrapper swiper-wrapper">
+                     <div class="cases__slider-item swiper-slide">
                         <img src="img/cases/01.jpg" alt="" />
                      </div>
-                     <div class="cases__item-slider swiper-slide">
+                     <div class="cases__slider-item swiper-slide">
                         <img src="img/cases/01.jpg" alt="" />
                      </div>
                   </div>
@@ -329,7 +405,6 @@
                      </div>
                   </div>
 
-                  <a href="#" class="btn btn-orange cases__item-btn">Подробнее</a>
 
                   <div class="cases__controls">
                      <button class="cases__control cases__control-prev icon-arrow"></button>
@@ -337,12 +412,12 @@
                   </div>
 
                </div>
-               <div class="cases__container swiper-container">
-                  <div class="cases__wrapper swiper-wrapper">
-                     <div class="cases__item-slider swiper-slide">
+               <div class="cases__slider swiper-container">
+                  <div class="cases__slider-wrapper swiper-wrapper">
+                     <div class="cases__slider-item swiper-slide">
                         <img src="img/cases/02.jpg" alt="" />
                      </div>
-                     <div class="cases__item-slider swiper-slide">
+                     <div class="cases__slider-item swiper-slide">
                         <img src="img/cases/02.jpg" alt="" />
                      </div>
                   </div>
@@ -374,7 +449,6 @@
                      </div>
                   </div>
 
-                  <a href="#" class="btn btn-orange cases__item-btn">Подробнее</a>
 
                   <div class="cases__controls">
                      <button class="cases__control cases__control-prev icon-arrow"></button>
@@ -382,55 +456,144 @@
                   </div>
 
                </div>
-               <div class="cases__container swiper-container">
-                  <div class="cases__wrapper swiper-wrapper">
-                     <div class="cases__item-slider swiper-slide">
+               <div class="cases__slider swiper-container">
+                  <div class="cases__slider-wrapper swiper-wrapper">
+                     <div class="cases__slider-item swiper-slide">
                         <img src="img/cases/03.jpg" alt="" />
                      </div>
-                     <div class="cases__item-slider swiper-slide">
+                     <div class="cases__slider-item swiper-slide">
+                        <img src="img/cases/03.jpg" alt="" />
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+         <div id="cases__item-2" class="cases__item">
+            <div class="cases__block">
+               <div class="cases__content">
+                  <div class="cases__item-info">
+                     <h3 class="cases__item-title">Уралкалий</h3>
+
+                     <div class="cases__item-desc">
+                        <p> В нашу компанию обратились с очень ответственным и крупным заказом – изготовление мерча для
+                           команды болельщиков известного гонщика Формулы 1 2021 года Никиты Мазепина. </p>
+
+                        <p>
+                           Заказ для Team Mazepin состоял из 7 изделий различных изделий с разнообразными видами
+                           нанесений.
+                           В него входило 250 женских и мужских комплектов, каждый из которых состоял из 3 видов
+                           различных
+                           футболок, рубашки-поло, бейсболки, спортивной сумки и, конечно, же маски. Все изделия были
+                           выполнены из премиальной ткани и с отличительной символикой команды.
+
+                        </p>
+
+                        <p>На реализацию данного заказа ушло 30 дней, и результат превзошел даже самые смелые ожидания
+                           заказчика.
+                        </p>
+
+                     </div>
+                  </div>
+
+
+                  <div class="cases__controls">
+                     <button class="cases__control cases__control-prev icon-arrow"></button>
+                     <button class="cases__control cases__control-next icon-arrow"></button>
+                  </div>
+
+               </div>
+               <div class="cases__slider swiper-container">
+                  <div class="cases__slider-wrapper swiper-wrapper">
+                     <div class="cases__slider-item swiper-slide">
+                        <img src="img/cases/03.jpg" alt="" />
+                     </div>
+                     <div class="cases__slider-item swiper-slide">
                         <img src="img/cases/03.jpg" alt="" />
                      </div>
                   </div>
                </div>
             </div>
          </div>
-         <div id="cases__item-2" class="cases__item">2</div>
-         <div id="cases__item-3" class="cases__item">3</div>
+         <div id="cases__item-3" class="cases__item">
+            <div class="cases__block">
+               <div class="cases__content">
+                  <div class="cases__item-info">
+                     <h3 class="cases__item-title">Уралкалий</h3>
+
+                     <div class="cases__item-desc">
+                        <p> В нашу компанию обратились с очень ответственным и крупным заказом – изготовление мерча для
+                           команды болельщиков известного гонщика Формулы 1 2021 года Никиты Мазепина. </p>
+
+                        <p>
+                           Заказ для Team Mazepin состоял из 7 изделий различных изделий с разнообразными видами
+                           нанесений.
+                           В него входило 250 женских и мужских комплектов, каждый из которых состоял из 3 видов
+                           различных
+                           футболок, рубашки-поло, бейсболки, спортивной сумки и, конечно, же маски. Все изделия были
+                           выполнены из премиальной ткани и с отличительной символикой команды.
+
+                        </p>
+
+                        <p>На реализацию данного заказа ушло 30 дней, и результат превзошел даже самые смелые ожидания
+                           заказчика.
+                        </p>
+
+                     </div>
+                  </div>
 
 
+                  <div class="cases__controls">
+                     <button class="cases__control cases__control-prev icon-arrow"></button>
+                     <button class="cases__control cases__control-next icon-arrow"></button>
+                  </div>
+
+               </div>
+               <div class="cases__slider swiper-container">
+                  <div class="cases__slider-wrapper swiper-wrapper">
+                     <div class="cases__slider-item swiper-slide">
+                        <img src="img/cases/03.jpg" alt="" />
+                     </div>
+                     <div class="cases__slider-item swiper-slide">
+                        <img src="img/cases/03.jpg" alt="" />
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
       </div>
    </div>
 </section>
-		<div class="section test">
+		<div class="section feedback">
    <div class='container'>
-      <div class="test__body">
-         <div class="test__content">
-            <h3 class="test__title">Пройдите тест за 1 минуту и узнайте <span>стоимость вашего проекта</span> </h3>
+      <div class="feedback__body">
+         <div class="feedback__content">
+            <h3 class="feedback__title">Оставьте заявку и узнайте <span>стоимость вашего проекта</span> </h3>
 
-            <p class="test__text">После теста вы сразу получите:</p>
+            <p class="feedback__text">После оставления заявки вы сразу получите:</p>
 
-            <div class="test__row">
-               <div class="test__item item-test">
-                  <div class="item-test__icon">
-                     <img src="img/test/test-icon-1.svg" alt="" />
+            <div class="feedback__row">
+               <div class="feedback__item item-feedback">
+                  <div class="item-feedback__icon">
+                     <img src="img/feedback/feedback-icon-1.png" alt="" />
                   </div>
-                  <h4 class="item-test__title">Стоимость вашего проекта</h4>
+                  <h4 class="item-feedback__title">Стоимость вашего проекта</h4>
                </div>
-               <div class="test__item item-test">
-                  <div class="item-test__icon">
-                     <img src="img/test/test-icon-2.svg" alt="" />
+               <div class="feedback__item item-feedback">
+                  <div class="item-feedback__icon">
+                     <img src="img/feedback/feedback-icon-2.png" alt="" />
                   </div>
-                  <h4 class="item-test__title">Консультацию специалиста</h4>
+                  <h4 class="item-feedback__title">Консультацию специалиста</h4>
                </div>
-               <div class="test__item item-test">
-                  <div class="item-test__icon">
-                     <img src="img/test/test-icon-3.svg" alt="" />
+               <div class="feedback__item item-feedback">
+                  <div class="item-feedback__icon">
+                     <img src="img/feedback/feedback-icon-3.png" alt="" />
                   </div>
-                  <h4 class="item-test__title">Коммерческое предложение</h4>
+                  <h4 class="item-feedback__title">Коммерческое предложение</h4>
                </div>
             </div>
 
-            <a href="#" class="btn test__btn btn-orange">Пройти тест</a>
+            <a href="#" class="btn feedback__btn btn-orange">Оставить заявку</a>
          </div>
       </div>
    </div>
@@ -462,44 +625,54 @@
 
    </div>
 </section>
-		<section class="section feedback">
+		<section id="callback" class="section callback">
    <div class='container'>
-      <div class="feedback__body">
-         <div class="feedback__col">
-            <h2 class="section-title feedback__title">Остались вопросы?</h2>
-            <p class="feedback__text">Оставь заявку и получи бесплатную консультацию нашего специалиста</p>
+      <div class="callback__body">
+         <div class="callback__col">
+            <h2 class="section-title callback__title">Остались вопросы?</h2>
+            <p class="callback__text">Оставь заявку и получи бесплатную консультацию нашего специалиста</p>
          </div>
-         <div class="feedback__col">
-            <div class="feedback__form">
-               <h3 class="feedback__form-title">Оставь заявку
-                  <span>и получи расчет стоимости принта на одежде</span> </h3>
-               <form action="#" class="form-feedback">
-                  <div class="form-feedback__group">
-                     <input type="text" class="form-feedback__input" placeholder="Ваше имя">
+         <div class="callback__col">
+            <form class="callback__form form-callback">
+               <h3 class="form-callback__title">Оставь заявку
+                  <span>и получи расчет стоимости проекта</span> </h3>
+               <div class="form-callback__inner">
+
+                  <div class="form-callback__group--block">
+                     <div class="form-callback__group">
+                        <input type="text" class="form-callback__input" placeholder="Ваше имя"
+                           data-validate-field="name" name="name">
+                     </div>
+                     <div class="form-callback__group">
+                        <input type="email" class="form-callback__input" placeholder="Ваш E-mail" name="email"
+                           data-validate-field="email">
+                     </div>
+                     <div class="form-callback__group">
+                        <input type="tel" class="form-callback__input" placeholder="+7 (XXX) XXX  XX X"
+                           data-validate-field="tel" name="phone">
+                     </div>
                   </div>
-                  <div class="form-feedback__group">
-                     <input type="email" class="form-feedback__input" placeholder="Ваш E-mail">
-                  </div>
-                  <div class="form-feedback__group">
-                     <input type="rel" class="form-feedback__input" placeholder="+7 (XXX) XXX  XX X">
-                  </div>
-                  <button class="btn btn-orange form-feedback__btn">Оставить заявку</button>
-               </form>
-            </div>
-            <img src="img/feedback/feedback-img.png" class="feedback__img" alt="" />
+                  <button class="btn btn-orange form-callback__btn">Оставить заявку</button>
+
+                  <label class="checkbox__label form-callback__label">
+                     <input type="checkbox">
+                     <span class="checkbox__control form-callback__checkbox-control icon-checked"></span>
+                     Я даю согласие на обработку персональных данных и соглашаюсь с политикой конфиденциальности
+                  </label>
+               </div>
+            </form>
+            <img src="img/callback/callback-img.png" class="callback__img" alt="" />
          </div>
       </div>
    </div>
 </section>
-
-
 		<footer class="footer">
    <div class='container'>
       <div class="footer__body">
          <div class="footer__map"></div>
          <div class="footer__content">
             <a href="#" class="footer__logo">
-               <img src="img/footer-logo.png" alt="" />
+               <img src="img/footer-logo.png" alt="Логотип" />
             </a>
             <div class="footer__content-inner">
                <div class="footer__col">
@@ -510,6 +683,7 @@
                   <div class="footer__item">
                      <h3 class="footer__item-title">ТЕЛЕФОН</h3>
                      <a href="tel:+79168300297 ">+7 (916) 830-02-97 </a>
+                     <a href="tel:88007773728 ">8 800 777-37-28</a>
                   </div>
                   <div class="footer__item">
                      <h3 class="footer__item-title">E-mail</h3>
@@ -533,7 +707,9 @@
                </div>
             </div>
          </div>
+
       </div>
+      <p class="footer__copyright"> © Сайт разработан 2021 </p>
    </div>
 </footer>
 	</div>

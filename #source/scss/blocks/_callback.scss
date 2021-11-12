@@ -1,0 +1,267 @@
+.callback {
+   background-image: url(../img/callback/callback-bg.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+
+   @media (max-width:$md3+px) {
+      padding-top: 176px;
+      padding-bottom: 67px;
+   }
+
+   @media (min-width:$md3+px) {
+      padding-top: 228px;
+      padding-bottom: 112px;
+   }
+
+   &__body {
+      position: relative;
+
+      @media (min-width:$md3+px) {
+         display: flex;
+         justify-content: space-between;
+         align-items: flex-end;
+      }
+   }
+
+   &__col {
+      &:first-child {
+
+         @media (min-width:$md3+px) {
+            max-width: 265px;
+         }
+
+         @media (min-width:$md2+px) {
+            max-width: 470px;
+         }
+      }
+   }
+
+   &__title {
+      color: #FFFFFF;
+      z-index: 3;
+      position: relative;
+
+      @media (max-width:$md3+px) {
+         font-size: 27px;
+         margin-bottom: 17px;
+         text-align: center;
+      }
+
+      @media (min-width:$md3+px) {
+         margin-bottom: 7px;
+         line-height: 38px;
+      }
+
+      @media (min-width:$md1+px) {
+         line-height: 60px;
+      }
+
+   }
+
+   &__text {
+      position: relative;
+      font-weight: 500;
+      color: #FFFFFF;
+      z-index: 3;
+
+      @media (max-width:$md3+px) {
+         margin-bottom: 118px;
+      }
+
+      @media (max-width:$md2+px) {
+         font-size: 14px;
+         line-height: 18px;
+         text-align: center;
+      }
+
+      @media (min-width:$md2+px) {
+         font-size: 24px;
+         line-height: 30px;
+      }
+   }
+
+   &__img {
+      position: absolute;
+      top: -75px;
+      left: 50px;
+      z-index: 1;
+
+      @media (max-width:$md3+px) {
+         top: 116px;
+         left: -5px;
+         max-width: initial;
+         width: 500px;
+      }
+
+      @media (min-width:$md3+px) {
+         top: -30px;
+         left: 35px;
+      }
+
+      @media (min-width:$md2+px) {
+         top: -9px;
+         left: 6px;
+      }
+   }
+}
+
+
+.form-callback {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color: #fff;
+   z-index: 2;
+
+   @media (max-width:$md2+px) {
+      margin: 0 auto;
+   }
+
+   @media (max-width:$md2+px) {
+      padding: 24px 30px;
+      border-radius: 9px;
+      max-width: 268px;
+   }
+
+   @media (min-width:$md2+px) {
+      max-width: 455px;
+      padding: 36px 50px;
+      top: 10px;
+      border-radius: 15px;
+   }
+
+   &__title {
+      font-family: 'Montserrat';
+      font-weight: bold;
+      align-items: center;
+      text-align: center;
+      color: #000000;
+
+
+      @media (max-width:$md2+px) {
+         font-size: 14px;
+         line-height: 17px;
+         margin-bottom: 18px;
+      }
+
+      @media (min-width:$md2+px) {
+         font-size: 24px;
+         line-height: 29px;
+         padding: 0 25px;
+         margin-bottom: 27px;
+      }
+
+      span {
+         display: block;
+         font-weight: 500;
+         color: $acentColor1;
+      }
+   }
+
+   &__inner {
+      @media (max-width:$md2+px) {
+         width: 175px;
+      }
+
+      @media (min-width:$md2+px) {
+         width: 300px;
+      }
+   }
+
+   &__group--block {
+      @media (max-width:$md2+px) {
+         margin-bottom: 10px;
+      }
+
+      @media (min-width:$md2+px) {
+         margin-bottom: 20px;
+      }
+   }
+
+   &__group {
+      &:not(:last-child) {
+         margin-bottom: 10px;
+      }
+   }
+
+   &__input {
+      width: 100%;
+      font-family: 'Montserrat';
+      border-radius: 50px;
+      color: #C4C4C4;
+      background: #F4F4F4;
+
+      @media (max-width:$md2+px) {
+         font-size: 10px;
+         line-height: 12px;
+         padding: 11px 16px;
+      }
+
+      @media (min-width:$md2+px) {
+         font-size: 18px;
+         line-height: 22px;
+         padding: 22px 20px 21px 32px;
+      }
+
+      &::placeholder {
+         color: #C4C4C4;
+      }
+   }
+
+   &__btn {
+      width: 100%;
+
+      @media (max-width:$md2+px) {
+         margin-bottom: 10px;
+      }
+
+      @media (min-width:$md2+px) {
+         margin-bottom: 20px;
+      }
+   }
+
+   &__label {
+      display: flex;
+      font-family: 'Montserrat';
+      color: #C4C4C4;
+      cursor: pointer;
+
+      @media (max-width:$md2+px) {
+         font-size: 7px;
+         line-height: 9px;
+      }
+
+      @media (min-width:$md2+px) {
+         font-size: 12px;
+         line-height: 15px;
+      }
+
+      &:before {
+         content: '';
+         font-size: 15px;
+         color: #C4C4C4;
+      }
+
+      input {
+         position: absolute;
+         opacity: 0;
+         visibility: hidden;
+
+         &:checked+.checkbox__control {
+            &:before {
+               color: $acentColor1;
+            }
+         }
+      }
+   }
+
+   &__checkbox-control {
+      margin-right: 17px;
+
+      @media (max-width:$md2+px) {
+         margin-right: 10px;
+      }
+   }
+}
