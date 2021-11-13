@@ -837,7 +837,8 @@ body {
     z-index: 1; }
     @media (max-width: 1199.98px) {
       .hero__btn {
-        padding: 10px 32px 11px 32px; } }
+        font-size: 12px;
+        padding: 14px 42px 14px 42px; } }
   @media (max-width: 767.98px) {
     .hero__img {
       max-width: 360px;
