@@ -163,6 +163,7 @@
       }
 
       &-item {
+         padding: 27px 20px 23px 32px;
          &:first-child {
             padding-top: 18px;
 
@@ -174,9 +175,6 @@
                padding-top: 87px;
             }
          }
-
-
-         padding: 27px 20px 23px 32px;
 
          &:not(:last-child) {
             border-bottom: 1px solid #E6E6E6;

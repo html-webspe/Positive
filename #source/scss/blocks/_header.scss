@@ -142,18 +142,74 @@
    }
 
    &__navigation {
-      display: none;
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      z-index: 100;
+      transition: right 0.3s ease 0s;
+
+      @media (min-width:$md3+px) {
+         width: 235px;
+      }
+
+      @media (min-width:$md1+px) {
+         width: 415px;
+      }
+
+      &-item {
+         padding: 27px 20px 23px 32px;
+
+         &:first-child {
+            padding-top: 18px;
+
+            @media (min-width:$md3+px) {
+               padding-top: 34px;
+            }
+
+            @media (min-width:$md1+px) {
+               padding-top: 87px;
+            }
+         }
+
+         &:not(:last-child) {
+            border-bottom: 1px solid #E6E6E6;
+         }
+
+      }
+
+      &.show-menu {
+         right: 0;
+      }
+
+      &-shop {
+         display: flex;
+         align-items: center;
+         margin-top: 0;
+
+         img {
+            width: 27px;
+
+            @media (min-width:$md3+px) and (max-width:$md1+px) {
+               width: 17px;
+            }
+         }
+
+         span {
+            font-weight: normal;
+            font-size: 18px;
+            color: #000000;
+            margin-left: 17px;
+
+            @media (min-width:$md3+px) and (max-width:$md1+px) {
+               font-size: 12px;
+               line-height: 15px;
+            }
+         }
+      }
    }
-
-   &__navigation-item {}
-
-   &__menu {}
-
-   &__navigation-shop {}
-
-   &__bottom {}
-
-   &__menu-desktop {}
 }
 
 
@@ -230,37 +286,93 @@
    }
 }
 
-.icon-search {}
 
 .menu {
+   &__item {
+      position: relative;
 
-   &__body {}
+      &:not(:last-child) {
+         margin-bottom: 17px;
+      }
 
-   &__list {}
+      @media (min-width:$md3+px) and (max-width:$md1+px) {
+         &:not(:last-child) {
+            margin-bottom: 10px;
+         }
+      }
+   }
 
-   &__item {}
+   &__link {
+      font-weight: normal;
+      font-size: 18px;
+      text-transform: uppercase;
+      color: #000000;
+      transition: font 0.2s;
 
-   &__link {}
+      @media (min-width:$md3+px) and (max-width:$md1+px) {
+         font-size: 12px;
+         line-height: 15px;
+      }
 
-   &__dropdown {}
+      &:hover,
+      &:focus {
+         font-weight: bold;
+      }
+   }
 }
 
 .header-contacts {
 
-   &__item {}
+   &__item {
+      &:not(:last-child) {
+         margin-bottom: 20px;
+         max-width: 226px;
+      }
+
+      span {
+         display: block;
+         font-weight: normal;
+         font-size: 16px;
+         color: #C4C4C4;
+         margin-bottom: 4px;
+
+         @media (min-width:$md3+px) and (max-width:$md1+px) {
+            font-size: 10px;
+            line-height: 13px;
+         }
+      }
+
+      p,
+      a {
+         font-weight: bold;
+         font-size: 18px;
+         line-height: 23px;
+         color: #000000;
+
+         @media (min-width:$md3+px) and (max-width:$md1+px) {
+            font-size: 12px;
+            line-height: 15px;
+         }
+      }
+   }
 }
 
-.header-social {}
-
 .social {
+   display: flex;
+   align-items: center;
 
-   &__item {}
+   &__item {
+      display: flex;
 
-   &__item-inst {}
+      &:not(:last-child) {
+         margin-right: 24px;
+      }
 
-   &__item-facebook {}
+      @media (min-width:$md3+px) and (max-width:$md1+px) {
+         width: 18px;
+      }
 
-   &__item-vk {}
+   }
 }
 
 .icon-menu {
