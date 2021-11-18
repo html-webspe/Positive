@@ -67,6 +67,7 @@ body {
   line-height: $lineHeight;
   font-weight: normal;
   color: $Boulder;
+  height: 100%;
 
   @media (min-width:$md1+px) {
     font-size: 18px;
@@ -114,9 +115,10 @@ body {
 }
 
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
+@import "ui/_modal";
+
 @import "ui/_btn";
 @import "ui/_title";
-@import "ui/_modal";
 
 
 

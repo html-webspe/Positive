@@ -129,6 +129,8 @@ class Modal {
       document.body.classList.add('disable-scroll');
       document.body.dataset.position = pagePosition;
       document.body.style.top = -pagePosition + 'px';
+
+
    }
 
    enableScroll() {
@@ -157,3 +159,5 @@ class Modal {
 }
 
 const modal = new Modal({});
+
+

@@ -226,3 +226,5 @@ validateForms('#modal-form',
 );
 
 //====================   <!-- FORMS -->   ========================//
+
+console.log(window.pageYOffset)
