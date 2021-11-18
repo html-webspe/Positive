@@ -57,7 +57,7 @@
       }
 
       @media (min-width:$md1+px) {
-         padding-top: 135px;
+         //padding-top: 135px;
          min-width: 815px;
       }
 
@@ -84,7 +84,7 @@
             height: 88px;
          }
 
-         @media (min-width:1600px) {
+         @media (min-width:$md1+px) {
             left: -97px;
             bottom: -60px;
             background-size: 798px;

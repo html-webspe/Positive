@@ -898,7 +898,6 @@ body {
         flex: 0 0 359px; } }
     @media (min-width: 1199.98px) {
       .hero__content {
-        padding-top: 135px;
         min-width: 815px; } }
     .hero__content:after {
       content: '';
@@ -920,7 +919,7 @@ body {
           background-size: 389px;
           width: 389px;
           height: 88px; } }
-      @media (min-width: 1600px) {
+      @media (min-width: 1199.98px) {
         .hero__content:after {
           left: -97px;
           bottom: -60px;
