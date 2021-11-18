@@ -34,13 +34,15 @@
       }
 
       @media (min-width:$md2+px) {
-         width: 605px;
-         flex: 0 0 605px;
-         height: 482px;
          margin-right: 81px;
+         flex: 0 0 446px;
+         height: 430px;
       }
 
       @media (min-width:1600px) {
+         width: 605px;
+         flex: 0 0 605px;
+         height: 482px;
          margin-right: 151px;
          margin-left: -204px;
       }

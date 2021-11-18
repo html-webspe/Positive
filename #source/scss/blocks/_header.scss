@@ -95,6 +95,11 @@
       display: flex;
       align-items: center;
 
+      /* ДЛЯ ЛЭНДА*/
+      margin-left: auto;
+
+      /* КОнец ДЛЯ ЛЭНДА*/
+
       @media (max-width:$md3+px) {
          margin-left: auto;
       }
@@ -126,9 +131,22 @@
       font-weight: bold;
       color: #000000;
       padding: 8px 11px;
-      background-color: $Cararra;
+      //background-color: $Cararra;
       margin-right: 20px;
 
+
+      /* ДЛЯ ЛЭНДА*/
+      margin-left: auto;
+
+      a {
+         margin-right: 10px;
+
+         &:first-child {
+            margin-bottom: 5px;
+         }
+      }
+
+      /* КОнец ДЛЯ ЛЭНДА*/
       @media (max-width:$md3+px) {
          display: none;
       }
@@ -344,6 +362,7 @@
 
       p,
       a {
+         display: block;
          font-weight: bold;
          font-size: 18px;
          line-height: 23px;

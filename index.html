@@ -23,22 +23,30 @@
       <div id="header-sticky" class="header__main">
          <a href="/" class="header__logo logo"><img src="img/logo.png" alt="Логотип" /></a>
 
-         <!--   search     -->
-         <div class="header__search search-form">
+         <!--   search   <div class="header__search search-form">
             <form action="#" class="search-form__item">
                <span class="search-form__icon icon-search"></span>
                <input type="text" placeholder="Найди свое" class="search-form__input">
                <button class="search-form__button">Искать</button>
             </form>
-         </div>
+         </div>  -->
+
          <!--   end search    -->
 
          <!--   action     -->
          <div class="header__action">
-            <a href="#" class="header__action-shop">
+            <!-- <a href="#" class="header__action-shop">
                <img src="img/shop.png" alt="shop" />
-            </a>
-            <a href="tel:+74997693728" class="header__action-tel">+7 (499) 769-37-28 </a>
+                 <a href="tel:+74997693728" class="header__action-tel">+7 (499) 769-37-28 </a>
+            <a href="tel:+78007773728" class="header__action-tel">+7 (800) 777-37-28 </a>
+            </a>-->
+
+            <div class="header__action-tel">
+               <a href="tel:+74997693728">+7 (499) 769-37-28 </a>
+               <a href="tel:+78007773728">+7 (800) 777-37-28 </a>
+            </div>
+
+
          </div>
          <!--   end action    -->
 
@@ -50,7 +58,8 @@
             <div class="header__navigation-item">
                <div class="header__menu menu">
                   <nav class="menu__body">
-                     <ul class="menu__list">
+                     <!--
+                        <ul class="menu__list">
                         <li class="menu__item"><a href="#" class="menu__link">О компании</a></li>
                         <li class="menu__item"><a href="#" class="menu__link">Каталог</a>
 
@@ -60,18 +69,28 @@
                         <li class="menu__item"><a href="#" class="menu__link">Прайс</a></li>
                         <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
                      </ul>
+                     -->
+                     <ul class="menu__list">
+                        <li class="menu__item"><a href="#about" class="menu__link scroll-to">О компании</a></li>
+                        <li class="menu__item"><a href="#print" class="menu__link scroll-to">Печать</a></li>
+                        <li class="menu__item"><a href="#cases" class="menu__link scroll-to">Кейсы</a></li>
+                        <li class="menu__item"><a href="#callback" class="menu__link scroll-to">Обратная связь</a></li>
+                        <li class="menu__item"><a href="#footer" class="menu__link scroll-to">Контакты</a></li>
+                     </ul>
                   </nav>
                </div>
             </div>
             <!--   end  menu-miobile  -->
 
 
-            <div class="header__navigation-item">
+            <!--
+             <div class="header__navigation-item">
                <a href="#" class="header__navigation-shop">
                   <img src="img/shop.png" alt="shop" />
                   <span>Корзина</span>
                </a>
             </div>
+         -->
 
             <!--   contacts  -->
             <div class="header__navigation-item">
@@ -79,14 +98,16 @@
                   <div class="header-contacts__item">
                      <span>Телефон</span>
                      <a href="tel:+74997693728">+7 (499) 769-37-28 </a>
+                     <a href="tel:+78007773728">+7 (800) 777-37-28 </a>
+
                   </div>
                   <div class="header-contacts__item">
                      <span>E-mail</span>
-                     <a href="mailto:tstarkhov@mail.ru">tstarkhov@mail.ru</a>
+                     <a href="mailto:tstarkhov@mail.ru">forma297@yandex.ru</a>
                   </div>
                   <div class="header-contacts__item">
                      <span>Адрес</span>
-                     <p>г. Москва, Остаповский проезд&nbsp;3, стр.&nbsp;29, 1&nbsp;этаж</p>
+                     <p>г. Москва, Остаповский проезд 3, стр. 29, 1 подьезд, 1 этаж</p>
                   </div>
                   <div class="header-contacts__item">
                      <span>График работы</span>
@@ -125,10 +146,11 @@
       </div>
       <div class="header__bottom">
          <div class="header__menu-desktop desktop-menu">
-            <ul class="desktop-menu__list">
+            <!-- <ul class="desktop-menu__list">
                <li class="desktop-menu__item"><a href="#" class="desktop-menu__link">О компании</a></li>
                <li class="desktop-menu__item"><a href="#" class="desktop-menu__link">Каталог</a>
-                  <div class="menu__dropdown dropdown-menu">
+                  
+                     <div class="menu__dropdown dropdown-menu">
                      <ul class="dropdown-menu__list">
                         <li class="dropdown-menu__item"><a href="" class="dropdown-menu__link">Пункт
                               каталога</a></li>
@@ -142,11 +164,20 @@
                               каталога</a></li>
                      </ul>
                   </div>
+                  
                </li>
                <li class="desktop-menu__item"><a href="#" class="desktop-menu__link">Печать</a></li>
                <li class="desktop-menu__item"><a href="#" class="desktop-menu__link">Пошив</a></li>
                <li class="desktop-menu__item"><a href="#" class="desktop-menu__link">Прайс</a></li>
                <li class="desktop-menu__item"><a href="#" class="desktop-menu__link">Контакты</a></li>
+            </ul>-->
+            <ul class="desktop-menu__list">
+               <li class="desktop-menu__item"><a href="#about" class="desktop-menu__link scroll-to">О компании</a></li>
+               <li class="desktop-menu__item"><a href="#print" class="desktop-menu__link scroll-to">Печать</a></li>
+               <li class="desktop-menu__item"><a href="#cases" class="desktop-menu__link scroll-to">Кейсы</a></li>
+               <li class="desktop-menu__item"><a href="#callback" class="desktop-menu__link scroll-to">Обратная
+                     связь</a></li>
+               <li class="desktop-menu__item"><a href="#footer" class="desktop-menu__link scroll-to">Контакты</a></li>
             </ul>
          </div>
       </div>
@@ -183,21 +214,24 @@
                   <img src="img/about/01.png" alt="Промо одежда" />
                </div>
                <h3 class="item-about__title">Производство <span>промо одежды</span> </h3>
-               <a href="#" class="btn about__btn btn-amethyst">Подробнее</a>
+               <a href="#" data-path="modal-callback" data-animation="fadeInUp" data-speed="500"
+                  class="btn about__btn btn-amethyst">Подробнее</a>
             </div>
             <div class="about__item item-about">
                <div class="item-about__img">
                   <img src="img/about/02.png" alt="Cувенирная продукция" />
                </div>
                <h3 class="item-about__title">Брендирование <span>сувенирной продукции</span> </h3>
-               <a href="#" class="btn about__btn btn-amethyst">Подробнее</a>
+               <a href="#" data-path="modal-callback" data-animation="fadeInUp" data-speed="500"
+                  class="btn about__btn btn-amethyst">Подробнее</a>
             </div>
             <div class="about__item item-about">
                <div class="item-about__img">
                   <img src="img/about/03.png" alt="Печать на текстиле" />
                </div>
                <h3 class="item-about__title">Печать на текстиле <span>одежде и аксессуарах</span> </h3>
-               <a href="#" class="btn about__btn btn-amethyst">Подробнее</a>
+               <a href="#" data-path="modal-callback" data-animation="fadeInUp" data-speed="500"
+                  class="btn about__btn btn-amethyst">Подробнее</a>
             </div>
          </div>
       </div>
@@ -333,7 +367,7 @@
       </div>
    </div>
 </section>
-		<section class="section cases">
+		<section id="cases" class="section cases">
    <div class='container'>
       <div class="cases__body">
          <h2 class="section-title cases__title">Кейсы</h2>
@@ -367,20 +401,24 @@
                         </p>
                      </div>
                   </div>
+
+
+               </div>
+               <div class="cases__slider">
+                  <div class="cases__slider-body swiper-container">
+                     <div class="cases__slider-wrapper swiper-wrapper">
+                        <div class="cases__slider-item swiper-slide">
+                           <img src="img/cases/01.jpg" alt="" />
+                        </div>
+                        <div class="cases__slider-item swiper-slide">
+                           <img src="img/cases/01.jpg" alt="" />
+                        </div>
+                     </div>
+                  </div>
+
                   <div class="cases__controls">
                      <button class="cases__control cases__control-prev icon-arrow"></button>
                      <button class="cases__control cases__control-next icon-arrow"></button>
-                  </div>
-
-               </div>
-               <div class="cases__slider swiper-container">
-                  <div class="cases__slider-wrapper swiper-wrapper">
-                     <div class="cases__slider-item swiper-slide">
-                        <img src="img/cases/01.jpg" alt="" />
-                     </div>
-                     <div class="cases__slider-item swiper-slide">
-                        <img src="img/cases/01.jpg" alt="" />
-                     </div>
                   </div>
                </div>
             </div>
@@ -406,20 +444,23 @@
                   </div>
 
 
+
+               </div>
+               <div class="cases__slider">
+                  <div class="cases__slider-body swiper-container">
+                     <div class="cases__slider-wrapper swiper-wrapper">
+                        <div class="cases__slider-item swiper-slide">
+                           <img src="img/cases/02.jpg" alt="" />
+                        </div>
+                        <div class="cases__slider-item swiper-slide">
+                           <img src="img/cases/02.jpg" alt="" />
+                        </div>
+                     </div>
+                  </div>
+
                   <div class="cases__controls">
                      <button class="cases__control cases__control-prev icon-arrow"></button>
                      <button class="cases__control cases__control-next icon-arrow"></button>
-                  </div>
-
-               </div>
-               <div class="cases__slider swiper-container">
-                  <div class="cases__slider-wrapper swiper-wrapper">
-                     <div class="cases__slider-item swiper-slide">
-                        <img src="img/cases/02.jpg" alt="" />
-                     </div>
-                     <div class="cases__slider-item swiper-slide">
-                        <img src="img/cases/02.jpg" alt="" />
-                     </div>
                   </div>
                </div>
             </div>
@@ -450,20 +491,24 @@
                   </div>
 
 
+
+
+               </div>
+               <div class="cases__slider">
+                  <div class="cases__slider-body swiper-container">
+                     <div class="cases__slider-wrapper swiper-wrapper">
+                        <div class="cases__slider-item swiper-slide">
+                           <img src="img/cases/03.jpg" alt="" />
+                        </div>
+                        <div class="cases__slider-item swiper-slide">
+                           <img src="img/cases/03.jpg" alt="" />
+                        </div>
+                     </div>
+                  </div>
+
                   <div class="cases__controls">
                      <button class="cases__control cases__control-prev icon-arrow"></button>
                      <button class="cases__control cases__control-next icon-arrow"></button>
-                  </div>
-
-               </div>
-               <div class="cases__slider swiper-container">
-                  <div class="cases__slider-wrapper swiper-wrapper">
-                     <div class="cases__slider-item swiper-slide">
-                        <img src="img/cases/03.jpg" alt="" />
-                     </div>
-                     <div class="cases__slider-item swiper-slide">
-                        <img src="img/cases/03.jpg" alt="" />
-                     </div>
                   </div>
                </div>
             </div>
@@ -497,20 +542,24 @@
                   </div>
 
 
+
+
+               </div>
+               <div class="cases__slider">
+                  <div class="cases__slider-body swiper-container">
+                     <div class="cases__slider-wrapper swiper-wrapper">
+                        <div class="cases__slider-item swiper-slide">
+                           <img src="img/cases/03.jpg" alt="" />
+                        </div>
+                        <div class="cases__slider-item swiper-slide">
+                           <img src="img/cases/03.jpg" alt="" />
+                        </div>
+                     </div>
+                  </div>
+
                   <div class="cases__controls">
                      <button class="cases__control cases__control-prev icon-arrow"></button>
                      <button class="cases__control cases__control-next icon-arrow"></button>
-                  </div>
-
-               </div>
-               <div class="cases__slider swiper-container">
-                  <div class="cases__slider-wrapper swiper-wrapper">
-                     <div class="cases__slider-item swiper-slide">
-                        <img src="img/cases/03.jpg" alt="" />
-                     </div>
-                     <div class="cases__slider-item swiper-slide">
-                        <img src="img/cases/03.jpg" alt="" />
-                     </div>
                   </div>
                </div>
             </div>
@@ -541,24 +590,26 @@
 
                      </div>
                   </div>
+               </div>
 
+               <div class="cases__slider">
+                  <div class="cases__slider-body swiper-container">
+                     <div class="cases__slider-wrapper swiper-wrapper">
+                        <div class="cases__slider-item swiper-slide">
+                           <img src="img/cases/03.jpg" alt="" />
+                        </div>
+                        <div class="cases__slider-item swiper-slide">
+                           <img src="img/cases/03.jpg" alt="" />
+                        </div>
+                     </div>
+                  </div>
 
                   <div class="cases__controls">
                      <button class="cases__control cases__control-prev icon-arrow"></button>
                      <button class="cases__control cases__control-next icon-arrow"></button>
                   </div>
+               </div>
 
-               </div>
-               <div class="cases__slider swiper-container">
-                  <div class="cases__slider-wrapper swiper-wrapper">
-                     <div class="cases__slider-item swiper-slide">
-                        <img src="img/cases/03.jpg" alt="" />
-                     </div>
-                     <div class="cases__slider-item swiper-slide">
-                        <img src="img/cases/03.jpg" alt="" />
-                     </div>
-                  </div>
-               </div>
             </div>
          </div>
       </div>
@@ -593,7 +644,8 @@
                </div>
             </div>
 
-            <a href="#" class="btn feedback__btn btn-orange">Оставить заявку</a>
+            <a href="#" data-path="modal-callback" data-animation="fadeInUp" data-speed="500"
+               class="btn feedback__btn btn-orange">Оставить заявку</a>
          </div>
       </div>
    </div>
@@ -633,7 +685,7 @@
             <p class="callback__text">Оставь заявку и получи бесплатную консультацию нашего специалиста</p>
          </div>
          <div class="callback__col">
-            <form class="callback__form form-callback">
+            <form id="form-callback" class="form callback__form form-callback">
                <h3 class="form-callback__title">Оставь заявку
                   <span>и получи расчет стоимости проекта</span> </h3>
                <div class="form-callback__inner">
@@ -651,6 +703,9 @@
                         <input type="tel" class="form-callback__input" placeholder="+7 (XXX) XXX  XX X"
                            data-validate-field="tel" name="phone">
                      </div>
+                     <div class="form-callback__group">
+                        <textarea class="form-callback__textarea">Комментарий к заказу</textarea>
+                     </div>
                   </div>
                   <button class="btn btn-orange form-callback__btn">Оставить заявку</button>
 
@@ -666,7 +721,7 @@
       </div>
    </div>
 </section>
-		<footer class="footer">
+		<footer id="footer" class="footer">
    <div class='container'>
       <div class="footer__body">
          <div class="footer__map"></div>
@@ -682,12 +737,12 @@
                   </div>
                   <div class="footer__item">
                      <h3 class="footer__item-title">ТЕЛЕФОН</h3>
-                     <a href="tel:+79168300297 ">+7 (916) 830-02-97 </a>
-                     <a href="tel:88007773728 ">8 800 777-37-28</a>
+                     <a href="tel:+74997693728">+7 (499) 769-37-28 </a>
+                     <a href="tel:+78007773728">+7 (800) 777-37-28 </a>
                   </div>
                   <div class="footer__item">
                      <h3 class="footer__item-title">E-mail</h3>
-                     <a href="mailto:tstarkhov@mail.ru">tstarkhov@mail.ru </a>
+                     <a href="mailto:tstarkhov@mail.ru">forma297@yandex.ru</a>
                   </div>
                </div>
                <div class="footer__col">
@@ -713,8 +768,58 @@
    </div>
 </footer>
 	</div>
+	<div class="modal">
+   <div class="modal__body" data-target="modal-callback">
+      <button class="modal-close">X</button>
+      <div class="modal-content">
+         <form id="modal-form" class="callback__form form-callback">
+            <h3 class="form-callback__title">Оставь заявку
+               <span>и получи расчет стоимости проекта</span> </h3>
+            <div class="form-callback__inner">
+
+               <div class="form-callback__group--block">
+                  <div class="form-callback__group">
+                     <input type="text" class="form-callback__input" placeholder="Ваше имя" data-validate-field="name"
+                        name="name">
+                  </div>
+                  <div class="form-callback__group">
+                     <input type="email" class="form-callback__input" placeholder="Ваш E-mail" name="email"
+                        data-validate-field="email">
+                  </div>
+                  <div class="form-callback__group">
+                     <input type="tel" class="form-callback__input" placeholder="+7 (XXX) XXX  XX X"
+                        data-validate-field="tel" name="phone">
+                  </div>
+                  <div class="form-callback__group">
+                     <textarea class="form-callback__textarea">Комментарий к заказу</textarea>
+                  </div>
+               </div>
+               <button class="btn btn-orange form-callback__btn">Оставить заявку</button>
+
+               <label class="checkbox__label form-callback__label">
+                  <input type="checkbox">
+                  <span class="checkbox__control form-callback__checkbox-control icon-checked"></span>
+                  Я даю согласие на обработку персональных данных и соглашаюсь с политикой конфиденциальности
+               </label>
+            </div>
+         </form>
+      </div>
+   </div>
+   <div class="modal__body thanks-popup">
+      <button class="modal-close">X</button>
+      <div class="modal-content">
+
+         <h3 class="thanks-popup__title">Спасибо,
+            <span>что оставили заявку!</span> </h3>
+
+         <p class="thanks-popup__text">Наш менеджер свяжется с вами в течении 10 минут</p>
+
+         <a href="#" class="btn btn-orange thanks-popup__btn">На главную</a>
+
+      </div>
+   </div>
+</div>
 	<script src="js/vendors.js"></script>
-<script src="js/jquery.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 

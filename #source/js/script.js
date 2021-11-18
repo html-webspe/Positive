@@ -68,7 +68,7 @@ const printSliderImg = new Swiper('.slider-img__container', {
 
 
 /*==================== <-- REMOVE MENU MOBILE --> ====================*/
-/*const navLink = document.querySelectorAll('.menu__link')
+const navLink = document.querySelectorAll('.menu__link')
 
 function linkAction() {
    const navMenu = document.getElementById('nav-menu'),
@@ -80,13 +80,13 @@ function linkAction() {
    navToggle.classList.remove('active');
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
-*/
+
 /*==================== <!-- REMOVE MENU MOBILE --> ====================*/
 
 
 
 //====================  <!-- GoTO -->  ========================//
-/*
+
 function Goto() {
    const links = document.querySelectorAll('.scroll-to');
 
@@ -102,7 +102,7 @@ function Goto() {
          });
       });
    }
-}*/
+}
 //====================  <!-- GoTO -->  ========================//
 
 //====================   <-- TABS -->   ========================//
@@ -131,7 +131,7 @@ tabsBtn.forEach((item) => {
 
 
 //====================   <-- CASES-SLIDER -->   ========================//
-const swiperItem = document.querySelectorAll('.cases__slider');
+const swiperItem = document.querySelectorAll('.cases__slider-body');
 
 if (swiperItem.length > 0) {
 
@@ -170,9 +170,15 @@ if (swiperItem.length > 0) {
 
 
 //====================   <-- FORMS -->   ========================//
-let selector = document.querySelector('input[type="tel"]'),
-   im = new Inputmask('+7 (999) 999-99-99');
-im.mask(selector);
+let selector = document.querySelectorAll('input[type="tel"]');
+
+
+selector.forEach(el => {
+   let im = new Inputmask('+7 (999) 999-99-99');
+   im.mask(el);
+});
+
+
 
 let validateForms = function (selector, rules, successModal, yaGoal) {
    new window.JustValidate(selector, {
@@ -185,7 +191,7 @@ let validateForms = function (selector, rules, successModal, yaGoal) {
          xhr.onreadystatechange = function () {
             if (xhr.readyState === 4) {
                if (xhr.status === 200) {
-                  console.log('Отправлено');
+                  successModal
                }
             }
          }
@@ -198,11 +204,25 @@ let validateForms = function (selector, rules, successModal, yaGoal) {
    });
 }
 
-validateForms('.form-callback',
+
+
+validateForms('#form-callback',
    {
       email: { required: true, email: true },
       tel: { required: true },
       name: { required: true },
-   }
+
+   },
+   '.thanks-popup'
 );
+validateForms('#modal-form',
+   {
+      email: { required: true, email: true },
+      tel: { required: true },
+      name: { required: true },
+
+   },
+   '.thanks-popup'
+);
+
 //====================   <!-- FORMS -->   ========================//

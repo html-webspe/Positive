@@ -23,9 +23,15 @@
    height: 100%;
 }
 
+.modal-close {
+   position: absolute;
+   top: 20px;
+   right: 20px;
+   z-index: 3;
+}
+
 .modal__body {
    position: relative;
-   width: 1000px;
    margin: 50px auto;
    display: none;
    vertical-align: middle;
@@ -71,10 +77,6 @@
    opacity: 1;
    transform: scale(1);
    transition: opacity var(--transition-time), transform var(--transition-time);
-}
-
-*:focus {
-   outline: 3px red solid;
 }
 
 .disable-scroll {

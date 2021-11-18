@@ -59,7 +59,7 @@ class Modal {
          }.bind(this));
 
          this.modal.addEventListener('click', function (e) {
-            if (!e.target.classList.contains('modal__container') && !e.target.closest('.modal__container') && this.isOpen) {
+            if (!e.target.classList.contains('modal__body') && !e.target.closest('.modal__body') && this.isOpen) {
                this.close();
             }
          }.bind(this));

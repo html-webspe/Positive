@@ -34,7 +34,7 @@
 
    &__info-title {
       font-size: 36px;
-      line-height: 45px;
+      line-height: 1;
       font-weight: 500;
       text-transform: uppercase;
       color: #A557C7;
@@ -42,13 +42,11 @@
 
       @media (max-width:$md1+px) {
          font-size: 20px;
-         line-height: 25px;
+         line-height: 1;
          margin-bottom: 24px;
-         margin-top: -5px;
       }
 
       @media (min-width:$md1+px) {
-         margin-top: -12px;
          margin-bottom: 36px;
       }
    }
@@ -265,13 +263,17 @@
    &__control {
       position: absolute;
       top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       width: 35px;
       height: 35px;
-      background: #FFFFFF;
       border: 1px solid #F9A000;
       border-radius: 50%;
 
       &:before {
+         font-size: 14px;
+         line-height: 35px;
          color: #F9A000;
       }
 
