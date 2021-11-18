@@ -191,7 +191,7 @@ let validateForms = function (selector, rules, successModal, yaGoal) {
          xhr.onreadystatechange = function () {
             if (xhr.readyState === 4) {
                if (xhr.status === 200) {
-                  successModal
+                  successModal.style.display = "block";
                }
             }
          }
