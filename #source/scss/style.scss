@@ -129,7 +129,7 @@ body {
 
   .video {
     display: none;
-    position: fixed;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -140,7 +140,7 @@ body {
     border: 2px solid $acentColor1;
 
     @media (max-width:$md3+px) {
-      width: 100%;
+      width: 320px;
     }
 
     iframe {
