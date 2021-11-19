@@ -185,6 +185,9 @@ body {
     @media (max-width: 767.98px) {
       .video-container .video {
         width: 320px; } }
+    @media (min-width: 767.98px) and (max-width: 1400px) {
+      .video-container .video {
+        position: fixed; } }
     .video-container .video iframe {
       width: 100%;
       height: 100%; }
@@ -247,7 +250,8 @@ body {
   cursor: pointer; }
   @media (max-width: 767.98px) {
     .video-btn__close {
-      top: -42px; } }
+      top: -78px;
+      right: -126px; } }
   .video-btn__close:after {
     content: '';
     position: absolute;

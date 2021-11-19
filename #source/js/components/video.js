@@ -29,6 +29,8 @@ $(videos).each(function (e) {
       videoOverlay = $(this).find('.section-video__overlay');
 
 
+
+
    if (img.length > 0) {
       $(img).attr('src', youtubeImgSrc);
    }

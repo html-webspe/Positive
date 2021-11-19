@@ -143,6 +143,10 @@ body {
       width: 320px;
     }
 
+    @media (min-width:$md3+px) and (max-width:1400px) {
+      position: fixed;
+    }
+
     iframe {
       width: 100%;
       height: 100%;
@@ -165,7 +169,6 @@ body {
   border: 2px solid $acentColor1;
   cursor: pointer;
   z-index: 10;
-
   transition: transform 0.3s;
 
   &:hover {
@@ -192,7 +195,6 @@ body {
       border-width: 5px 0 5px 6px;
     }
   }
-
 }
 
 .video-btn__close {
@@ -205,7 +207,8 @@ body {
   cursor: pointer;
 
   @media (max-width:$md3+px) {
-    top: -42px;
+    top: -78px;
+    right: -126px;
   }
 
   &:after {
@@ -229,14 +232,10 @@ body {
     background-color: $acentColor1;
     transform: rotate(-45deg);
   }
-
-
-
 }
 
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
 @import "ui/_modal";
-
 @import "ui/_btn";
 @import "ui/_title";
 
