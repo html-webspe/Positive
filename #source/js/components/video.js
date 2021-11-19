@@ -18,7 +18,6 @@ let createIframe = function (id) {
 const videos = document.querySelectorAll('.section-video');
 
 
-
 $(videos).each(function (e) {
 
    let videoCnt = $(this).closest('.section-video').find('.video'),
