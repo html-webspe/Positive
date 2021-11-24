@@ -29,11 +29,11 @@
          z-index: -1;
 
          @media (max-width:$md1+px) {
-            height: 60px;
+            height: 84px;
          }
 
          @media (min-width:$md1+px) {
-            height: 100px;
+            height: 119px;
          }
       }
 
@@ -136,10 +136,10 @@
 
 
       /* ДЛЯ ЛЭНДА*/
-      margin-left: auto;
+      // margin-left: auto;
 
       a {
-         margin-right: 10px;
+         display: block;
 
          &:first-child {
             margin-bottom: 5px;
