@@ -2521,8 +2521,13 @@ body {
   .page-promo-main .page-hero__content {
     max-width: 525px; } }
 
-.page-promo-main .page-hero__text {
-  max-width: 500px; }
+@media (max-width: 992.98px) {
+  .page-promo-main .page-hero__text {
+    max-width: 264px; } }
+
+@media (min-width: 1199.98px) {
+  .page-promo-main .page-hero__text {
+    max-width: 500px; } }
 
 .page-promo-main .page-hero__form:after {
   content: '';

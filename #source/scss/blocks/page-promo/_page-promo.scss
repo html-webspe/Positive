@@ -25,7 +25,13 @@
    }
 
    .page-hero__text {
-      max-width: 500px;
+      @media (max-width:$md2+px) {
+         max-width: 264px;
+      }
+
+      @media (min-width:$md1+px) {
+         max-width: 500px;
+      }
    }
 
    .page-hero__form {
