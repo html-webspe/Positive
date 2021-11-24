@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <title>О компании</title>
+   <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+   <meta name="format-detection" content="telephone=no">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+   <link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="shortcut icon" href="favicon.ico">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header">
+   <div class='container header__container'>
+      <div id="header-sticky" class="header__main">
+         <a href="/" class="header__logo logo"><img src="img/logo.png" alt="Логотип" /></a>
+
+         <!--   search   <div class="header__search search-form">
+            <form action="#" class="search-form__item">
+               <span class="search-form__icon icon-search"></span>
+               <input type="text" placeholder="Найди свое" class="search-form__input">
+               <button class="search-form__button">Искать</button>
+            </form>
+         </div>  -->
+
+         <!--   end search    -->
+
+         <!--   action     -->
+         <div class="header__action">
+            <!-- <a href="#" class="header__action-shop">
+               <img src="img/shop.png" alt="shop" />
+                 <a href="tel:+74997693728" class="header__action-tel">+7 (499) 769-37-28 </a>
+            <a href="tel:+78007773728" class="header__action-tel">+7 (800) 777-37-28 </a>
+            </a>-->
+
+            <div class="header__action-tel">
+               <a href="tel:+74997693728">+7 (499) 769-37-28 </a>
+               <a href="tel:+78007773728">+7 (800) 777-37-28 </a>
+            </div>
+
+
+         </div>
+         <!--   end action    -->
+
+
+         <!--     navigation  -->
+         <div id="nav-menu" class="header__navigation">
+
+            <!--    menu-miobile  -->
+            <div class="header__navigation-item">
+               <div class="header__menu menu">
+                  <nav class="menu__body">
+                     <!--
+                        <ul class="menu__list">
+                        <li class="menu__item"><a href="#" class="menu__link">О компании</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Каталог</a>
+
+                        </li>
+                        <li class="menu__item"><a href="#" class="menu__link">Печать</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Пошив</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Прайс</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+                     </ul>
+                     -->
+                     <ul class="menu__list">
+                        <li class="menu__item"><a href="#about" class="menu__link scroll-to">О компании</a></li>
+                        <li class="menu__item"><a href="#print" class="menu__link scroll-to">Печать</a></li>
+                        <li class="menu__item"><a href="#cases" class="menu__link scroll-to">Кейсы</a></li>
+                        <li class="menu__item"><a href="#callback" class="menu__link scroll-to">Обратная связь</a></li>
+                        <li class="menu__item"><a href="#footer" class="menu__link scroll-to">Контакты</a></li>
+                     </ul>
+                  </nav>
+               </div>
+            </div>
+            <!--   end  menu-miobile  -->
+
+
+            <!--
+             <div class="header__navigation-item">
+               <a href="#" class="header__navigation-shop">
+                  <img src="img/shop.png" alt="shop" />
+                  <span>Корзина</span>
+               </a>
+            </div>
+         -->
+
+            <!--   contacts  -->
+            <div class="header__navigation-item">
+               <div class="header-contacts">
+                  <div class="header-contacts__item">
+                     <span>Телефон</span>
+                     <a href="tel:+74997693728">+7 (499) 769-37-28 </a>
+                     <a href="tel:+78007773728">+7 (800) 777-37-28 </a>
+
+                  </div>
+                  <div class="header-contacts__item">
+                     <span>E-mail</span>
+                     <a href="mailto:tstarkhov@mail.ru">forma297@yandex.ru</a>
+                  </div>
+                  <div class="header-contacts__item">
+                     <span>Адрес</span>
+                     <p>г. Москва, Остаповский проезд 3, стр. 29, 1 подьезд, 1 этаж</p>
+                  </div>
+                  <div class="header-contacts__item">
+                     <span>График работы</span>
+                     <p>Пн-Пт: 10:00-19:00</p>
+                  </div>
+               </div>
+            </div>
+            <!--   end  contacts  -->
+
+            <!--    social  -->
+            <div class="header__navigation-item">
+               <div class="header-social social">
+                  <a href="#" class="social__item social__item-inst" target="_blank">
+                     <img src="img/social/inst.svg" alt="Instagram" />
+                  </a>
+                  <a href="#" class="social__item social__item-facebook" target="_blank">
+                     <img src="img/social/facebook.svg" alt="Facebook" />
+                  </a>
+                  <a href="#" class="social__item social__item-vk" target="_blank">
+                     <img src="img/social/vk.svg" alt="VKontakte" />
+                  </a>
+               </div>
+            </div>
+            <!--   end  social  -->
+
+         </div>
+         <!--   end navigation    -->
+
+
+         <button id="nav-toggle" type="button" class="icon-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+         </button>
+
+      </div>
+      <div class="header__bottom">
+         <div class="header__menu-desktop desktop-menu">
+            <!-- <ul class="desktop-menu__list">
+               <li class="desktop-menu__item"><a href="#" class="desktop-menu__link">О компании</a></li>
+               <li class="desktop-menu__item"><a href="#" class="desktop-menu__link">Каталог</a>
+                  
+                     <div class="menu__dropdown dropdown-menu">
+                     <ul class="dropdown-menu__list">
+                        <li class="dropdown-menu__item"><a href="" class="dropdown-menu__link">Пункт
+                              каталога</a></li>
+                        <li class="dropdown-menu__item"><a href="" class="dropdown-menu__link">Пункт каталога в
+                              две строки</a></li>
+                        <li class="dropdown-menu__item"><a href="" class="dropdown-menu__link">Пункт
+                              каталога</a></li>
+                        <li class="dropdown-menu__item"><a href="" class="dropdown-menu__link">Пункт
+                              каталога</a></li>
+                        <li class="dropdown-menu__item"><a href="" class="dropdown-menu__link">Пункт
+                              каталога</a></li>
+                     </ul>
+                  </div>
+                  
+               </li>
+               <li class="desktop-menu__item"><a href="#" class="desktop-menu__link">Печать</a></li>
+               <li class="desktop-menu__item"><a href="sewing.html" class="desktop-menu__link">Пошив</a></li>
+               <li class="desktop-menu__item"><a href="#" class="desktop-menu__link">Прайс</a></li>
+               <li class="desktop-menu__item"><a href="#" class="desktop-menu__link">Контакты</a></li>
+            </ul>-->
+            <ul class="desktop-menu__list">
+               <li class="desktop-menu__item"><a href="sewing.html" class="desktop-menu__link">Пошив</a></li>
+               <li class="desktop-menu__item"><a href="page-about.html" class="desktop-menu__link scroll-to">О
+                     компании</a></li>
+               <li class="desktop-menu__item"><a href="page-promo.html" class="desktop-menu__link scroll-to">Печать</a>
+               </li>
+               <li class="desktop-menu__item"><a href="#cases" class="desktop-menu__link scroll-to">Кейсы</a></li>
+               <li class="desktop-menu__item"><a href="#callback" class="desktop-menu__link scroll-to">Обратная
+                     связь</a></li>
+               <li class="desktop-menu__item"><a href="#footer" class="desktop-menu__link scroll-to">Контакты</a></li>
+            </ul>
+         </div>
+      </div>
+   </div>
+</header>
+      <main class="page-main page-about-main">
+         <section class="section page-hero">
+   <div class='container page-hero__container'>
+      <div class="page-hero__body">
+         <div class="page-hero__content">
+            <div class="page-hero__single">
+               <img src="img/page-about/page-single-logo.png" alt="" />
+            </div>
+            <h1 class="title page-hero__title">О КОМПАНИИ</h1>
+            <p class="page-hero__text">Компания "Positive" успешно существует с 2010 года. За прошедшее время мы прошли
+               путь от малого предприятия до крупного производства с разнообразным ассортиментом продукции. </p>
+         </div>
+         <div class="page-hero__img">
+            <img src="img/page-about/page-hero-img.png" alt="" />
+         </div>
+      </div>
+
+   </div>
+</section>
+         <section class="section company">
+   <div class='container company__container'>
+      <div class="company__body">
+         <div class="company__col company__play">
+            <div class="company__play-block">
+               <span class="company__play-title">Посмотрите видео о компании</span>
+            </div>
+
+            <div class="company__play-img">
+               <span class="company__play-btn icon-play"></span>
+
+               <img class="company__play-img" src="img/page-about/about-img.png" alt="" />
+
+            </div>
+         </div>
+         <div class="company__col company__info">
+
+            <p>
+               <b>Компания "Positive"</b> оснащена новейшим оборудованием для печати по ткани и сувенирной продукции.
+               Нашими
+               приоритетными направлениями нанесения логотипов являются термопечать и сублимационная печать, что
+               позволяет
+               нам выполнять заказы в кратчайшие сроки и по максимально лояльной цене. Также мы наносим любые принты на
+               футболки, бейсболки, куртки, разнообразную сувенирную продукцию. Изображение на текстильных изделиях не
+               стирается, остается четким и ярким на протяжении долгого времени.
+
+            </p>
+
+            <p>
+               Таким образом <b>мы можем предложить вам все виды нанесения</b> логотипов на текстильную и сувенирную
+               продукцию,
+               такие как шелкография, термотрансфер, вышивка, цифровая печать, сублимация, тампопечать, тиснение,
+               гравировка и тд.
+               Наша компания осуществляет полный цикл производства изделий под ключ. Мы предлагаем полный спектр услуг
+               от
+               разработки дизайн-макета до транспортировки заказа в любой регион Российской Федерации. Наши специалисты
+               контролируют качество изделий на каждом этапе производственного цикла и постоянно на связи с заказчиком.
+            </p>
+
+            <p>
+               <b>Приоритетом</b> нашей компании является четкое выполнение сроков и требований клиента. Внедряя
+               инновационные
+               технологии XXI века, мы можем гарантировать высочайшее качество и износостойкость нашей продукции в
+               сложнейших климатических условиях.
+            </p>
+
+         </div>
+      </div>
+   </div>
+</section>
+         <section class="section progects">
+   <div class="progects__body">
+      <h2 class="section-title progects__title">НАШИ ПРОЕКТЫ</h2>
+
+      <div class="progects__wrapper ">
+         <div class="progects__item">
+            <img src="img/page-about/progects/01.jpg" alt="" />
+         </div>
+         <div class="progects__item">
+            <img src="img/page-about/progects/02.jpg" alt="" />
+         </div>
+         <div class="progects__item">
+            <img src="img/page-about/progects/03.jpg" alt="" />
+         </div>
+         <div class="progects__item">
+            <img src="img/page-about/progects/04.jpg" alt="" />
+         </div>
+         <div class="progects__item">
+            <img src="img/page-about/progects/05.jpg" alt="" />
+         </div>
+         <div class="progects__item">
+            <img src="img/page-about/progects/06.jpg" alt="" />
+         </div>
+         <div class="progects__item">
+            <img src="img/page-about/progects/07.jpg" alt="" />
+         </div>
+         <div class="progects__item">
+            <img src="img/page-about/progects/08.jpg" alt="" />
+         </div>
+         <div class="progects__item">
+            <img src="img/page-about/progects/09.jpg" alt="" />
+         </div>
+         <div class="progects__item">
+            <img src="img/page-about/progects/10.jpg" alt="" />
+         </div>
+         <div class="progects__item">
+            <img src="img/page-about/progects/11.jpg" alt="" />
+         </div>
+         <div class="progects__item">
+            <img src="img/page-about/progects/12.jpg" alt="" />
+         </div>
+         <div class="progects__item">
+            <img src="img/page-about/progects/13.jpg" alt="" />
+         </div>
+         <div class="progects__item">
+            <img src="img/page-about/progects/14.jpg" alt="" />
+         </div>
+         <div class="progects__item">
+            <img src="img/page-about/progects/15.jpg" alt="" />
+         </div>
+         <div class="progects__item">
+            <img src="img/page-about/progects/16.jpg" alt="" />
+         </div>
+         <div class="progects__item">
+            <img src="img/page-about/progects/17.jpg" alt="" />
+         </div>
+         <div class="progects__item">
+            <img src="img/page-about/progects/18.jpg" alt="" />
+         </div>
+         <div class="progects__item">
+            <img src="img/page-about/progects/19.jpg" alt="" />
+         </div>
+         <div class="progects__item">
+            <img src="img/page-about/progects/20.jpg" alt="" />
+         </div>
+      </div>
+   </div>
+</section>
+      </main>
+      <footer id="footer" class="footer">
+   <div class='container'>
+      <div class="footer__body">
+         <div class="footer__map"></div>
+         <div class="footer__content">
+            <a href="#" class="footer__logo">
+               <img src="img/footer-logo.png" alt="Логотип" />
+            </a>
+            <div class="footer__content-inner">
+               <div class="footer__col">
+                  <div class="footer__item">
+                     <h3 class="footer__item-title">АДРЕС</h3>
+                     <p>г. Москва, Остаповский проезд 3, стр. 29, 1 этаж</p>
+                  </div>
+                  <div class="footer__item">
+                     <h3 class="footer__item-title">ТЕЛЕФОН</h3>
+                     <a href="tel:+74997693728">+7 (499) 769-37-28 </a>
+                     <a href="tel:+78007773728">+7 (800) 777-37-28 </a>
+                  </div>
+                  <div class="footer__item">
+                     <h3 class="footer__item-title">E-mail</h3>
+                     <a href="mailto:tstarkhov@mail.ru">forma297@yandex.ru</a>
+                  </div>
+               </div>
+               <div class="footer__col">
+                  <div class="footer__item">
+                     <h3 class="footer__item-title">СТРАНИЦЫ</h3>
+                     <nav class="footer__nav">
+                        <ul class="footer__nav-list">
+                           <li class="footer__nav-item"><a href="" class="footer__nav-link">О компании</a></li>
+                           <li class="footer__nav-item"><a href="" class="footer__nav-link">Каталог</a></li>
+                           <li class="footer__nav-item"><a href="" class="footer__nav-link">Печать</a></li>
+                           <li class="footer__nav-item"><a href="" class="footer__nav-link">Пошив</a></li>
+                           <li class="footer__nav-item"><a href="" class="footer__nav-link">Прайс</a></li>
+                           <li class="footer__nav-item"><a href="" class="footer__nav-link">Контакты</a></li>
+                        </ul>
+                     </nav>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+      </div>
+      <p class="footer__copyright"> © Сайт разработан 2021 </p>
+   </div>
+</footer>
+
+      <div class="modal">
+   <div class="modal__body" data-target="modal-callback">
+      <button class="modal-close">X</button>
+      <div class="modal-content">
+         <form id="modal-form" class="callback__form form-callback">
+            <h3 class="form-callback__title">Оставь заявку
+               <span>и получи расчет стоимости проекта</span> </h3>
+            <div class="form-callback__inner">
+
+               <div class="form-callback__group--block">
+                  <div class="form-callback__group">
+                     <input type="text" class="form-callback__input" placeholder="Ваше имя" data-validate-field="name"
+                        name="name">
+                  </div>
+                  <div class="form-callback__group">
+                     <input type="email" class="form-callback__input" placeholder="Ваш E-mail" name="email"
+                        data-validate-field="email">
+                  </div>
+                  <div class="form-callback__group">
+                     <input type="tel" class="form-callback__input" placeholder="+7 (XXX) XXX  XX X"
+                        data-validate-field="tel" name="phone">
+                  </div>
+                  <div class="form-callback__group">
+                     <textarea class="form-callback__textarea">Комментарий к заказу</textarea>
+                  </div>
+               </div>
+               <button class="btn btn-orange form-callback__btn">Оставить заявку</button>
+
+               <label class="checkbox__label form-callback__label">
+                  <input type="checkbox">
+                  <span class="checkbox__control form-callback__checkbox-control icon-checked"></span>
+                  Я даю согласие на обработку персональных данных и соглашаюсь с политикой конфиденциальности
+               </label>
+            </div>
+         </form>
+      </div>
+   </div>
+   <div class="modal__body thanks-popup">
+      <button class="modal-close">X</button>
+      <div class="modal-content">
+
+         <h3 class="thanks-popup__title">Спасибо,
+            <span>что оставили заявку!</span> </h3>
+
+         <p class="thanks-popup__text">Наш менеджер свяжется с вами в течении 10 минут</p>
+
+         <a href="#" class="btn btn-orange thanks-popup__btn">На главную</a>
+
+      </div>
+   </div>
+</div>
+   </div>
+
+   <script src="js/jquery.min.js"></script>
+<script src="js/vendors.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+
+</html>

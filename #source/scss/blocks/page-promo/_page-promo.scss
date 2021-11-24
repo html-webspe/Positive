@@ -1,0 +1,163 @@
+.page-promo-main {
+   .page-hero__title {
+      @media (max-width:$md2+px) {
+         padding-right: 40px;
+      }
+   }
+
+   .print__content {
+      position: relative;
+
+      @media (min-width:$md2+px) {
+         display: flex;
+         justify-content: space-between;
+      }
+
+      @media (max-width:$md3+px) {
+         padding-top: 53px;
+      }
+   }
+
+   .page-hero__content {
+      @media (min-width:$md2+px) {
+         max-width: 525px;
+      }
+   }
+
+   .page-hero__text {
+      max-width: 500px;
+   }
+
+   .page-hero__form {
+      &:after {
+         content: '';
+         background-image: url("../img/page-promo/page-hero-img.png");
+      }
+   }
+
+   .print__block {
+      margin-bottom: 200px;
+
+      &:last-child {
+         margin-bottom: 100px;
+      }
+
+      @media (max-width:$md2+px) {
+         margin-bottom: 50px;
+      }
+   }
+
+   .print__info {
+
+      @media (max-width:$md3+px) {
+         max-width: inherit;
+         text-align: justify;
+      }
+
+      @media (min-width:$md2+px) {
+         display: flex;
+         flex-direction: column;
+         align-items: flex-start;
+      }
+   }
+
+   .print__title {
+      @media (max-width:$md3+px) {
+         text-align: left;
+         margin-bottom: 30px;
+
+      }
+   }
+
+   .print__pagination {
+      @media (max-width:$md2+px) {
+         top: 0;
+         right: 0;
+         font-size: 16px;
+         line-height: 20px;
+      }
+   }
+
+   .print__info-title {
+      @media (max-width:$md3+px) {
+         position: absolute;
+         top: 0;
+         left: 0;
+      }
+   }
+
+   .print__info-desc {
+      padding: 0;
+      flex-grow: 1;
+
+      @media (max-width:$md3+px) {
+         margin-bottom: 30px;
+         font-size: 16px;
+         line-height: 22px;
+      }
+
+      @media (min-width:$md3+px) {
+         font-size: 18px;
+         line-height: 23px;
+         margin-bottom: 20px;
+      }
+   }
+
+   .print-img {
+      @media (max-width:$md3+px) {
+         margin-bottom: 24px;
+      }
+
+      @media (min-width:600px) and (max-width:$md2+px) {
+         margin-right: 12px;
+         float: left;
+      }
+
+      @media (min-width:$md2+px) {
+         margin-right: 50px;
+      }
+   }
+
+   .print-img__item {
+      padding-bottom: 133%;
+
+      @media (max-width:$md2+px) {
+         width: 328px;
+      }
+
+      @media (min-width:$md2+px) {
+         width: 417px;
+      }
+   }
+
+   .item-product {
+      padding-top: 0;
+   }
+
+}
+
+/*
+.page-promo-main {
+ 
+
+
+   
+
+
+
+   
+
+
+  
+
+
+
+   .print__btn {
+      padding: 21px 60px;
+      font-size: 20px;
+      line-height: 24px;
+   }
+
+
+   
+}*/

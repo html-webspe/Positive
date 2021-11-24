@@ -57,14 +57,38 @@ const printSlider = new Swiper('.slider-print__container', {
    parallax: true
 });
 
-const printSliderImg = new Swiper('.slider-img__container', {
+const printSliderImg = new Swiper('.print-img__container', {
    slidesPerView: 1,
    navigation: {
-      nextEl: ".slider-img__control-next",
-      prevEl: ".slider-img__control-prev",
+      nextEl: ".print-img__control-next",
+      prevEl: ".print-img__control-prev",
    },
 });
 /*==================== <!-- PRINT SWIPE -->  ====================*/
+
+const productSlider = document.querySelector('.product__slider')
+
+if (productSlider) {
+   new Swiper(productSlider, {
+      slidesPerView: 2,
+      slidesPerColumn: 2,
+      slidesPerColumnFill: 'row',
+      navigation: {
+         nextEl: ".product__control-next",
+         prevEl: ".product__control-prev",
+      },
+      breakpoints: {
+         767: {
+            slidesPerView: 3,
+            slidesPerColumn: 2,
+         },
+         1024: {
+            slidesPerView: 4,
+            slidesPerColumn: 2,
+         },
+      },
+   });
+}
 
 
 /*==================== <-- REMOVE MENU MOBILE --> ====================*/
@@ -191,7 +215,32 @@ let validateForms = function (selector, rules, successModal, yaGoal) {
          xhr.onreadystatechange = function () {
             if (xhr.readyState === 4) {
                if (xhr.status === 200) {
-                  successModal.style.display = "block";
+                  const modal = document.querySelector('.modal'),
+                     modalContainer = document.querySelectorAll('.modal__body'),
+                     body = document.querySelector('body'),
+                     modalThanks = document.querySelector(successModal);
+
+                  modalContainer.forEach(element => {
+                     element.classList.remove('modal-open');
+                     element.classList.remove('fadeInUp');
+                     element.classList.remove('animate-open');
+                  });
+
+                  modal.classList.add('is-open');
+                  modalThanks.classList.add('modal-open');
+
+                  setTimeout(() => {
+                     modal.classList.remove('is-open');
+                     modalThanks.classList.remove('modal-open');
+
+                     let pagePosition = parseInt(document.body.dataset.position, 10);
+                     document.body.style.top = 'auto';
+                     document.body.style.paddingRight = '0';
+                     document.body.classList.remove('disable-scroll');
+                     window.scroll({ top: pagePosition, left: 0 });
+                     document.body.removeAttribute('data-position');
+
+                  }, 2000);
                }
             }
          }
@@ -228,3 +277,25 @@ validateForms('#modal-form',
 //====================   <!-- FORMS -->   ========================//
 
 
+
+const section = document.querySelector(".reviews");
+function checkScroll() {
+
+   if (section) {
+      let scrollTop = window.scrollY,
+         sectionHeight = section.offsetHeight,
+         sectionTop = section.offsetTop,
+         sectionBottom = sectionTop + sectionHeight;
+
+      if (scrollTop > sectionBottom) {
+         $('.video').html(' ');
+         $('.video').fadeOut();
+
+         $('.video-poster').fadeIn();
+         $('.video-btn__play').fadeIn();
+      }
+   }
+}
+
+window.addEventListener('scroll', checkScroll, false);
+window.addEventListener('resize', checkScroll, false);

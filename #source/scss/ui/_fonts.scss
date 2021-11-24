@@ -88,6 +88,10 @@
    -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-play:before {
+   content: "\e903";
+}
+
 .icon-arrow:before {
    content: "\e900";
 }

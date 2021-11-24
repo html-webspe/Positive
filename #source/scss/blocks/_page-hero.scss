@@ -1,0 +1,221 @@
+.page-hero {
+   position: relative;
+   background: $heroBg;
+
+   @media (max-width:$md1+px) {
+      padding-top: 54px;
+      padding-bottom: 74px;
+      margin-bottom: 50px;
+   }
+
+   @media (min-width:$md1+px) {
+      padding-top: 122px;
+      padding-bottom: 210px;
+      margin-bottom: 96px;
+   }
+
+   &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-image: url("../img/page-hero-bottom.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 87px;
+
+      @media (max-width:$md1+px) {
+         height: 40px;
+      }
+   }
+
+   &__container {
+      max-width: 1630px;
+   }
+
+   &__body {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   &__content {
+
+      @media (min-width:$md1+px) {
+         padding-top: 74px;
+      }
+   }
+
+   &__title {
+      font-size: 25px;
+      line-height: 38px;
+
+      @media (max-width:$md3+px) {
+         margin-bottom: 24px;
+      }
+
+      @media (min-width:$md2+px) {
+         font-size: 40px;
+         line-height: 55px;
+      }
+
+      @media (min-width:$md3+px) {
+         margin-bottom: 58px;
+      }
+   }
+
+   &__text {
+      font-weight: 500;
+      color: #676767;
+
+      @media (max-width:$md2+px) {
+         max-width: 264px;
+         margin-bottom: 61px;
+         font-size: 14px;
+         line-height: 18px;
+      }
+
+      @media (min-width:$md2+px) {
+         font-size: 22px;
+         line-height: 26px;
+         margin-bottom: 40px;
+
+      }
+
+      @media (min-width:$md1+px) {
+         font-size: 30px;
+         line-height: 38px;
+      }
+   }
+
+   &__btn {
+      @media (max-width:$md2+px) {
+         padding-left: 32px;
+         padding-right: 32px;
+      }
+
+      @media (min-width:$md2+px) {
+         padding-left: 70px;
+         padding-right: 70px;
+      }
+   }
+
+   &__form {
+      position: relative;
+      flex: 1;
+
+      &:after {
+         content: '';
+         position: absolute;
+         background-size: contain;
+         background-position: center;
+         background-repeat: no-repeat;
+
+         @media (max-width:$md3+px) {
+            width: 310px;
+            height: 153px;
+            top: 67px;
+            left: -135px;
+         }
+
+         @media (min-width:$md3+px) {
+            width: 494px;
+            height: 282px;
+            top: 14px;
+            left: -255px;
+         }
+
+         @media (min-width:$md2+px) {
+            left: 0;
+         }
+
+         @media (min-width:$md1+px) {
+            top: 7px;
+            width: 1150px;
+            height: 574px;
+         }
+      }
+
+      @media (min-width:$md3+px) and (max-width:$md1+px) {
+         padding-top: 62px;
+      }
+   }
+
+   /*
+   &__img {
+      position: absolute;
+
+      @media (max-width:$md4+px) {
+         max-width: 294px;
+         top: 62px;
+         right: -133px;
+      }
+
+      @media (min-width:$md4+px) {
+         max-width: 570px;
+         top: 20px;
+         right: -198px;
+      }
+
+
+      @media (min-width:$md3+px) and (max-width:$md1+px) {
+         top: 50px;
+         right: -135px;
+      }
+
+      @media (min-width:$md1+px) and (max-width:1500px) {
+         max-width: 1095px;
+         top: 0;
+         right: -103px;
+      }
+
+   }*/
+
+   .form-callback {
+      margin-left: auto;
+
+      @media (max-width:$md4+px) {
+         display: none;
+      }
+   }
+
+   @media (min-width:$md3+px) and (max-width:$md1+px) {
+      .form-callback {
+         width: 192px;
+         padding: 12px 25px;
+      }
+
+      .form-callback__title {
+         font-size: 10.112px;
+         line-height: 12px;
+         margin-bottom: 12px;
+         padding: 0;
+      }
+
+      .form-callback__input {
+         font-size: 7px;
+         line-height: 9px;
+         padding: 9px 9px 9px 13px;
+      }
+
+      .form-callback__group {
+         margin-bottom: 9px;
+      }
+
+      .form-callback__inner {
+         width: 126px;
+      }
+
+      .form-callback__label {
+         font-size: 5px;
+         line-height: 6px;
+      }
+
+      .form-callback__btn {
+         font-size: 8px;
+         line-height: 13px;
+         padding: 8px 0 8px 0;
+      }
+   }
+}

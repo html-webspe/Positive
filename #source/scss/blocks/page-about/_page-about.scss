@@ -1,0 +1,137 @@
+.page-about-main {
+   .page-hero {
+      @media (min-width:$md1+px) {
+         padding-top: 108px;
+      }
+   }
+
+   .page-hero__single {
+      margin-bottom: 26px;
+   }
+
+   .page-hero__body {
+      align-items: center;
+
+      @media (max-width:$md4+px) {
+         flex-direction: column;
+      }
+   }
+
+   .page-hero__title {
+      margin-bottom: 25px;
+
+      @media (max-width:$md3+px) {
+         margin-bottom: 14px;
+      }
+
+      @media (min-width:$md1+px) {
+         font-size: 54px;
+         line-height: 70px;
+      }
+   }
+
+   .page-hero__content {
+      padding-top: 52px;
+
+      @media (min-width:$md4+px) and (max-width:$md2+px) {
+         flex: 0 0 350px;
+      }
+
+      @media (min-width:$md1+px) {
+         flex: 0 0 645px;
+         padding-left: 50px;
+      }
+   }
+
+   .page-hero__text {
+      @media (min-width:$md2+px) {
+         font-size: 24px;
+         line-height: 30px;
+         padding-right: 0;
+      }
+   }
+
+   .page-hero__img {
+      @media (min-width:$md4+px) and (max-width:$md1+px) {
+         flex: 0 0 511px;
+      }
+
+      @media (min-width:$md2+px) {
+         transform: translateX(100px);
+      }
+   }
+
+}
+
+/*
+.page-about-main {
+   .page-hero__single {
+      margin-bottom: 26px;
+   }
+
+   .page-hero {
+      @media (min-width:$md1+px) {
+         padding-top: 108px;
+      }
+   }
+
+   .page-hero__body {
+      align-items: center;
+
+      @media (max-width:$md4+px) {
+         flex-direction: column;
+      }
+   }
+
+   .page-hero__title {
+      margin-bottom: 25px;
+
+      @media (max-width:$md3+px) {
+         margin-bottom: 14px;
+      }
+   }
+
+   .page-hero__content {
+      padding-top: 52px;
+
+      @media (max-width:$md4+px) {
+         max-width: inherit;
+      }
+
+      @media (min-width:$md4+px) and (max-width:$md2+px) {
+         flex: 0 0 350px;
+      }
+
+      @media (min-width:$md1+px) {
+         flex: 0 0 645px;
+         max-width: inherit;
+         padding-left: 50px;
+      }
+   }
+
+   .page-hero__text {
+      @media (max-width:$md4+px) {
+         width: inherit;
+      }
+
+      @media (min-width:$md2+px) {
+         font-size: 24px;
+         line-height: 30px;
+         padding-right: 0;
+      }
+
+      @media (min-width:$md3+px) {
+         width: auto;
+      }
+   }
+
+   .page-hero-img {
+      @media (min-width:$md4+px) and (max-width:$md1+px) {
+         flex: 0 0 511px;
+      }
+
+      @media (min-width:$md2+px) {
+         transform: translateX(100px);
+      }
+   }
+}*/

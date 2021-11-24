@@ -1,0 +1,87 @@
+.page-sewing-main {
+
+   .page-hero__form {
+      &:after {
+         content: '';
+         background-image: url("../img/page-sewing/page-hero-img.png");
+      }
+   }
+
+   .page-hero__content {
+      @media (min-width:$md2+px) {
+         max-width: 525px;
+      }
+   }
+
+   .page-hero__text {
+      @media (min-width:$md2+px) {
+         width: 643px;
+      }
+   }
+
+   .product__content {
+      .swiper-container {
+         @media (max-width:$md2+px) {
+            height: 544px;
+         }
+
+         @media (min-width:$md2+px) {
+            height: 730px;
+         }
+      }
+
+      .swiper-slide {
+         height: calc((100% - 30px) / 2);
+         overflow: hidden;
+      }
+   }
+
+   .item-product {
+      margin-bottom: 0;
+      padding-bottom: 0;
+   }
+
+}
+
+/*
+.page-sewing-main {
+   .page-hero__text {
+
+      padding-right: 0;
+
+      @media (min-width:$md1+px) {
+         width: 643px;
+      }
+   }
+
+   @media (max-width:$md3+px) {
+      .page-hero__content {
+         max-width: inherit;
+      }
+
+      .page-hero__title {
+         margin-bottom: 39px;
+      }
+
+      .page-hero__text {
+         position: relative;
+         z-index: 2;
+         width: 270px;
+      }
+
+      .page-hero__img {
+         left: -208px;
+      }
+   }
+
+
+
+  
+
+   .item-product__btn {
+      @media (max-width:$md2+px) {
+         font-size: 8px;
+         line-height: 9px;
+      }
+   }
+}*/

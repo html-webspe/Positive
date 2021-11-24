@@ -28,9 +28,6 @@ $(videos).each(function (e) {
       closeBtn = $(this).find('.video-btn__close'),
       videoOverlay = $(this).find('.section-video__overlay');
 
-
-
-
    if (img.length > 0) {
       $(img).attr('src', youtubeImgSrc);
    }
@@ -57,3 +54,4 @@ $(videos).each(function (e) {
    });
 });
 //====================  <!-- Video -->  ========================//
+

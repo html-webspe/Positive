@@ -1,4 +1,5 @@
 //@prepros-append components/modal.js
+//@prepros-append components/dynamic_adapt.js
 //@prepros-append components/video.js
 //@prepros-append libs/swiper.min.js
 //@prepros-append libs/inputmask.min.js

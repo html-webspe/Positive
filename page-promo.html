@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <title>Печать на рекламной продукции</title>
+   <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+   <meta name="format-detection" content="telephone=no">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+   <link rel="stylesheet" href="css/normalize.css">
+   <link rel="stylesheet" href="css/swiper.min.css">
+
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="shortcut icon" href="favicon.ico">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header">
+   <div class='container header__container'>
+      <div id="header-sticky" class="header__main">
+         <a href="/" class="header__logo logo"><img src="img/logo.png" alt="Логотип" /></a>
+
+         <!--   search   <div class="header__search search-form">
+            <form action="#" class="search-form__item">
+               <span class="search-form__icon icon-search"></span>
+               <input type="text" placeholder="Найди свое" class="search-form__input">
+               <button class="search-form__button">Искать</button>
+            </form>
+         </div>  -->
+
+         <!--   end search    -->
+
+         <!--   action     -->
+         <div class="header__action">
+            <!-- <a href="#" class="header__action-shop">
+               <img src="img/shop.png" alt="shop" />
+                 <a href="tel:+74997693728" class="header__action-tel">+7 (499) 769-37-28 </a>
+            <a href="tel:+78007773728" class="header__action-tel">+7 (800) 777-37-28 </a>
+            </a>-->
+
+            <div class="header__action-tel">
+               <a href="tel:+74997693728">+7 (499) 769-37-28 </a>
+               <a href="tel:+78007773728">+7 (800) 777-37-28 </a>
+            </div>
+
+
+         </div>
+         <!--   end action    -->
+
+
+         <!--     navigation  -->
+         <div id="nav-menu" class="header__navigation">
+
+            <!--    menu-miobile  -->
+            <div class="header__navigation-item">
+               <div class="header__menu menu">
+                  <nav class="menu__body">
+                     <!--
+                        <ul class="menu__list">
+                        <li class="menu__item"><a href="#" class="menu__link">О компании</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Каталог</a>
+
+                        </li>
+                        <li class="menu__item"><a href="#" class="menu__link">Печать</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Пошив</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Прайс</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+                     </ul>
+                     -->
+                     <ul class="menu__list">
+                        <li class="menu__item"><a href="#about" class="menu__link scroll-to">О компании</a></li>
+                        <li class="menu__item"><a href="#print" class="menu__link scroll-to">Печать</a></li>
+                        <li class="menu__item"><a href="#cases" class="menu__link scroll-to">Кейсы</a></li>
+                        <li class="menu__item"><a href="#callback" class="menu__link scroll-to">Обратная связь</a></li>
+                        <li class="menu__item"><a href="#footer" class="menu__link scroll-to">Контакты</a></li>
+                     </ul>
+                  </nav>
+               </div>
+            </div>
+            <!--   end  menu-miobile  -->
+
+
+            <!--
+             <div class="header__navigation-item">
+               <a href="#" class="header__navigation-shop">
+                  <img src="img/shop.png" alt="shop" />
+                  <span>Корзина</span>
+               </a>
+            </div>
+         -->
+
+            <!--   contacts  -->
+            <div class="header__navigation-item">
+               <div class="header-contacts">
+                  <div class="header-contacts__item">
+                     <span>Телефон</span>
+                     <a href="tel:+74997693728">+7 (499) 769-37-28 </a>
+                     <a href="tel:+78007773728">+7 (800) 777-37-28 </a>
+
+                  </div>
+                  <div class="header-contacts__item">
+                     <span>E-mail</span>
+                     <a href="mailto:tstarkhov@mail.ru">forma297@yandex.ru</a>
+                  </div>
+                  <div class="header-contacts__item">
+                     <span>Адрес</span>
+                     <p>г. Москва, Остаповский проезд 3, стр. 29, 1 подьезд, 1 этаж</p>
+                  </div>
+                  <div class="header-contacts__item">
+                     <span>График работы</span>
+                     <p>Пн-Пт: 10:00-19:00</p>
+                  </div>
+               </div>
+            </div>
+            <!--   end  contacts  -->
+
+            <!--    social  -->
+            <div class="header__navigation-item">
+               <div class="header-social social">
+                  <a href="#" class="social__item social__item-inst" target="_blank">
+                     <img src="img/social/inst.svg" alt="Instagram" />
+                  </a>
+                  <a href="#" class="social__item social__item-facebook" target="_blank">
+                     <img src="img/social/facebook.svg" alt="Facebook" />
+                  </a>
+                  <a href="#" class="social__item social__item-vk" target="_blank">
+                     <img src="img/social/vk.svg" alt="VKontakte" />
+                  </a>
+               </div>
+            </div>
+            <!--   end  social  -->
+
+         </div>
+         <!--   end navigation    -->
+
+
+         <button id="nav-toggle" type="button" class="icon-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+         </button>
+
+      </div>
+      <div class="header__bottom">
+         <div class="header__menu-desktop desktop-menu">
+            <!-- <ul class="desktop-menu__list">
+               <li class="desktop-menu__item"><a href="#" class="desktop-menu__link">О компании</a></li>
+               <li class="desktop-menu__item"><a href="#" class="desktop-menu__link">Каталог</a>
+                  
+                     <div class="menu__dropdown dropdown-menu">
+                     <ul class="dropdown-menu__list">
+                        <li class="dropdown-menu__item"><a href="" class="dropdown-menu__link">Пункт
+                              каталога</a></li>
+                        <li class="dropdown-menu__item"><a href="" class="dropdown-menu__link">Пункт каталога в
+                              две строки</a></li>
+                        <li class="dropdown-menu__item"><a href="" class="dropdown-menu__link">Пункт
+                              каталога</a></li>
+                        <li class="dropdown-menu__item"><a href="" class="dropdown-menu__link">Пункт
+                              каталога</a></li>
+                        <li class="dropdown-menu__item"><a href="" class="dropdown-menu__link">Пункт
+                              каталога</a></li>
+                     </ul>
+                  </div>
+                  
+               </li>
+               <li class="desktop-menu__item"><a href="#" class="desktop-menu__link">Печать</a></li>
+               <li class="desktop-menu__item"><a href="sewing.html" class="desktop-menu__link">Пошив</a></li>
+               <li class="desktop-menu__item"><a href="#" class="desktop-menu__link">Прайс</a></li>
+               <li class="desktop-menu__item"><a href="#" class="desktop-menu__link">Контакты</a></li>
+            </ul>-->
+            <ul class="desktop-menu__list">
+               <li class="desktop-menu__item"><a href="sewing.html" class="desktop-menu__link">Пошив</a></li>
+               <li class="desktop-menu__item"><a href="page-about.html" class="desktop-menu__link scroll-to">О
+                     компании</a></li>
+               <li class="desktop-menu__item"><a href="page-promo.html" class="desktop-menu__link scroll-to">Печать</a>
+               </li>
+               <li class="desktop-menu__item"><a href="#cases" class="desktop-menu__link scroll-to">Кейсы</a></li>
+               <li class="desktop-menu__item"><a href="#callback" class="desktop-menu__link scroll-to">Обратная
+                     связь</a></li>
+               <li class="desktop-menu__item"><a href="#footer" class="desktop-menu__link scroll-to">Контакты</a></li>
+            </ul>
+         </div>
+      </div>
+   </div>
+</header>
+      <main class="page-main page-promo-main">
+         <section class="section page-hero">
+   <div class='container page-hero__container'>
+
+      <div class="page-hero__body">
+         <div class="page-hero__content">
+            <h1 class="title page-hero__title">Печать на рекламной продукции</h1>
+            <p class="page-hero__text">Брендирование корпоративной
+               и&nbsp;промо одежды, сувениров
+               и&nbsp;аксессуаров</p>
+            <a href="#" class="btn page-hero__btn btn-amethyst">Сделать заказ</a>
+         </div>
+         <div class="page-hero__form">
+            <form id="form-callback" class="form callback__form form-callback">
+               <h3 class="form-callback__title">Оставь заявку
+                  <span>и получи расчет стоимости проекта</span> </h3>
+               <div class="form-callback__inner">
+
+                  <div class="form-callback__group--block">
+                     <div class="form-callback__group">
+                        <input type="text" class="form-callback__input" placeholder="Ваше имя"
+                           data-validate-field="name" name="name">
+                     </div>
+                     <div class="form-callback__group">
+                        <input type="email" class="form-callback__input" placeholder="Ваш E-mail" name="email"
+                           data-validate-field="email">
+                     </div>
+                     <div class="form-callback__group">
+                        <input type="tel" class="form-callback__input" placeholder="+7 (XXX) XXX  XX X"
+                           data-validate-field="tel" name="phone">
+                     </div>
+
+                  </div>
+                  <button class="btn btn-orange form-callback__btn">Оставить заявку</button>
+
+                  <label class="checkbox__label form-callback__label">
+                     <input type="checkbox">
+                     <span class="checkbox__control form-callback__checkbox-control icon-checked"></span>
+                     Я даю согласие на обработку персональных данных и соглашаюсь с политикой конфиденциальности
+                  </label>
+               </div>
+            </form>
+            <!--<img src="img/page-promo/page-hero-img.png" class="page-hero__img" alt="" />-->
+         </div>
+      </div>
+
+   </div>
+</section>
+         <section class="section product">
+   <div class='container'>
+      <div class="product__body">
+         <h2 class="section-title product__title">Способы нанесения <br>логотипа </h2>
+
+         <div class="product__content">
+            <div class="product__item item-product">
+               <div class="item-product__img">
+                  <img src="img/page-promo/product/01.jpg" alt="Термопечать" />
+               </div>
+               <div class="item-product__title">Термопечать</div>
+               <a href="#" class="item-product__btn btn btn-orange">Подробнее</a>
+            </div>
+            <div class="product__item item-product">
+               <div class="item-product__img">
+                  <img src="img/page-promo/product/02.jpg" alt="Сублимация" />
+               </div>
+               <div class="item-product__title">Сублимация</div>
+               <a href="#" class="item-product__btn btn btn-orange">Подробнее</a>
+            </div>
+            <div class="product__item item-product">
+               <div class="item-product__img">
+                  <img src="img/page-promo/product/03.jpg" alt="Шелкография" />
+               </div>
+               <div class="item-product__title">Шелкография</div>
+               <a href="#" class="item-product__btn btn btn-orange">Подробнее</a>
+            </div>
+            <div class="product__item item-product">
+               <div class="item-product__img">
+                  <img src="img/page-promo/product/04.jpg" alt="Термотрансфер" />
+               </div>
+               <div class="item-product__title">Термотрансфер</div>
+               <a href="#" class="item-product__btn btn btn-orange">Подробнее</a>
+            </div>
+            <div class="product__item item-product">
+               <div class="item-product__img">
+                  <img src="img/page-promo/product/05.jpg" alt="Вышивка" />
+               </div>
+               <div class="item-product__title">Вышивка</div>
+               <a href="#" class="item-product__btn btn btn-orange">Подробнее</a>
+            </div>
+            <div class="product__item item-product">
+               <div class="item-product__img">
+                  <img src="img/page-promo/product/06.jpg" alt="Цифровая печать" />
+               </div>
+               <div class="item-product__title">Цифровая печать</div>
+               <a href="#" class="item-product__btn btn btn-orange">Подробнее</a>
+            </div>
+            <div class="product__item item-product">
+               <div class="item-product__img">
+                  <img src="img/page-promo/product/07.jpg" alt="Тампонная печать" />
+               </div>
+               <div class="item-product__title">Тампонная печать</div>
+               <a href="#" class="item-product__btn btn btn-orange">Подробнее</a>
+            </div>
+            <div class="product__item item-product">
+               <div class="item-product__img">
+                  <img src="img/page-promo/product/08.jpg" alt="Тиснение" />
+               </div>
+               <div class="item-product__title">Тиснение</div>
+               <a href="#" class="item-product__btn btn btn-orange">Подробнее</a>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+         <section id="print" class="section print">
+   <div class='container'>
+      <div class="print__body">
+         <h2 class="section-title print__title">Виды печати</h2>
+
+
+         <div class="print__block">
+
+            <div class="print__content">
+               <div class="print-img">
+                  <div class="print-img__item">
+                     <img src="img/print/02.jpg" alt="" />
+                  </div>
+               </div>
+               <div class="print__info">
+                  <h3 class="print__info-title">Термопечать</h3>
+
+                  <p class="print__info-desc">
+                     Печать производится полиуретановой пленкой. Пленка состоит из двух слоёв лицевая и
+                     рабочая.
+                     Лицевая сторона защищена специальной прозрачной подложкой (удаляется после печати) Рабочая
+                     сторона покрыта тонким слоем клея, который при нагревании с помощью термопресса принимает
+                     вязкую
+                     консистенцию и под давлением впитывается в поверхность ткани и при остывании принимает
+                     прежние
+                     свойства. Пленкой можно печатать как полноцветные красочные картинки, так и аппликации
+                     собранные
+                     из разноцветных пленок. Печатать таким способом можно почти на любых материалах,
+                     синтетика,
+                     х/б,
+                     ткани с водоотталкивающей пропиткой. Пленки бывают светоотражающие, глиттерные,
+                     люминесцентные,
+                     хамелеон, неоновые, металлики различных цветов (серебро, золото, бронза, зеркальные), с
+                     имитацией под фольгу, резину и с объемным эффектом.
+                  </p>
+
+                  <a href="#" class="btn btn-amethyst print__btn">Оставить заявку</a>
+               </div>
+               <div class="print__pagination">01/08</div>
+            </div>
+
+         </div>
+
+         <div class="print__block">
+
+            <div class="print__content">
+               <div class="print-img">
+                  <div class="print-img__item">
+                     <img src="img/print/01.jpg" alt="" />
+                  </div>
+               </div>
+               <div class="print__info">
+                  <h3 class="print__info-title">СУБЛИМАЦИЯ</h3>
+
+                  <p class="print__info-desc">
+                     Печать производится полиуретановой пленкой. Пленка состоит из двух слоёв лицевая и рабочая. Лицевая
+                     сторона защищена специальной прозрачной подложкой (удаляется после печати) Рабочая сторона покрыта
+                     тонким слоем клея, который при нагревании с помощью термопресса принимает вязкую консистенцию и под
+                     давлением впитывается в поверхность ткани и при остывании принимает прежние свойства. Пленкой можно
+                     печатать как полноцветные красочные картинки, так и аппликации собранные из разноцветных пленок.
+                     Печатать таким способом можно почти на любых материалах, синтетика, х/б, ткани с водоотталкивающей
+                     пропиткой. Пленки бывают светоотражающие, глиттерные, люминесцентные, хамелеон, неоновые, металлики
+                     различных цветов (серебро, золото, бронза, зеркальные), с имитацией под фольгу, резину и с объемным
+                     эффектом.
+                  </p>
+
+                  <a href="#" class="btn btn-amethyst print__btn">Оставить заявку</a>
+               </div>
+               <div class="print__pagination">02/08</div>
+            </div>
+
+         </div>
+
+      </div>
+   </div>
+</section>
+         <section id="cases" class="section cases">
+   <div class='container'>
+      <div class="cases__body">
+         <h2 class="section-title cases__title">Кейсы</h2>
+
+         <div class="cases__navigation">
+            <div class="cases__navigation-item active" data-tab="#cases__item-1">Все</div>
+            <div class="cases__navigation-item" data-tab="#cases__item-2">Пошив</div>
+            <div class="cases__navigation-item" data-tab="#cases__item-3">Печать </div>
+         </div>
+
+         <div id="cases__item-1" class="cases__item active">
+            <div class="cases__block">
+               <div class="cases__content">
+                  <div class="cases__item-info">
+                     <h3 class="cases__item-title">Яндекс Маркет</h3>
+
+                     <div class="cases__item-desc">
+                        <p> Клиент обратился к&nbsp;нам со&nbsp;срочным и&nbsp;неоднозначным запросом- брендирование
+                           водолазных
+                           костюмов для Яндекс Маркета.</p>
+
+                        <p> Данное нанесение считается довольно сложным, так как логотип должен выдерживать
+                           многочисленные
+                           погружения на&nbsp;большую глубину и&nbsp;растяжение ткани с&nbsp;водоотталкивающей
+                           пропиткой.
+                           Большинство компаний не&nbsp;могли предоставить нашему клиенту печать данного качества
+                           и&nbsp;отказывались от&nbsp;заказа. Мы&nbsp;же подобрали подходящие термотрансферные пленки
+                           и&nbsp;смогли удовлетворить запрос клиента за&nbsp;2&nbsp;часа. Клиент остался доволен,
+                           логотип
+                           идеально лег и&nbsp;отвечал всем требованиям заказчика.
+                        </p>
+                     </div>
+                  </div>
+
+
+               </div>
+               <div class="cases__slider">
+                  <div class="cases__slider-body swiper-container">
+                     <div class="cases__slider-wrapper swiper-wrapper">
+                        <div class="cases__slider-item swiper-slide">
+                           <img src="img/cases/01.jpg" alt="" />
+                        </div>
+                        <div class="cases__slider-item swiper-slide">
+                           <img src="img/cases/01.jpg" alt="" />
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="cases__controls">
+                     <button class="cases__control cases__control-prev icon-arrow"></button>
+                     <button class="cases__control cases__control-next icon-arrow"></button>
+                  </div>
+               </div>
+            </div>
+            <div class="cases__block">
+               <div class="cases__content">
+                  <div class="cases__item-info">
+                     <h3 class="cases__item-title">Росатом</h3>
+
+                     <div class="cases__item-desc">
+                        <p> В нашу компанию обратился клиент с просьбой сделать печать на футболках максимально стойкой
+                           и с
+                           высокой точностью передачи градиентного перехода цветов в логотипе.</p>
+
+                        <p>
+                           Данному запросу удовлетворяет
+                           цифровая печать на термотрансферной пленке. С помощью данного вида нанесения можно создавать
+                           полноцветные изображения и переносить их на изделия, что мы и сделали в данном случае.
+                        </p>
+
+                        <p>Клиент остался доволен, а у нас в копилке успешно выполненный заказ для компании Росатом.</p>
+
+                     </div>
+                  </div>
+
+
+
+               </div>
+               <div class="cases__slider">
+                  <div class="cases__slider-body swiper-container">
+                     <div class="cases__slider-wrapper swiper-wrapper">
+                        <div class="cases__slider-item swiper-slide">
+                           <img src="img/cases/02.jpg" alt="" />
+                        </div>
+                        <div class="cases__slider-item swiper-slide">
+                           <img src="img/cases/02.jpg" alt="" />
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="cases__controls">
+                     <button class="cases__control cases__control-prev icon-arrow"></button>
+                     <button class="cases__control cases__control-next icon-arrow"></button>
+                  </div>
+               </div>
+            </div>
+            <div class="cases__block">
+               <div class="cases__content">
+                  <div class="cases__item-info">
+                     <h3 class="cases__item-title">Уралкалий</h3>
+
+                     <div class="cases__item-desc">
+                        <p> В нашу компанию обратились с очень ответственным и крупным заказом – изготовление мерча для
+                           команды болельщиков известного гонщика Формулы 1 2021 года Никиты Мазепина. </p>
+
+                        <p>
+                           Заказ для Team Mazepin состоял из 7 изделий различных изделий с разнообразными видами
+                           нанесений.
+                           В него входило 250 женских и мужских комплектов, каждый из которых состоял из 3 видов
+                           различных
+                           футболок, рубашки-поло, бейсболки, спортивной сумки и, конечно, же маски. Все изделия были
+                           выполнены из премиальной ткани и с отличительной символикой команды.
+
+                        </p>
+
+                        <p>На реализацию данного заказа ушло 30 дней, и результат превзошел даже самые смелые ожидания
+                           заказчика.
+                        </p>
+
+                     </div>
+                  </div>
+
+
+
+
+               </div>
+               <div class="cases__slider">
+                  <div class="cases__slider-body swiper-container">
+                     <div class="cases__slider-wrapper swiper-wrapper">
+                        <div class="cases__slider-item swiper-slide">
+                           <img src="img/cases/03.jpg" alt="" />
+                        </div>
+                        <div class="cases__slider-item swiper-slide">
+                           <img src="img/cases/03.jpg" alt="" />
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="cases__controls">
+                     <button class="cases__control cases__control-prev icon-arrow"></button>
+                     <button class="cases__control cases__control-next icon-arrow"></button>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+         <div id="cases__item-2" class="cases__item">
+            <div class="cases__block">
+               <div class="cases__content">
+                  <div class="cases__item-info">
+                     <h3 class="cases__item-title">Уралкалий</h3>
+
+                     <div class="cases__item-desc">
+                        <p> В нашу компанию обратились с очень ответственным и крупным заказом – изготовление мерча для
+                           команды болельщиков известного гонщика Формулы 1 2021 года Никиты Мазепина. </p>
+
+                        <p>
+                           Заказ для Team Mazepin состоял из 7 изделий различных изделий с разнообразными видами
+                           нанесений.
+                           В него входило 250 женских и мужских комплектов, каждый из которых состоял из 3 видов
+                           различных
+                           футболок, рубашки-поло, бейсболки, спортивной сумки и, конечно, же маски. Все изделия были
+                           выполнены из премиальной ткани и с отличительной символикой команды.
+
+                        </p>
+
+                        <p>На реализацию данного заказа ушло 30 дней, и результат превзошел даже самые смелые ожидания
+                           заказчика.
+                        </p>
+
+                     </div>
+                  </div>
+
+
+
+
+               </div>
+               <div class="cases__slider">
+                  <div class="cases__slider-body swiper-container">
+                     <div class="cases__slider-wrapper swiper-wrapper">
+                        <div class="cases__slider-item swiper-slide">
+                           <img src="img/cases/03.jpg" alt="" />
+                        </div>
+                        <div class="cases__slider-item swiper-slide">
+                           <img src="img/cases/03.jpg" alt="" />
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="cases__controls">
+                     <button class="cases__control cases__control-prev icon-arrow"></button>
+                     <button class="cases__control cases__control-next icon-arrow"></button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div id="cases__item-3" class="cases__item">
+            <div class="cases__block">
+               <div class="cases__content">
+                  <div class="cases__item-info">
+                     <h3 class="cases__item-title">Уралкалий</h3>
+
+                     <div class="cases__item-desc">
+                        <p> В нашу компанию обратились с очень ответственным и крупным заказом – изготовление мерча для
+                           команды болельщиков известного гонщика Формулы 1 2021 года Никиты Мазепина. </p>
+
+                        <p>
+                           Заказ для Team Mazepin состоял из 7 изделий различных изделий с разнообразными видами
+                           нанесений.
+                           В него входило 250 женских и мужских комплектов, каждый из которых состоял из 3 видов
+                           различных
+                           футболок, рубашки-поло, бейсболки, спортивной сумки и, конечно, же маски. Все изделия были
+                           выполнены из премиальной ткани и с отличительной символикой команды.
+
+                        </p>
+
+                        <p>На реализацию данного заказа ушло 30 дней, и результат превзошел даже самые смелые ожидания
+                           заказчика.
+                        </p>
+
+                     </div>
+                  </div>
+               </div>
+
+               <div class="cases__slider">
+                  <div class="cases__slider-body swiper-container">
+                     <div class="cases__slider-wrapper swiper-wrapper">
+                        <div class="cases__slider-item swiper-slide">
+                           <img src="img/cases/03.jpg" alt="" />
+                        </div>
+                        <div class="cases__slider-item swiper-slide">
+                           <img src="img/cases/03.jpg" alt="" />
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="cases__controls">
+                     <button class="cases__control cases__control-prev icon-arrow"></button>
+                     <button class="cases__control cases__control-next icon-arrow"></button>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+         <section id="callback" class="section callback">
+   <div class='container'>
+      <div class="callback__body">
+         <div class="callback__col">
+            <h2 class="section-title callback__title">Остались вопросы?</h2>
+            <p class="callback__text">Оставь заявку и получи бесплатную консультацию нашего специалиста</p>
+         </div>
+         <div class="callback__col">
+            <form id="form-callback" class="form callback__form form-callback">
+               <h3 class="form-callback__title">Оставь заявку
+                  <span>и получи расчет стоимости проекта</span> </h3>
+               <div class="form-callback__inner">
+
+                  <div class="form-callback__group--block">
+                     <div class="form-callback__group">
+                        <input type="text" class="form-callback__input" placeholder="Ваше имя"
+                           data-validate-field="name" name="name">
+                     </div>
+                     <div class="form-callback__group">
+                        <input type="email" class="form-callback__input" placeholder="Ваш E-mail" name="email"
+                           data-validate-field="email">
+                     </div>
+                     <div class="form-callback__group">
+                        <input type="tel" class="form-callback__input" placeholder="+7 (XXX) XXX  XX X"
+                           data-validate-field="tel" name="phone">
+                     </div>
+                     <div class="form-callback__group">
+                        <textarea class="form-callback__textarea">Комментарий к заказу</textarea>
+                     </div>
+                  </div>
+                  <button class="btn btn-orange form-callback__btn">Оставить заявку</button>
+
+                  <label class="checkbox__label form-callback__label">
+                     <input type="checkbox">
+                     <span class="checkbox__control form-callback__checkbox-control icon-checked"></span>
+                     Я даю согласие на обработку персональных данных и соглашаюсь с политикой конфиденциальности
+                  </label>
+               </div>
+            </form>
+            <img src="img/callback/callback-img.png" class="callback__img" alt="" />
+         </div>
+      </div>
+   </div>
+</section>
+      </main>
+      <footer id="footer" class="footer">
+   <div class='container'>
+      <div class="footer__body">
+         <div class="footer__map"></div>
+         <div class="footer__content">
+            <a href="#" class="footer__logo">
+               <img src="img/footer-logo.png" alt="Логотип" />
+            </a>
+            <div class="footer__content-inner">
+               <div class="footer__col">
+                  <div class="footer__item">
+                     <h3 class="footer__item-title">АДРЕС</h3>
+                     <p>г. Москва, Остаповский проезд 3, стр. 29, 1 этаж</p>
+                  </div>
+                  <div class="footer__item">
+                     <h3 class="footer__item-title">ТЕЛЕФОН</h3>
+                     <a href="tel:+74997693728">+7 (499) 769-37-28 </a>
+                     <a href="tel:+78007773728">+7 (800) 777-37-28 </a>
+                  </div>
+                  <div class="footer__item">
+                     <h3 class="footer__item-title">E-mail</h3>
+                     <a href="mailto:tstarkhov@mail.ru">forma297@yandex.ru</a>
+                  </div>
+               </div>
+               <div class="footer__col">
+                  <div class="footer__item">
+                     <h3 class="footer__item-title">СТРАНИЦЫ</h3>
+                     <nav class="footer__nav">
+                        <ul class="footer__nav-list">
+                           <li class="footer__nav-item"><a href="" class="footer__nav-link">О компании</a></li>
+                           <li class="footer__nav-item"><a href="" class="footer__nav-link">Каталог</a></li>
+                           <li class="footer__nav-item"><a href="" class="footer__nav-link">Печать</a></li>
+                           <li class="footer__nav-item"><a href="" class="footer__nav-link">Пошив</a></li>
+                           <li class="footer__nav-item"><a href="" class="footer__nav-link">Прайс</a></li>
+                           <li class="footer__nav-item"><a href="" class="footer__nav-link">Контакты</a></li>
+                        </ul>
+                     </nav>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+      </div>
+      <p class="footer__copyright"> © Сайт разработан 2021 </p>
+   </div>
+</footer>
+
+      <div class="modal">
+   <div class="modal__body" data-target="modal-callback">
+      <button class="modal-close">X</button>
+      <div class="modal-content">
+         <form id="modal-form" class="callback__form form-callback">
+            <h3 class="form-callback__title">Оставь заявку
+               <span>и получи расчет стоимости проекта</span> </h3>
+            <div class="form-callback__inner">
+
+               <div class="form-callback__group--block">
+                  <div class="form-callback__group">
+                     <input type="text" class="form-callback__input" placeholder="Ваше имя" data-validate-field="name"
+                        name="name">
+                  </div>
+                  <div class="form-callback__group">
+                     <input type="email" class="form-callback__input" placeholder="Ваш E-mail" name="email"
+                        data-validate-field="email">
+                  </div>
+                  <div class="form-callback__group">
+                     <input type="tel" class="form-callback__input" placeholder="+7 (XXX) XXX  XX X"
+                        data-validate-field="tel" name="phone">
+                  </div>
+                  <div class="form-callback__group">
+                     <textarea class="form-callback__textarea">Комментарий к заказу</textarea>
+                  </div>
+               </div>
+               <button class="btn btn-orange form-callback__btn">Оставить заявку</button>
+
+               <label class="checkbox__label form-callback__label">
+                  <input type="checkbox">
+                  <span class="checkbox__control form-callback__checkbox-control icon-checked"></span>
+                  Я даю согласие на обработку персональных данных и соглашаюсь с политикой конфиденциальности
+               </label>
+            </div>
+         </form>
+      </div>
+   </div>
+   <div class="modal__body thanks-popup">
+      <button class="modal-close">X</button>
+      <div class="modal-content">
+
+         <h3 class="thanks-popup__title">Спасибо,
+            <span>что оставили заявку!</span> </h3>
+
+         <p class="thanks-popup__text">Наш менеджер свяжется с вами в течении 10 минут</p>
+
+         <a href="#" class="btn btn-orange thanks-popup__btn">На главную</a>
+
+      </div>
+   </div>
+</div>
+   </div>
+
+   <script src="js/jquery.min.js"></script>
+<script src="js/vendors.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+
+</html>
