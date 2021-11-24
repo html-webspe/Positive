@@ -127,7 +127,7 @@
    .print-img__item {
       padding-bottom: 133%;
 
-      @media (max-width:$md2+px) {
+      @media (min-width:$md4+px) {
          width: 328px;
       }
 
