@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <title>Каталог</title>
+   <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+   <meta name="format-detection" content="telephone=no">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+   <link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="shortcut icon" href="favicon.ico">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header">
+   <div class='container header__container'>
+      <div id="header-sticky" class="header__main">
+         <a href="/" class="header__logo logo"><img src="img/logo.png" alt="Логотип" /></a>
+
+         <!--   search    -->
+         <div class="header__search search-form">
+            <form action="#" class="search-form__item">
+               <span class="search-form__icon icon-search"></span>
+               <input type="text" placeholder="Найди свое" class="search-form__input">
+               <button class="search-form__button">Искать</button>
+            </form>
+         </div>
+         <!--   end search    -->
+
+         <!--   action     -->
+         <div class="header__action">
+            <a href="#" class="header__action-shop">
+               <img src="img/shop.png" alt="shop" />
+
+            </a>
+
+            <div class="header__action-tel">
+               <a href="tel:+74997693728">+7 (499) 769-37-28 </a>
+               <a href="tel:+78007773728">+7 (800) 777-37-28 </a>
+            </div>
+
+
+         </div>
+         <!--   end action    -->
+
+
+         <!--     navigation  -->
+         <div id="nav-menu" class="header__navigation">
+
+            <!--    menu-miobile  -->
+            <div class="header__navigation-item">
+               <div class="header__menu menu">
+                  <nav class="menu__body">
+
+                     <ul class="menu__list">
+                        <li class="menu__item"><a href="page-about.html" class="menu__link">О компании</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Каталог</a>
+
+                        </li>
+                        <li class="menu__item"><a href="page-promo.html" class="menu__link">Печать</a></li>
+                        <li class="menu__item"><a href="page-sewing.html" class="menu__link">Пошив</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Прайс</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+                     </ul>
+
+                     <!--
+                        <ul class="menu__list">
+                        <li class="menu__item"><a href="#about" class="menu__link scroll-to">О компании</a></li>
+                        <li class="menu__item"><a href="#print" class="menu__link scroll-to">Печать</a></li>
+                        <li class="menu__item"><a href="#cases" class="menu__link scroll-to">Кейсы</a></li>
+                        <li class="menu__item"><a href="#callback" class="menu__link scroll-to">Обратная связь</a></li>
+                        <li class="menu__item"><a href="#footer" class="menu__link scroll-to">Контакты</a></li>
+                     </ul>
+                     -->
+                  </nav>
+               </div>
+            </div>
+            <!--   end  menu-miobile  -->
+
+
+
+            <div class="header__navigation-item">
+               <a href="#" class="header__navigation-shop">
+                  <img src="img/shop.png" alt="shop" />
+                  <span>Корзина</span>
+               </a>
+            </div>
+
+
+            <!--   contacts  -->
+            <div class="header__navigation-item">
+               <div class="header-contacts">
+                  <div class="header-contacts__item">
+                     <span>Телефон</span>
+                     <a href="tel:+74997693728">+7 (499) 769-37-28 </a>
+                     <a href="tel:+78007773728">+7 (800) 777-37-28 </a>
+
+                  </div>
+                  <div class="header-contacts__item">
+                     <span>E-mail</span>
+                     <a href="mailto:tstarkhov@mail.ru">forma297@yandex.ru</a>
+                  </div>
+                  <div class="header-contacts__item">
+                     <span>Адрес</span>
+                     <p>г. Москва, Остаповский проезд 3, стр. 29, 1 подьезд, 1 этаж</p>
+                  </div>
+                  <div class="header-contacts__item">
+                     <span>График работы</span>
+                     <p>Пн-Пт: 10:00-19:00</p>
+                  </div>
+               </div>
+            </div>
+            <!--   end  contacts  -->
+
+            <!--    social  -->
+            <div class="header__navigation-item">
+               <div class="header-social social">
+                  <a href="#" class="social__item social__item-inst" target="_blank">
+                     <img src="img/social/inst.svg" alt="Instagram" />
+                  </a>
+                  <a href="#" class="social__item social__item-facebook" target="_blank">
+                     <img src="img/social/facebook.svg" alt="Facebook" />
+                  </a>
+                  <a href="#" class="social__item social__item-vk" target="_blank">
+                     <img src="img/social/vk.svg" alt="VKontakte" />
+                  </a>
+               </div>
+            </div>
+            <!--   end  social  -->
+
+         </div>
+         <!--   end navigation    -->
+
+
+         <button id="nav-toggle" type="button" class="icon-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+         </button>
+
+      </div>
+      <div class="header__bottom">
+         <div class="header__menu-desktop desktop-menu">
+            <ul class="desktop-menu__list">
+               <li class="desktop-menu__item"><a href="page-about.html" class="desktop-menu__link">О компании</a></li>
+               <li class="desktop-menu__item"><a href="page-catalog.html" class="desktop-menu__link">Каталог</a>
+
+                  <div class="menu__dropdown dropdown-menu">
+                     <ul class="dropdown-menu__list">
+                        <li class="dropdown-menu__item"><a href="" class="dropdown-menu__link">Пункт
+                              каталога</a></li>
+                        <li class="dropdown-menu__item"><a href="" class="dropdown-menu__link">Пункт каталога в
+                              две строки</a></li>
+                        <li class="dropdown-menu__item"><a href="" class="dropdown-menu__link">Пункт
+                              каталога</a></li>
+                        <li class="dropdown-menu__item"><a href="" class="dropdown-menu__link">Пункт
+                              каталога</a></li>
+                        <li class="dropdown-menu__item"><a href="" class="dropdown-menu__link">Пункт
+                              каталога</a></li>
+                     </ul>
+                  </div>
+
+               </li>
+               <li class="desktop-menu__item"><a href="page-promo.html" class="desktop-menu__link">Печать</a></li>
+               <li class="desktop-menu__item"><a href="page-sewing.html" class="desktop-menu__link">Пошив</a></li>
+               <li class="desktop-menu__item"><a href="#" class="desktop-menu__link">Прайс</a></li>
+               <li class="desktop-menu__item"><a href="#" class="desktop-menu__link">Контакты</a></li>
+            </ul>
+            <!--
+               <ul class="desktop-menu__list">
+               <li class="desktop-menu__item"><a href="page-sewing.html" class="desktop-menu__link">Пошив</a></li>
+               <li class="desktop-menu__item"><a href="page-about.html" class="desktop-menu__link scroll-to">О
+                     компании</a></li>
+               <li class="desktop-menu__item"><a href="page-promo.html" class="desktop-menu__link scroll-to">Печать</a>
+               </li>
+               <li class="desktop-menu__item"><a href="#cases" class="desktop-menu__link scroll-to">Кейсы</a></li>
+               <li class="desktop-menu__item"><a href="#callback" class="desktop-menu__link scroll-to">Обратная
+                     связь</a></li>
+               <li class="desktop-menu__item"><a href="#footer" class="desktop-menu__link scroll-to">Контакты</a></li>
+            </ul>
+           -->
+         </div>
+      </div>
+   </div>
+</header>
+      <main class="page-main page-catalog-main">
+         <section class="section page-hero page-hero-catalog">
+   <div class='container page-hero__container'>
+      <div class="page-hero__body">
+         <div class="page-hero__content">
+            <div class="page-hero__single">
+               <img src="img/page-catalog/page-single-logo.png" alt="" />
+            </div>
+            <h1 class="title page-hero__title">КАТАЛОГ ТОВАРОВ</h1>
+            <p class="page-hero__text">Минимальный заказ от 5000 ₽ </p>
+
+            <a href="#" class="btn btn-amethyst page-hero__btn">Сделать заказ</a>
+         </div>
+         <div class="page-hero__img">
+            <img src="img/page-catalog/page-hero-img.png" alt="" />
+         </div>
+      </div>
+
+   </div>
+</section>
+         <section class="section catalog">
+   <div class='container catalog__container'>
+      <aside class="catalog-aside">
+         <div class="catalog-filter filter-catalog">
+            <div class="filter-catalog__wrapper" data-spollers>
+               <div class="filter-catalog__item ">
+                  <button tabindex="-1" type="button" data-spoller
+                     class="filter-catalog__title icon-arrow _active"><span>ФУТБОЛКИ</span></button>
+
+                  <div class="filter-catalog__action">
+                     <label>
+                        <input type="checkbox" class="filter-catalog__input">
+                        <span class="filter-catalog__checkbox">
+                           <span class="filter-catalog__check">
+                              <span class="filter-catalog__checked">
+                                 <svg width="8" height="6" viewBox="0 0 8 6" fill="none">
+                                    <path
+                                       d="M7.88285 0.179664C7.72665 0.0234453 7.4734 0.0234453 7.31716 0.179664L2.52491 4.97196L0.682852 3.1299C0.526648 2.97368 0.273398 2.97369 0.117164 3.1299C-0.0390547 3.2861 -0.0390547 3.53935 0.117164 3.69557L2.24207 5.82044C2.39823 5.97665 2.65166 5.97654 2.80776 5.82044L7.88285 0.745351C8.03907 0.589148 8.03905 0.335883 7.88285 0.179664Z"
+                                       fill="#A557C7" />
+                                 </svg>
+                              </span>
+                           </span>
+                           <span class="filter-catalog__checkbox-title">Промо</span>
+                        </span>
+                     </label>
+                     <label>
+                        <input type="checkbox" class="filter-catalog__input">
+                        <span class="filter-catalog__checkbox">
+                           <span class="filter-catalog__check">
+                              <span class="filter-catalog__checked">
+                                 <svg width="8" height="6" viewBox="0 0 8 6" fill="none">
+                                    <path
+                                       d="M7.88285 0.179664C7.72665 0.0234453 7.4734 0.0234453 7.31716 0.179664L2.52491 4.97196L0.682852 3.1299C0.526648 2.97368 0.273398 2.97369 0.117164 3.1299C-0.0390547 3.2861 -0.0390547 3.53935 0.117164 3.69557L2.24207 5.82044C2.39823 5.97665 2.65166 5.97654 2.80776 5.82044L7.88285 0.745351C8.03907 0.589148 8.03905 0.335883 7.88285 0.179664Z"
+                                       fill="#A557C7" />
+                                 </svg>
+                              </span>
+                           </span>
+                           <span class="filter-catalog__checkbox-title">Классик</span>
+                        </span>
+                     </label>
+                     <label>
+                        <input type="checkbox" class="filter-catalog__input">
+                        <span class="filter-catalog__checkbox">
+                           <span class="filter-catalog__check">
+                              <span class="filter-catalog__checked">
+                                 <svg width="8" height="6" viewBox="0 0 8 6" fill="none">
+                                    <path
+                                       d="M7.88285 0.179664C7.72665 0.0234453 7.4734 0.0234453 7.31716 0.179664L2.52491 4.97196L0.682852 3.1299C0.526648 2.97368 0.273398 2.97369 0.117164 3.1299C-0.0390547 3.2861 -0.0390547 3.53935 0.117164 3.69557L2.24207 5.82044C2.39823 5.97665 2.65166 5.97654 2.80776 5.82044L7.88285 0.745351C8.03907 0.589148 8.03905 0.335883 7.88285 0.179664Z"
+                                       fill="#A557C7" />
+                                 </svg>
+                              </span>
+                           </span>
+                           <span class="filter-catalog__checkbox-title">Премиум</span>
+                        </span>
+                     </label>
+                     <label>
+                        <input type="checkbox" class="filter-catalog__input">
+                        <span class="filter-catalog__checkbox">
+                           <span class="filter-catalog__check">
+                              <span class="filter-catalog__checked">
+                                 <svg width="8" height="6" viewBox="0 0 8 6" fill="none">
+                                    <path
+                                       d="M7.88285 0.179664C7.72665 0.0234453 7.4734 0.0234453 7.31716 0.179664L2.52491 4.97196L0.682852 3.1299C0.526648 2.97368 0.273398 2.97369 0.117164 3.1299C-0.0390547 3.2861 -0.0390547 3.53935 0.117164 3.69557L2.24207 5.82044C2.39823 5.97665 2.65166 5.97654 2.80776 5.82044L7.88285 0.745351C8.03907 0.589148 8.03905 0.335883 7.88285 0.179664Z"
+                                       fill="#A557C7" />
+                                 </svg>
+                              </span>
+                           </span>
+                           <span class="filter-catalog__checkbox-title">Классические</span>
+                        </span>
+                     </label>
+                     <label>
+                        <input type="checkbox" class="filter-catalog__input">
+                        <span class="filter-catalog__checkbox">
+                           <span class="filter-catalog__check">
+                              <span class="filter-catalog__checked">
+                                 <svg width="8" height="6" viewBox="0 0 8 6" fill="none">
+                                    <path
+                                       d="M7.88285 0.179664C7.72665 0.0234453 7.4734 0.0234453 7.31716 0.179664L2.52491 4.97196L0.682852 3.1299C0.526648 2.97368 0.273398 2.97369 0.117164 3.1299C-0.0390547 3.2861 -0.0390547 3.53935 0.117164 3.69557L2.24207 5.82044C2.39823 5.97665 2.65166 5.97654 2.80776 5.82044L7.88285 0.745351C8.03907 0.589148 8.03905 0.335883 7.88285 0.179664Z"
+                                       fill="#A557C7" />
+                                 </svg>
+                              </span>
+                           </span>
+                           <span class="filter-catalog__checkbox-title">Оверсайз</span>
+                        </span>
+                     </label>
+                     <label>
+                        <input type="checkbox" class="filter-catalog__input">
+                        <span class="filter-catalog__checkbox">
+                           <span class="filter-catalog__check">
+                              <span class="filter-catalog__checked">
+                                 <svg width="8" height="6" viewBox="0 0 8 6" fill="none">
+                                    <path
+                                       d="M7.88285 0.179664C7.72665 0.0234453 7.4734 0.0234453 7.31716 0.179664L2.52491 4.97196L0.682852 3.1299C0.526648 2.97368 0.273398 2.97369 0.117164 3.1299C-0.0390547 3.2861 -0.0390547 3.53935 0.117164 3.69557L2.24207 5.82044C2.39823 5.97665 2.65166 5.97654 2.80776 5.82044L7.88285 0.745351C8.03907 0.589148 8.03905 0.335883 7.88285 0.179664Z"
+                                       fill="#A557C7" />
+                                 </svg>
+                              </span>
+                           </span>
+                           <span class="filter-catalog__checkbox-title">С длинным рукавом</span>
+                        </span>
+                     </label>
+                     <label>
+                        <input type="checkbox" class="filter-catalog__input">
+                        <span class="filter-catalog__checkbox">
+                           <span class="filter-catalog__check">
+                              <span class="filter-catalog__checked">
+                                 <svg width="8" height="6" viewBox="0 0 8 6" fill="none">
+                                    <path
+                                       d="M7.88285 0.179664C7.72665 0.0234453 7.4734 0.0234453 7.31716 0.179664L2.52491 4.97196L0.682852 3.1299C0.526648 2.97368 0.273398 2.97369 0.117164 3.1299C-0.0390547 3.2861 -0.0390547 3.53935 0.117164 3.69557L2.24207 5.82044C2.39823 5.97665 2.65166 5.97654 2.80776 5.82044L7.88285 0.745351C8.03907 0.589148 8.03905 0.335883 7.88285 0.179664Z"
+                                       fill="#A557C7" />
+                                 </svg>
+                              </span>
+                           </span>
+                           <span class="filter-catalog__checkbox-title">Мужские</span>
+                        </span>
+                     </label>
+                     <label>
+                        <input type="checkbox" class="filter-catalog__input">
+                        <span class="filter-catalog__checkbox">
+                           <span class="filter-catalog__check">
+                              <span class="filter-catalog__checked">
+                                 <svg width="8" height="6" viewBox="0 0 8 6" fill="none">
+                                    <path
+                                       d="M7.88285 0.179664C7.72665 0.0234453 7.4734 0.0234453 7.31716 0.179664L2.52491 4.97196L0.682852 3.1299C0.526648 2.97368 0.273398 2.97369 0.117164 3.1299C-0.0390547 3.2861 -0.0390547 3.53935 0.117164 3.69557L2.24207 5.82044C2.39823 5.97665 2.65166 5.97654 2.80776 5.82044L7.88285 0.745351C8.03907 0.589148 8.03905 0.335883 7.88285 0.179664Z"
+                                       fill="#A557C7" />
+                                 </svg>
+                              </span>
+                           </span>
+                           <span class="filter-catalog__checkbox-title">Женские</span>
+                        </span>
+                     </label>
+                     <label>
+                        <input type="checkbox" class="filter-catalog__input">
+                        <span class="filter-catalog__checkbox">
+                           <span class="filter-catalog__check">
+                              <span class="filter-catalog__checked">
+                                 <svg width="8" height="6" viewBox="0 0 8 6" fill="none">
+                                    <path
+                                       d="M7.88285 0.179664C7.72665 0.0234453 7.4734 0.0234453 7.31716 0.179664L2.52491 4.97196L0.682852 3.1299C0.526648 2.97368 0.273398 2.97369 0.117164 3.1299C-0.0390547 3.2861 -0.0390547 3.53935 0.117164 3.69557L2.24207 5.82044C2.39823 5.97665 2.65166 5.97654 2.80776 5.82044L7.88285 0.745351C8.03907 0.589148 8.03905 0.335883 7.88285 0.179664Z"
+                                       fill="#A557C7" />
+                                 </svg>
+                              </span>
+                           </span>
+                           <span class="filter-catalog__checkbox-title">Детские</span>
+                        </span>
+                     </label>
+                  </div>
+               </div>
+               <div class="filter-catalog__item">
+                  <button tabindex="-1" type="button" data-spoller
+                     class="filter-catalog__title icon-arrow"><span>РУБАШКИ-ПОЛО</span></button>
+
+                  <div class="filter-catalog__action">
+                     <label>
+                        <input type="checkbox" class="filter-catalog__input">
+                        <span class="filter-catalog__checkbox">
+                           <span class="filter-catalog__check">
+                              <span class="filter-catalog__checked">
+                                 <svg width="8" height="6" viewBox="0 0 8 6" fill="none">
+                                    <path
+                                       d="M7.88285 0.179664C7.72665 0.0234453 7.4734 0.0234453 7.31716 0.179664L2.52491 4.97196L0.682852 3.1299C0.526648 2.97368 0.273398 2.97369 0.117164 3.1299C-0.0390547 3.2861 -0.0390547 3.53935 0.117164 3.69557L2.24207 5.82044C2.39823 5.97665 2.65166 5.97654 2.80776 5.82044L7.88285 0.745351C8.03907 0.589148 8.03905 0.335883 7.88285 0.179664Z"
+                                       fill="#A557C7" />
+                                 </svg>
+                              </span>
+                           </span>
+                           <span class="filter-catalog__checkbox-title">Промо</span>
+                        </span>
+                     </label>
+                     <label>
+                        <input type="checkbox" class="filter-catalog__input">
+                        <span class="filter-catalog__checkbox">
+                           <span class="filter-catalog__check">
+                              <span class="filter-catalog__checked">
+                                 <svg width="8" height="6" viewBox="0 0 8 6" fill="none">
+                                    <path
+                                       d="M7.88285 0.179664C7.72665 0.0234453 7.4734 0.0234453 7.31716 0.179664L2.52491 4.97196L0.682852 3.1299C0.526648 2.97368 0.273398 2.97369 0.117164 3.1299C-0.0390547 3.2861 -0.0390547 3.53935 0.117164 3.69557L2.24207 5.82044C2.39823 5.97665 2.65166 5.97654 2.80776 5.82044L7.88285 0.745351C8.03907 0.589148 8.03905 0.335883 7.88285 0.179664Z"
+                                       fill="#A557C7" />
+                                 </svg>
+                              </span>
+                           </span>
+                           <span class="filter-catalog__checkbox-title">Классик</span>
+                        </span>
+                     </label>
+                     <label>
+                        <input type="checkbox" class="filter-catalog__input">
+                        <span class="filter-catalog__checkbox">
+                           <span class="filter-catalog__check">
+                              <span class="filter-catalog__checked">
+                                 <svg width="8" height="6" viewBox="0 0 8 6" fill="none">
+                                    <path
+                                       d="M7.88285 0.179664C7.72665 0.0234453 7.4734 0.0234453 7.31716 0.179664L2.52491 4.97196L0.682852 3.1299C0.526648 2.97368 0.273398 2.97369 0.117164 3.1299C-0.0390547 3.2861 -0.0390547 3.53935 0.117164 3.69557L2.24207 5.82044C2.39823 5.97665 2.65166 5.97654 2.80776 5.82044L7.88285 0.745351C8.03907 0.589148 8.03905 0.335883 7.88285 0.179664Z"
+                                       fill="#A557C7" />
+                                 </svg>
+                              </span>
+                           </span>
+                           <span class="filter-catalog__checkbox-title">Премиум</span>
+                        </span>
+                     </label>
+                     <label>
+                        <input type="checkbox" class="filter-catalog__input">
+                        <span class="filter-catalog__checkbox">
+                           <span class="filter-catalog__check">
+                              <span class="filter-catalog__checked">
+                                 <svg width="8" height="6" viewBox="0 0 8 6" fill="none">
+                                    <path
+                                       d="M7.88285 0.179664C7.72665 0.0234453 7.4734 0.0234453 7.31716 0.179664L2.52491 4.97196L0.682852 3.1299C0.526648 2.97368 0.273398 2.97369 0.117164 3.1299C-0.0390547 3.2861 -0.0390547 3.53935 0.117164 3.69557L2.24207 5.82044C2.39823 5.97665 2.65166 5.97654 2.80776 5.82044L7.88285 0.745351C8.03907 0.589148 8.03905 0.335883 7.88285 0.179664Z"
+                                       fill="#A557C7" />
+                                 </svg>
+                              </span>
+                           </span>
+                           <span class="filter-catalog__checkbox-title">Классические</span>
+                        </span>
+                     </label>
+                     <label>
+                        <input type="checkbox" class="filter-catalog__input">
+                        <span class="filter-catalog__checkbox">
+                           <span class="filter-catalog__check">
+                              <span class="filter-catalog__checked">
+                                 <svg width="8" height="6" viewBox="0 0 8 6" fill="none">
+                                    <path
+                                       d="M7.88285 0.179664C7.72665 0.0234453 7.4734 0.0234453 7.31716 0.179664L2.52491 4.97196L0.682852 3.1299C0.526648 2.97368 0.273398 2.97369 0.117164 3.1299C-0.0390547 3.2861 -0.0390547 3.53935 0.117164 3.69557L2.24207 5.82044C2.39823 5.97665 2.65166 5.97654 2.80776 5.82044L7.88285 0.745351C8.03907 0.589148 8.03905 0.335883 7.88285 0.179664Z"
+                                       fill="#A557C7" />
+                                 </svg>
+                              </span>
+                           </span>
+                           <span class="filter-catalog__checkbox-title">Оверсайз</span>
+                        </span>
+                     </label>
+                     <label>
+                        <input type="checkbox" class="filter-catalog__input">
+                        <span class="filter-catalog__checkbox">
+                           <span class="filter-catalog__check">
+                              <span class="filter-catalog__checked">
+                                 <svg width="8" height="6" viewBox="0 0 8 6" fill="none">
+                                    <path
+                                       d="M7.88285 0.179664C7.72665 0.0234453 7.4734 0.0234453 7.31716 0.179664L2.52491 4.97196L0.682852 3.1299C0.526648 2.97368 0.273398 2.97369 0.117164 3.1299C-0.0390547 3.2861 -0.0390547 3.53935 0.117164 3.69557L2.24207 5.82044C2.39823 5.97665 2.65166 5.97654 2.80776 5.82044L7.88285 0.745351C8.03907 0.589148 8.03905 0.335883 7.88285 0.179664Z"
+                                       fill="#A557C7" />
+                                 </svg>
+                              </span>
+                           </span>
+                           <span class="filter-catalog__checkbox-title">С длинным рукавом</span>
+                        </span>
+                     </label>
+                     <label>
+                        <input type="checkbox" class="filter-catalog__input">
+                        <span class="filter-catalog__checkbox">
+                           <span class="filter-catalog__check">
+                              <span class="filter-catalog__checked">
+                                 <svg width="8" height="6" viewBox="0 0 8 6" fill="none">
+                                    <path
+                                       d="M7.88285 0.179664C7.72665 0.0234453 7.4734 0.0234453 7.31716 0.179664L2.52491 4.97196L0.682852 3.1299C0.526648 2.97368 0.273398 2.97369 0.117164 3.1299C-0.0390547 3.2861 -0.0390547 3.53935 0.117164 3.69557L2.24207 5.82044C2.39823 5.97665 2.65166 5.97654 2.80776 5.82044L7.88285 0.745351C8.03907 0.589148 8.03905 0.335883 7.88285 0.179664Z"
+                                       fill="#A557C7" />
+                                 </svg>
+                              </span>
+                           </span>
+                           <span class="filter-catalog__checkbox-title">Мужские</span>
+                        </span>
+                     </label>
+                     <label>
+                        <input type="checkbox" class="filter-catalog__input">
+                        <span class="filter-catalog__checkbox">
+                           <span class="filter-catalog__check">
+                              <span class="filter-catalog__checked">
+                                 <svg width="8" height="6" viewBox="0 0 8 6" fill="none">
+                                    <path
+                                       d="M7.88285 0.179664C7.72665 0.0234453 7.4734 0.0234453 7.31716 0.179664L2.52491 4.97196L0.682852 3.1299C0.526648 2.97368 0.273398 2.97369 0.117164 3.1299C-0.0390547 3.2861 -0.0390547 3.53935 0.117164 3.69557L2.24207 5.82044C2.39823 5.97665 2.65166 5.97654 2.80776 5.82044L7.88285 0.745351C8.03907 0.589148 8.03905 0.335883 7.88285 0.179664Z"
+                                       fill="#A557C7" />
+                                 </svg>
+                              </span>
+                           </span>
+                           <span class="filter-catalog__checkbox-title">Женские</span>
+                        </span>
+                     </label>
+                     <label>
+                        <input type="checkbox" class="filter-catalog__input">
+                        <span class="filter-catalog__checkbox">
+                           <span class="filter-catalog__check">
+                              <span class="filter-catalog__checked">
+                                 <svg width="8" height="6" viewBox="0 0 8 6" fill="none">
+                                    <path
+                                       d="M7.88285 0.179664C7.72665 0.0234453 7.4734 0.0234453 7.31716 0.179664L2.52491 4.97196L0.682852 3.1299C0.526648 2.97368 0.273398 2.97369 0.117164 3.1299C-0.0390547 3.2861 -0.0390547 3.53935 0.117164 3.69557L2.24207 5.82044C2.39823 5.97665 2.65166 5.97654 2.80776 5.82044L7.88285 0.745351C8.03907 0.589148 8.03905 0.335883 7.88285 0.179664Z"
+                                       fill="#A557C7" />
+                                 </svg>
+                              </span>
+                           </span>
+                           <span class="filter-catalog__checkbox-title">Детские</span>
+                        </span>
+                     </label>
+                  </div>
+               </div>
+               <div class="filter-catalog__item">
+                  <button tabindex="-1" type="button" data-spoller
+                     class="filter-catalog__title icon-arrow"><span>СВИТШОТЫ</span></button>
+
+                  <div class="filter-catalog__action">
+                     <label>
+                        <input type="checkbox" class="filter-catalog__input">
+                        <span class="filter-catalog__checkbox">
+                           <span class="filter-catalog__check">
+                              <span class="filter-catalog__checked">
+                                 <svg width="8" height="6" viewBox="0 0 8 6" fill="none">
+                                    <path
+                                       d="M7.88285 0.179664C7.72665 0.0234453 7.4734 0.0234453 7.31716 0.179664L2.52491 4.97196L0.682852 3.1299C0.526648 2.97368 0.273398 2.97369 0.117164 3.1299C-0.0390547 3.2861 -0.0390547 3.53935 0.117164 3.69557L2.24207 5.82044C2.39823 5.97665 2.65166 5.97654 2.80776 5.82044L7.88285 0.745351C8.03907 0.589148 8.03905 0.335883 7.88285 0.179664Z"
+                                       fill="#A557C7" />
+                                 </svg>
+                              </span>
+                           </span>
+                           <span class="filter-catalog__checkbox-title">Промо</span>
+                        </span>
+                     </label>
+                     <label>
+                        <input type="checkbox" class="filter-catalog__input">
+                        <span class="filter-catalog__checkbox">
+                           <span class="filter-catalog__check">
+                              <span class="filter-catalog__checked">
+                                 <svg width="8" height="6" viewBox="0 0 8 6" fill="none">
+                                    <path
+                                       d="M7.88285 0.179664C7.72665 0.0234453 7.4734 0.0234453 7.31716 0.179664L2.52491 4.97196L0.682852 3.1299C0.526648 2.97368 0.273398 2.97369 0.117164 3.1299C-0.0390547 3.2861 -0.0390547 3.53935 0.117164 3.69557L2.24207 5.82044C2.39823 5.97665 2.65166 5.97654 2.80776 5.82044L7.88285 0.745351C8.03907 0.589148 8.03905 0.335883 7.88285 0.179664Z"
+                                       fill="#A557C7" />
+                                 </svg>
+                              </span>
+                           </span>
+                           <span class="filter-catalog__checkbox-title">Классик</span>
+                        </span>
+                     </label>
+                  </div>
+               </div>
+               <div class="filter-catalog__item">
+                  <button tabindex="-1" type="button" data-spoller
+                     class="filter-catalog__title icon-arrow"><span>ХУДИ</span></button>
+
+                  <div class="filter-catalog__action">
+                     <label>
+                        <input type="checkbox" class="filter-catalog__input">
+                        <span class="filter-catalog__checkbox">
+                           <span class="filter-catalog__check">
+                              <span class="filter-catalog__checked">
+                                 <svg width="8" height="6" viewBox="0 0 8 6" fill="none">
+                                    <path
+                                       d="M7.88285 0.179664C7.72665 0.0234453 7.4734 0.0234453 7.31716 0.179664L2.52491 4.97196L0.682852 3.1299C0.526648 2.97368 0.273398 2.97369 0.117164 3.1299C-0.0390547 3.2861 -0.0390547 3.53935 0.117164 3.69557L2.24207 5.82044C2.39823 5.97665 2.65166 5.97654 2.80776 5.82044L7.88285 0.745351C8.03907 0.589148 8.03905 0.335883 7.88285 0.179664Z"
+                                       fill="#A557C7" />
+                                 </svg>
+                              </span>
+                           </span>
+                           <span class="filter-catalog__checkbox-title">Промо</span>
+                        </span>
+                     </label>
+                     <label>
+                        <input type="checkbox" class="filter-catalog__input">
+                        <span class="filter-catalog__checkbox">
+                           <span class="filter-catalog__check">
+                              <span class="filter-catalog__checked">
+                                 <svg width="8" height="6" viewBox="0 0 8 6" fill="none">
+                                    <path
+                                       d="M7.88285 0.179664C7.72665 0.0234453 7.4734 0.0234453 7.31716 0.179664L2.52491 4.97196L0.682852 3.1299C0.526648 2.97368 0.273398 2.97369 0.117164 3.1299C-0.0390547 3.2861 -0.0390547 3.53935 0.117164 3.69557L2.24207 5.82044C2.39823 5.97665 2.65166 5.97654 2.80776 5.82044L7.88285 0.745351C8.03907 0.589148 8.03905 0.335883 7.88285 0.179664Z"
+                                       fill="#A557C7" />
+                                 </svg>
+                              </span>
+                           </span>
+                           <span class="filter-catalog__checkbox-title">Классик</span>
+                        </span>
+                     </label>
+                  </div>
+               </div>
+               <div class="filter-catalog__item">
+                  <button tabindex="-1" type="button" data-spoller
+                     class="filter-catalog__title icon-arrow"><span>ТОЛСТОВКИ</span></button>
+
+                  <div class="filter-catalog__action">
+                     <label>
+                        <input type="checkbox" class="filter-catalog__input">
+                        <span class="filter-catalog__checkbox">
+                           <span class="filter-catalog__check">
+                              <span class="filter-catalog__checked">
+                                 <svg width="8" height="6" viewBox="0 0 8 6" fill="none">
+                                    <path
+                                       d="M7.88285 0.179664C7.72665 0.0234453 7.4734 0.0234453 7.31716 0.179664L2.52491 4.97196L0.682852 3.1299C0.526648 2.97368 0.273398 2.97369 0.117164 3.1299C-0.0390547 3.2861 -0.0390547 3.53935 0.117164 3.69557L2.24207 5.82044C2.39823 5.97665 2.65166 5.97654 2.80776 5.82044L7.88285 0.745351C8.03907 0.589148 8.03905 0.335883 7.88285 0.179664Z"
+                                       fill="#A557C7" />
+                                 </svg>
+                              </span>
+                           </span>
+                           <span class="filter-catalog__checkbox-title">Промо</span>
+                        </span>
+                     </label>
+                     <label>
+                        <input type="checkbox" class="filter-catalog__input">
+                        <span class="filter-catalog__checkbox">
+                           <span class="filter-catalog__check">
+                              <span class="filter-catalog__checked">
+                                 <svg width="8" height="6" viewBox="0 0 8 6" fill="none">
+                                    <path
+                                       d="M7.88285 0.179664C7.72665 0.0234453 7.4734 0.0234453 7.31716 0.179664L2.52491 4.97196L0.682852 3.1299C0.526648 2.97368 0.273398 2.97369 0.117164 3.1299C-0.0390547 3.2861 -0.0390547 3.53935 0.117164 3.69557L2.24207 5.82044C2.39823 5.97665 2.65166 5.97654 2.80776 5.82044L7.88285 0.745351C8.03907 0.589148 8.03905 0.335883 7.88285 0.179664Z"
+                                       fill="#A557C7" />
+                                 </svg>
+                              </span>
+                           </span>
+                           <span class="filter-catalog__checkbox-title">Классик</span>
+                        </span>
+                     </label>
+                  </div>
+               </div>
+               <div class="filter-catalog__item">
+                  <button tabindex="-1" type="button" data-spoller
+                     class="filter-catalog__title icon-arrow"><span>СПОРТИВНАЯ ФОРМА</span></button>
+
+                  <div class="filter-catalog__action">
+                     <label>
+                        <input type="checkbox" class="filter-catalog__input">
+                        <span class="filter-catalog__checkbox">
+                           <span class="filter-catalog__check">
+                              <span class="filter-catalog__checked">
+                                 <svg width="8" height="6" viewBox="0 0 8 6" fill="none">
+                                    <path
+                                       d="M7.88285 0.179664C7.72665 0.0234453 7.4734 0.0234453 7.31716 0.179664L2.52491 4.97196L0.682852 3.1299C0.526648 2.97368 0.273398 2.97369 0.117164 3.1299C-0.0390547 3.2861 -0.0390547 3.53935 0.117164 3.69557L2.24207 5.82044C2.39823 5.97665 2.65166 5.97654 2.80776 5.82044L7.88285 0.745351C8.03907 0.589148 8.03905 0.335883 7.88285 0.179664Z"
+                                       fill="#A557C7" />
+                                 </svg>
+                              </span>
+                           </span>
+                           <span class="filter-catalog__checkbox-title">Промо</span>
+                        </span>
+                     </label>
+                     <label>
+                        <input type="checkbox" class="filter-catalog__input">
+                        <span class="filter-catalog__checkbox">
+                           <span class="filter-catalog__check">
+                              <span class="filter-catalog__checked">
+                                 <svg width="8" height="6" viewBox="0 0 8 6" fill="none">
+                                    <path
+                                       d="M7.88285 0.179664C7.72665 0.0234453 7.4734 0.0234453 7.31716 0.179664L2.52491 4.97196L0.682852 3.1299C0.526648 2.97368 0.273398 2.97369 0.117164 3.1299C-0.0390547 3.2861 -0.0390547 3.53935 0.117164 3.69557L2.24207 5.82044C2.39823 5.97665 2.65166 5.97654 2.80776 5.82044L7.88285 0.745351C8.03907 0.589148 8.03905 0.335883 7.88285 0.179664Z"
+                                       fill="#A557C7" />
+                                 </svg>
+                              </span>
+                           </span>
+                           <span class="filter-catalog__checkbox-title">Классик</span>
+                        </span>
+                     </label>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </aside>
+      <div class="catalog-main">
+         <div class="catalog-card">
+            <div class="catalog-card__label">-17%</div>
+
+            <div class="catalog-card__colors">
+               <div class="catalog-card__color"></div>
+               <div class="catalog-card__color" style="background-color: #F9A000;"></div>
+               <div class="catalog-card__color" style="background-color: #A557C7;"></div>
+            </div>
+
+            <div class="catalog-card__img ibg">
+               <img src="img/page-catalog/catalog-img.jpg" alt="catalog-img" />
+            </div>
+
+            <div class="catalog-card__title">Футболка мужская
+               с&nbsp;логотипом</div>
+
+            <div class="catalog-card__price">
+               <div class="catalog-card__price-new">2500 ₽</div>
+               <div class="catalog-card__price-old">2900 ₽</div>
+            </div>
+
+            <div class="catalog-card__btns">
+               <a href="#" class="btn catalog-card__btn">В корзину</a>
+               <a href="#" class="btn catalog-card__btn-go icon-arrow"></a>
+            </div>
+
+         </div>
+         <div class="catalog-card">
+            <div class="catalog-card__label">NEW</div>
+
+            <div class="catalog-card__colors">
+               <div class="catalog-card__color"></div>
+               <div class="catalog-card__color" style="background-color: #F9A000;"></div>
+               <div class="catalog-card__color" style="background-color: #A557C7;"></div>
+            </div>
+
+            <div class="catalog-card__img ibg">
+               <img src="img/page-catalog/catalog-img.jpg" alt="catalog-img" />
+            </div>
+
+            <div class="catalog-card__title">Футболка мужская
+               с&nbsp;логотипом</div>
+
+            <div class="catalog-card__price">
+               <div class="catalog-card__price-new">2500 ₽</div>
+               <div class="catalog-card__price-old">2900 ₽</div>
+            </div>
+
+            <div class="catalog-card__btns">
+               <a href="#" class="btn catalog-card__btn">В корзину</a>
+               <a href="#" class="btn catalog-card__btn-go icon-arrow"></a>
+            </div>
+
+         </div>
+         <div class="catalog-card">
+            <div class="catalog-card__label">NEW</div>
+
+            <div class="catalog-card__colors">
+               <div class="catalog-card__color"></div>
+               <div class="catalog-card__color" style="background-color: #F9A000;"></div>
+               <div class="catalog-card__color" style="background-color: #A557C7;"></div>
+            </div>
+
+            <div class="catalog-card__img ibg">
+               <img src="img/page-catalog/catalog-img.jpg" alt="catalog-img" />
+            </div>
+
+            <div class="catalog-card__title">Футболка мужская
+               с&nbsp;логотипом</div>
+
+            <div class="catalog-card__price">
+               <div class="catalog-card__price-new">2500 ₽</div>
+               <div class="catalog-card__price-old">2900 ₽</div>
+            </div>
+
+            <div class="catalog-card__btns">
+               <a href="#" class="btn catalog-card__btn">В корзину</a>
+               <a href="#" class="btn catalog-card__btn-go icon-arrow"></a>
+            </div>
+
+         </div>
+         <div class="catalog-card">
+            <div class="catalog-card__label">NEW</div>
+
+            <div class="catalog-card__colors">
+               <div class="catalog-card__color"></div>
+               <div class="catalog-card__color" style="background-color: #F9A000;"></div>
+               <div class="catalog-card__color" style="background-color: #A557C7;"></div>
+            </div>
+
+            <div class="catalog-card__img ibg">
+               <img src="img/page-catalog/catalog-img.jpg" alt="catalog-img" />
+            </div>
+
+            <div class="catalog-card__title">Футболка мужская
+               с&nbsp;логотипом</div>
+
+            <div class="catalog-card__price">
+               <div class="catalog-card__price-new">2500 ₽</div>
+               <div class="catalog-card__price-old">2900 ₽</div>
+            </div>
+
+            <div class="catalog-card__btns">
+               <a href="#" class="btn catalog-card__btn">В корзину</a>
+               <a href="#" class="btn catalog-card__btn-go icon-arrow"></a>
+            </div>
+
+         </div>
+         <div class="catalog-card">
+            <div class="catalog-card__label">NEW</div>
+
+            <div class="catalog-card__colors">
+               <div class="catalog-card__color"></div>
+               <div class="catalog-card__color" style="background-color: #F9A000;"></div>
+               <div class="catalog-card__color" style="background-color: #A557C7;"></div>
+            </div>
+
+            <div class="catalog-card__img ibg">
+               <img src="img/page-catalog/catalog-img.jpg" alt="catalog-img" />
+            </div>
+
+            <div class="catalog-card__title">Футболка мужская
+               с&nbsp;логотипом</div>
+
+            <div class="catalog-card__price">
+               <div class="catalog-card__price-new">2500 ₽</div>
+               <div class="catalog-card__price-old">2900 ₽</div>
+            </div>
+
+            <div class="catalog-card__btns">
+               <a href="#" class="btn catalog-card__btn">В корзину</a>
+               <a href="#" class="btn catalog-card__btn-go icon-arrow"></a>
+            </div>
+
+         </div>
+         <div class="catalog-card">
+            <div class="catalog-card__label">NEW</div>
+
+            <div class="catalog-card__colors">
+               <div class="catalog-card__color"></div>
+               <div class="catalog-card__color" style="background-color: #F9A000;"></div>
+               <div class="catalog-card__color" style="background-color: #A557C7;"></div>
+            </div>
+
+            <div class="catalog-card__img ibg">
+               <img src="img/page-catalog/catalog-img.jpg" alt="catalog-img" />
+            </div>
+
+            <div class="catalog-card__title">Футболка мужская
+               с&nbsp;логотипом</div>
+
+            <div class="catalog-card__price">
+               <div class="catalog-card__price-new">2500 ₽</div>
+               <div class="catalog-card__price-old">2900 ₽</div>
+            </div>
+
+            <div class="catalog-card__btns">
+               <a href="#" class="btn catalog-card__btn">В корзину</a>
+               <a href="#" class="btn catalog-card__btn-go icon-arrow"></a>
+            </div>
+
+         </div>
+         <div class="catalog-card">
+            <div class="catalog-card__label">NEW</div>
+
+            <div class="catalog-card__colors">
+               <div class="catalog-card__color"></div>
+               <div class="catalog-card__color" style="background-color: #F9A000;"></div>
+               <div class="catalog-card__color" style="background-color: #A557C7;"></div>
+            </div>
+
+            <div class="catalog-card__img ibg">
+               <img src="img/page-catalog/catalog-img.jpg" alt="catalog-img" />
+            </div>
+
+            <div class="catalog-card__title">Футболка мужская
+               с&nbsp;логотипом</div>
+
+            <div class="catalog-card__price">
+               <div class="catalog-card__price-new">2500 ₽</div>
+               <div class="catalog-card__price-old">2900 ₽</div>
+            </div>
+
+            <div class="catalog-card__btns">
+               <a href="#" class="btn catalog-card__btn">В корзину</a>
+               <a href="#" class="btn catalog-card__btn-go icon-arrow"></a>
+            </div>
+
+         </div>
+         <div class="catalog-card">
+            <div class="catalog-card__label">NEW</div>
+
+            <div class="catalog-card__colors">
+               <div class="catalog-card__color"></div>
+               <div class="catalog-card__color" style="background-color: #F9A000;"></div>
+               <div class="catalog-card__color" style="background-color: #A557C7;"></div>
+            </div>
+
+            <div class="catalog-card__img ibg">
+               <img src="img/page-catalog/catalog-img.jpg" alt="catalog-img" />
+            </div>
+
+            <div class="catalog-card__title">Футболка мужская
+               с&nbsp;логотипом</div>
+
+            <div class="catalog-card__price">
+               <div class="catalog-card__price-new">2500 ₽</div>
+               <div class="catalog-card__price-old">2900 ₽</div>
+            </div>
+
+            <div class="catalog-card__btns">
+               <a href="#" class="btn catalog-card__btn">В корзину</a>
+               <a href="#" class="btn catalog-card__btn-go icon-arrow"></a>
+            </div>
+
+         </div>
+      </div>
+   </div>
+</section>
+
+      </main>
+      <footer id="footer" class="footer">
+   <div class='container'>
+      <div class="footer__body">
+         <div class="footer__map"></div>
+         <div class="footer__content">
+            <a href="#" class="footer__logo">
+               <img src="img/footer-logo.png" alt="Логотип" />
+            </a>
+            <div class="footer__content-inner">
+               <div class="footer__col">
+                  <div class="footer__item">
+                     <h3 class="footer__item-title">АДРЕС</h3>
+                     <p>г. Москва, Остаповский проезд 3, стр. 29, 1 этаж</p>
+                  </div>
+                  <div class="footer__item">
+                     <h3 class="footer__item-title">ТЕЛЕФОН</h3>
+                     <a href="tel:+74997693728">+7 (499) 769-37-28 </a>
+                     <a href="tel:+78007773728">+7 (800) 777-37-28 </a>
+                  </div>
+                  <div class="footer__item">
+                     <h3 class="footer__item-title">E-mail</h3>
+                     <a href="mailto:tstarkhov@mail.ru">forma297@yandex.ru</a>
+                  </div>
+               </div>
+               <div class="footer__col">
+                  <div class="footer__item">
+                     <h3 class="footer__item-title">СТРАНИЦЫ</h3>
+                     <nav class="footer__nav">
+                        <ul class="footer__nav-list">
+                           <li class="footer__nav-item"><a href="" class="footer__nav-link">О компании</a></li>
+                           <li class="footer__nav-item"><a href="" class="footer__nav-link">Каталог</a></li>
+                           <li class="footer__nav-item"><a href="" class="footer__nav-link">Печать</a></li>
+                           <li class="footer__nav-item"><a href="" class="footer__nav-link">Пошив</a></li>
+                           <li class="footer__nav-item"><a href="" class="footer__nav-link">Прайс</a></li>
+                           <li class="footer__nav-item"><a href="" class="footer__nav-link">Контакты</a></li>
+                        </ul>
+                     </nav>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+      </div>
+      <p class="footer__copyright"> © Сайт разработан 2021 </p>
+   </div>
+</footer>
+   </div>
+
+   <script src="js/jquery.min.js"></script>
+<script src="js/vendors.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+
+</html>

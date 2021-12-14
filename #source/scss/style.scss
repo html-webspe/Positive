@@ -116,6 +116,7 @@ body {
 
 
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
+@import "ui/_ui";
 @import "ui/_grid-masonry";
 @import "ui/_modal";
 @import "ui/_btn";
@@ -148,6 +149,11 @@ body {
 
 
 @import "blocks/page-sewing/_page-sewing";
+
+@import "blocks/page-catalog/_page-hero-catalog";
+@import "blocks/page-catalog/_catalog";
+
+
 
 
 
