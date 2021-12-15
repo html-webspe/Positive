@@ -378,7 +378,7 @@ const productRelated = document.querySelector('.product-related__slider')
 if (productRelated) {
    new Swiper(productRelated, {
       slidesPerView: 2,
-      spaceBetween: 27,
+      spaceBetween: 6,
 
       navigation: {
          nextEl: ".product-related__control-next",
@@ -387,9 +387,11 @@ if (productRelated) {
       breakpoints: {
          767: {
             slidesPerView: 3,
+            spaceBetween: 27,
          },
          1024: {
             slidesPerView: 4,
+            spaceBetween: 27,
          },
       },
    });

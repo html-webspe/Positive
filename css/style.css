@@ -3845,7 +3845,7 @@ body {
     overflow: hidden; }
   .product-related__inner {
     position: relative;
-    padding: 0 42px; }
+    padding: 0 15px; }
     @media (min-width: 1199.98px) {
       .product-related__inner {
         padding: 0 90px; } }
