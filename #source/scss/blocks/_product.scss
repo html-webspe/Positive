@@ -66,6 +66,7 @@
 
    &__control-prev {
       margin-left: -92px;
+      transform: rotate(180deg);
 
       @media (max-width:1400px) {
          margin-left: -30px;
@@ -78,7 +79,7 @@
 
    &__control-next {
       margin-right: -92px;
-      transform: rotate(180deg);
+
 
       @media (max-width:1400px) {
          margin-right: -30px;

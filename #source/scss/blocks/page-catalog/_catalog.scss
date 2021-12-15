@@ -78,7 +78,7 @@
 
       &:before {
          margin-left: 18px;
-         transform: rotate(-90deg);
+         transform: rotate(90deg);
          transition: transform 0.3s;
       }
 
@@ -341,7 +341,10 @@
       &:before {
          font-size: 15px;
          color: #F9A000;
-         transform: rotate(180deg);
+      }
+
+      &:hover {
+         transform: scale(1.2);
       }
 
       @media (max-width:$md1+px) {

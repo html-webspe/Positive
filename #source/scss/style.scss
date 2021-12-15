@@ -61,6 +61,27 @@ input {
   border: none;
 }
 
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="number"]:hover,
+input[type="number"]:focus {
+  -moz-appearance: number-input;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 body {
   font-family: $fontfamily;
   font-size: $fontSize;
@@ -153,7 +174,9 @@ body {
 @import "blocks/page-catalog/_page-hero-catalog";
 @import "blocks/page-catalog/_catalog";
 
-
+@import "blocks/page-card/_card";
+@import "blocks/page-card/_info";
+@import "blocks/page-card/_related";
 
 
 

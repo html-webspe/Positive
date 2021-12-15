@@ -263,7 +263,7 @@ let validateForms = function (selector, rules, successModal, yaGoal) {
    });
 }
 
-
+/*
 
 validateForms('#form-callback',
    {
@@ -283,7 +283,7 @@ validateForms('#modal-form',
    },
    '.thanks-popup'
 );
-
+*/
 //====================   <!-- FORMS -->   ========================//
 
 
@@ -309,3 +309,88 @@ function checkScroll() {
 
 window.addEventListener('scroll', checkScroll, false);
 window.addEventListener('resize', checkScroll, false);
+
+
+
+
+
+let cardSlider = new Swiper('.slider-block', {
+});
+const sliderNavItem = document.querySelectorAll('.slider-nav__item');
+
+sliderNavItem.forEach((el, index) => {
+   el.setAttribute('data-index', index);
+
+   el.addEventListener('click', (e) => {
+      const index = parseInt(e.currentTarget.dataset.index);
+      cardSlider.slideTo(index);
+
+      document.querySelectorAll('.slider-nav__item').forEach((e) => {
+         e.classList.remove('active');
+      })
+      el.classList.add('active');
+   });
+})
+
+/* Input Width */
+
+const input = document.querySelectorAll('.card-edition__count-input'),
+   buffer = [];
+for (var i = 0; input.length > i; i++) {
+   console.log(input[i].value);
+   buffer[i] = document.createElement('div');
+   buffer[i].className = "buffer";
+   //вставляем скрытый div.buffer
+   input[i].parentNode.insertBefore(buffer[i], input[i].nextSibling);
+
+   input[i].oninput = function () {
+      this.nextElementSibling.innerHTML = this.value;
+      this.style.width = this.nextElementSibling.clientWidth + 'px';
+   };
+}
+/* Input Width */
+
+
+
+//====================  Product-count ========================//
+const counters = [].slice.call(document.querySelectorAll('.card-edition__counts'));
+
+counters.forEach(function (counter) {
+   var input = counter.querySelector('.card-edition__count-input');
+
+   counter.querySelector('.card-edition__count-minus').onclick = function () {
+      var newValue = +input.value - 1;
+
+      if (newValue >= 0) {
+         input.value = newValue;
+      }
+   };
+
+   counter.querySelector('.card-edition__count-plus').onclick = function () {
+      input.value = +input.value + 1;
+   };
+});
+//====================  /Product-count ========================//
+
+
+const productRelated = document.querySelector('.product-related__slider')
+
+if (productRelated) {
+   new Swiper(productRelated, {
+      slidesPerView: 2,
+      spaceBetween: 27,
+
+      navigation: {
+         nextEl: ".product-related__control-next",
+         prevEl: ".product-related__control-prev",
+      },
+      breakpoints: {
+         767: {
+            slidesPerView: 3,
+         },
+         1024: {
+            slidesPerView: 4,
+         },
+      },
+   });
+}

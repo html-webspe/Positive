@@ -196,11 +196,11 @@
       @media (max-width:$md2+px) {
          margin-right: 10px;
       }
-   }
 
-   &__control-next {
       transform: rotate(180deg);
    }
+
+   &__control-next {}
 }
 
 
@@ -290,10 +290,10 @@
 
    &__control-prev {
       left: 10px;
+      transform: rotate(180deg);
    }
 
    &__control-next {
       right: 10px;
-      transform: rotate(180deg);
    }
 }

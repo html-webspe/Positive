@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <title>Карточка товара</title>
+   <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+   <meta name="format-detection" content="telephone=no">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+   <link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="shortcut icon" href="favicon.ico">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header">
+   <div class='container header__container'>
+      <div id="header-sticky" class="header__main">
+         <a href="/" class="header__logo logo"><img src="img/logo.png" alt="Логотип" /></a>
+
+         <!--   search    -->
+         <div class="header__search search-form">
+            <form action="#" class="search-form__item">
+               <span class="search-form__icon icon-search"></span>
+               <input type="text" placeholder="Найди свое" class="search-form__input">
+               <button class="search-form__button">Искать</button>
+            </form>
+         </div>
+         <!--   end search    -->
+
+         <!--   action     -->
+         <div class="header__action">
+            <a href="#" class="header__action-shop">
+               <img src="img/shop.png" alt="shop" />
+
+            </a>
+
+            <div class="header__action-tel">
+               <a href="tel:+74997693728">+7 (499) 769-37-28 </a>
+               <a href="tel:+78007773728">+7 (800) 777-37-28 </a>
+            </div>
+
+
+         </div>
+         <!--   end action    -->
+
+
+         <!--     navigation  -->
+         <div id="nav-menu" class="header__navigation">
+
+            <!--    menu-miobile  -->
+            <div class="header__navigation-item">
+               <div class="header__menu menu">
+                  <nav class="menu__body">
+
+                     <ul class="menu__list">
+                        <li class="menu__item"><a href="page-about.html" class="menu__link">О компании</a></li>
+                        <li class="menu__item"><a href="page-catalog.html" class="menu__link">Каталог</a>
+
+                        </li>
+                        <li class="menu__item"><a href="page-promo.html" class="menu__link">Печать</a></li>
+                        <li class="menu__item"><a href="page-sewing.html" class="menu__link">Пошив</a></li>
+                        <li class="menu__item"><a href="page-card.html" class="menu__link">Прайс</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+                     </ul>
+
+                     <!--
+                        <ul class="menu__list">
+                        <li class="menu__item"><a href="#about" class="menu__link scroll-to">О компании</a></li>
+                        <li class="menu__item"><a href="#print" class="menu__link scroll-to">Печать</a></li>
+                        <li class="menu__item"><a href="#cases" class="menu__link scroll-to">Кейсы</a></li>
+                        <li class="menu__item"><a href="#callback" class="menu__link scroll-to">Обратная связь</a></li>
+                        <li class="menu__item"><a href="#footer" class="menu__link scroll-to">Контакты</a></li>
+                     </ul>
+                     -->
+                  </nav>
+               </div>
+            </div>
+            <!--   end  menu-miobile  -->
+
+
+
+            <div class="header__navigation-item">
+               <a href="#" class="header__navigation-shop">
+                  <img src="img/shop.png" alt="shop" />
+                  <span>Корзина</span>
+               </a>
+            </div>
+
+
+            <!--   contacts  -->
+            <div class="header__navigation-item">
+               <div class="header-contacts">
+                  <div class="header-contacts__item">
+                     <span>Телефон</span>
+                     <a href="tel:+74997693728">+7 (499) 769-37-28 </a>
+                     <a href="tel:+78007773728">+7 (800) 777-37-28 </a>
+
+                  </div>
+                  <div class="header-contacts__item">
+                     <span>E-mail</span>
+                     <a href="mailto:tstarkhov@mail.ru">forma297@yandex.ru</a>
+                  </div>
+                  <div class="header-contacts__item">
+                     <span>Адрес</span>
+                     <p>г. Москва, Остаповский проезд 3, стр. 29, 1 подьезд, 1 этаж</p>
+                  </div>
+                  <div class="header-contacts__item">
+                     <span>График работы</span>
+                     <p>Пн-Пт: 10:00-19:00</p>
+                  </div>
+               </div>
+            </div>
+            <!--   end  contacts  -->
+
+            <!--    social  -->
+            <div class="header__navigation-item">
+               <div class="header-social social">
+                  <a href="#" class="social__item social__item-inst" target="_blank">
+                     <img src="img/social/inst.svg" alt="Instagram" />
+                  </a>
+                  <a href="#" class="social__item social__item-facebook" target="_blank">
+                     <img src="img/social/facebook.svg" alt="Facebook" />
+                  </a>
+                  <a href="#" class="social__item social__item-vk" target="_blank">
+                     <img src="img/social/vk.svg" alt="VKontakte" />
+                  </a>
+               </div>
+            </div>
+            <!--   end  social  -->
+
+         </div>
+         <!--   end navigation    -->
+
+
+         <button id="nav-toggle" type="button" class="icon-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+         </button>
+
+      </div>
+      <div class="header__bottom">
+         <div class="header__menu-desktop desktop-menu">
+            <ul class="desktop-menu__list">
+               <li class="desktop-menu__item"><a href="page-about.html" class="desktop-menu__link">О компании</a></li>
+               <li class="desktop-menu__item"><a href="page-catalog.html" class="desktop-menu__link">Каталог</a>
+
+                  <div class="menu__dropdown dropdown-menu">
+                     <ul class="dropdown-menu__list">
+                        <li class="dropdown-menu__item"><a href="" class="dropdown-menu__link">Пункт
+                              каталога</a></li>
+                        <li class="dropdown-menu__item"><a href="" class="dropdown-menu__link">Пункт каталога в
+                              две строки</a></li>
+                        <li class="dropdown-menu__item"><a href="" class="dropdown-menu__link">Пункт
+                              каталога</a></li>
+                        <li class="dropdown-menu__item"><a href="" class="dropdown-menu__link">Пункт
+                              каталога</a></li>
+                        <li class="dropdown-menu__item"><a href="" class="dropdown-menu__link">Пункт
+                              каталога</a></li>
+                     </ul>
+                  </div>
+
+               </li>
+               <li class="desktop-menu__item"><a href="page-promo.html" class="desktop-menu__link">Печать</a></li>
+               <li class="desktop-menu__item"><a href="page-sewing.html" class="desktop-menu__link">Пошив</a></li>
+               <li class="desktop-menu__item"><a href="page-card.html" class="desktop-menu__link">Прайс</a></li>
+               <li class="desktop-menu__item"><a href="#" class="desktop-menu__link">Контакты</a></li>
+            </ul>
+            <!--
+               <ul class="desktop-menu__list">
+               <li class="desktop-menu__item"><a href="page-sewing.html" class="desktop-menu__link">Пошив</a></li>
+               <li class="desktop-menu__item"><a href="page-about.html" class="desktop-menu__link scroll-to">О
+                     компании</a></li>
+               <li class="desktop-menu__item"><a href="page-promo.html" class="desktop-menu__link scroll-to">Печать</a>
+               </li>
+               <li class="desktop-menu__item"><a href="#cases" class="desktop-menu__link scroll-to">Кейсы</a></li>
+               <li class="desktop-menu__item"><a href="#callback" class="desktop-menu__link scroll-to">Обратная
+                     связь</a></li>
+               <li class="desktop-menu__item"><a href="#footer" class="desktop-menu__link scroll-to">Контакты</a></li>
+            </ul>
+           -->
+         </div>
+      </div>
+   </div>
+</header>
+      <main class="page-main page-card-main">
+         <section class="section page-hero page-hero-card">
+   <div class='container'>
+      <div class="product-card card">
+
+         <div class="card__slider">
+            <div class="card__slider-nav slider-nav">
+               <div class="slider-nav__item active" tabindex="0"><img src="img/page-card/03.png" alt="card-img"></div>
+               <div class="slider-nav__item" tabindex="0"><img src="img/page-card/01.png" alt="card-img"></div>
+               <div class="slider-nav__item" tabindex="0"><img src="img/page-card/02.png" alt="card-img"></div>
+               <div class="slider-nav__item" tabindex="0"><img src="img/page-card/03.png" alt="card-img"></div>
+            </div>
+            <div class="card__slider-block slider-block">
+               <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                     <img src="img/page-card/03.png" alt="card-img">
+                     <div class="product__favorite icon-favorites favorite"></div>
+                  </div>
+                  <div class="swiper-slide">
+                     <img src="img/page-card/01.png" alt="card-img">
+                     <div class="product__favorite icon-favorites favorite"></div>
+                  </div>
+                  <div class="swiper-slide">
+                     <img src="img/page-card/02.png" alt="card-img">
+                     <div class="product__favorite icon-favorites favorite"></div>
+                  </div>
+                  <div class="swiper-slide">
+                     <img src="img/page-card/03.png" alt="card-img">
+                     <div class="product__favorite icon-favorites favorite"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="card__info">
+            <h2 class="card__title">Футболка мужская с&nbsp;геометрическим паттерном</h2>
+
+            <div class="card__info-block">
+               <h3 class="card__info-title">ОПИСАНИЕ</h3>
+               <p class="card__info-text">Футболка мужская, стандартный покрой. Не садится при стирке. Воротник не
+                  мнется при отжиме.</p>
+            </div>
+            <div class="card__info-block">
+               <h3 class="card__info-title">СОСТАВ</h3>
+               <p class="card__info-text">99% Хлопок, 1% Вискоза</p>
+            </div>
+
+            <div class="card__info-group">
+               <div class="card__info-block">
+                  <h3 class="card__info-title">цвет</h3>
+
+                  <div class="card__color color-filter">
+                     <label>
+                        <input type="checkbox" class="color-filter__input">
+                        <span class="color-filter__checkbox">
+                           <span class="color-filter__check" style="background-color: #fff; stroke: #000;">
+                              <span class="color-filter__checked">
+                                 <svg viewBox="0 0 15 13" fill="none">
+                                    <path
+                                       d="M14.7803 1.21187C14.4875 0.91896 14.0126 0.91896 13.7197 1.21187L4.73421 10.1974L1.28035 6.74356C0.987466 6.45065 0.512622 6.45068 0.219683 6.74356C-0.0732275 7.03644 -0.0732275 7.51128 0.219683 7.80419L4.20388 11.7883C4.49668 12.0812 4.97187 12.081 5.26455 11.7883L14.7803 2.27253C15.0733 1.97965 15.0732 1.50478 14.7803 1.21187Z"
+                                       fill="white" />
+                                 </svg>
+                              </span>
+                           </span>
+                        </span>
+                     </label>
+                     <label>
+                        <input type="checkbox" class="color-filter__input">
+                        <span class="color-filter__checkbox">
+                           <span class="color-filter__check" style="background-color: #A6A4A4;">
+                              <span class="color-filter__checked">
+                                 <svg viewBox="0 0 15 13" fill="none">
+                                    <path
+                                       d="M14.7803 1.21187C14.4875 0.91896 14.0126 0.91896 13.7197 1.21187L4.73421 10.1974L1.28035 6.74356C0.987466 6.45065 0.512622 6.45068 0.219683 6.74356C-0.0732275 7.03644 -0.0732275 7.51128 0.219683 7.80419L4.20388 11.7883C4.49668 12.0812 4.97187 12.081 5.26455 11.7883L14.7803 2.27253C15.0733 1.97965 15.0732 1.50478 14.7803 1.21187Z"
+                                       fill="white" />
+                                 </svg>
+                              </span>
+                           </span>
+                        </span>
+                     </label>
+                     <label>
+                        <input type="checkbox" class="color-filter__input">
+                        <span class="color-filter__checkbox">
+                           <span class="color-filter__check" style="background-color: #000;">
+                              <span class="color-filter__checked">
+                                 <svg viewBox="0 0 15 13" fill="none">
+                                    <path
+                                       d="M14.7803 1.21187C14.4875 0.91896 14.0126 0.91896 13.7197 1.21187L4.73421 10.1974L1.28035 6.74356C0.987466 6.45065 0.512622 6.45068 0.219683 6.74356C-0.0732275 7.03644 -0.0732275 7.51128 0.219683 7.80419L4.20388 11.7883C4.49668 12.0812 4.97187 12.081 5.26455 11.7883L14.7803 2.27253C15.0733 1.97965 15.0732 1.50478 14.7803 1.21187Z"
+                                       fill="white" />
+                                 </svg>
+                              </span>
+                           </span>
+                        </span>
+                     </label>
+                     <label>
+                        <input type="checkbox" class="color-filter__input">
+                        <span class="color-filter__checkbox">
+                           <span class="color-filter__check" style="background-color: #F9A000;">
+                              <span class="color-filter__checked">
+                                 <svg viewBox="0 0 15 13" fill="none">
+                                    <path
+                                       d="M14.7803 1.21187C14.4875 0.91896 14.0126 0.91896 13.7197 1.21187L4.73421 10.1974L1.28035 6.74356C0.987466 6.45065 0.512622 6.45068 0.219683 6.74356C-0.0732275 7.03644 -0.0732275 7.51128 0.219683 7.80419L4.20388 11.7883C4.49668 12.0812 4.97187 12.081 5.26455 11.7883L14.7803 2.27253C15.0733 1.97965 15.0732 1.50478 14.7803 1.21187Z"
+                                       fill="white" />
+                                 </svg>
+                              </span>
+                           </span>
+                        </span>
+                     </label>
+                     <label>
+                        <input type="checkbox" class="color-filter__input">
+                        <span class="color-filter__checkbox">
+                           <span class="color-filter__check" style="background-color: #A557C7;">
+                              <span class="color-filter__checked">
+                                 <svg viewBox="0 0 15 13" fill="none">
+                                    <path
+                                       d="M14.7803 1.21187C14.4875 0.91896 14.0126 0.91896 13.7197 1.21187L4.73421 10.1974L1.28035 6.74356C0.987466 6.45065 0.512622 6.45068 0.219683 6.74356C-0.0732275 7.03644 -0.0732275 7.51128 0.219683 7.80419L4.20388 11.7883C4.49668 12.0812 4.97187 12.081 5.26455 11.7883L14.7803 2.27253C15.0733 1.97965 15.0732 1.50478 14.7803 1.21187Z"
+                                       fill="white" />
+                                 </svg>
+                              </span>
+                           </span>
+                        </span>
+                     </label>
+                     <label>
+                        <input type="checkbox" class="color-filter__input">
+                        <span class="color-filter__checkbox">
+                           <span class="color-filter__check" style="background-color: #0B30DC;">
+                              <span class="color-filter__checked">
+                                 <svg viewBox="0 0 15 13" fill="none">
+                                    <path
+                                       d="M14.7803 1.21187C14.4875 0.91896 14.0126 0.91896 13.7197 1.21187L4.73421 10.1974L1.28035 6.74356C0.987466 6.45065 0.512622 6.45068 0.219683 6.74356C-0.0732275 7.03644 -0.0732275 7.51128 0.219683 7.80419L4.20388 11.7883C4.49668 12.0812 4.97187 12.081 5.26455 11.7883L14.7803 2.27253C15.0733 1.97965 15.0732 1.50478 14.7803 1.21187Z"
+                                       fill="white" />
+                                 </svg>
+                              </span>
+                           </span>
+                        </span>
+                     </label>
+                     <label>
+                        <input type="checkbox" class="color-filter__input">
+                        <span class="color-filter__checkbox">
+                           <span class="color-filter__check" style="background-color: #01ADB7;">
+                              <span class="color-filter__checked">
+                                 <svg viewBox="0 0 15 13" fill="none">
+                                    <path
+                                       d="M14.7803 1.21187C14.4875 0.91896 14.0126 0.91896 13.7197 1.21187L4.73421 10.1974L1.28035 6.74356C0.987466 6.45065 0.512622 6.45068 0.219683 6.74356C-0.0732275 7.03644 -0.0732275 7.51128 0.219683 7.80419L4.20388 11.7883C4.49668 12.0812 4.97187 12.081 5.26455 11.7883L14.7803 2.27253C15.0733 1.97965 15.0732 1.50478 14.7803 1.21187Z"
+                                       fill="white" />
+                                 </svg>
+                              </span>
+                           </span>
+                        </span>
+                     </label>
+                     <label>
+                        <input type="checkbox" class="color-filter__input">
+                        <span class="color-filter__checkbox">
+                           <span class="color-filter__check" style="background-color: #87C0E6;">
+                              <span class="color-filter__checked">
+                                 <svg viewBox="0 0 15 13" fill="none">
+                                    <path
+                                       d="M14.7803 1.21187C14.4875 0.91896 14.0126 0.91896 13.7197 1.21187L4.73421 10.1974L1.28035 6.74356C0.987466 6.45065 0.512622 6.45068 0.219683 6.74356C-0.0732275 7.03644 -0.0732275 7.51128 0.219683 7.80419L4.20388 11.7883C4.49668 12.0812 4.97187 12.081 5.26455 11.7883L14.7803 2.27253C15.0733 1.97965 15.0732 1.50478 14.7803 1.21187Z"
+                                       fill="white" />
+                                 </svg>
+                              </span>
+                           </span>
+                        </span>
+                     </label>
+                     <label>
+                        <input type="checkbox" class="color-filter__input">
+                        <span class="color-filter__checkbox">
+                           <span class="color-filter__check" style="background-color: #1BAA03;">
+                              <span class="color-filter__checked">
+                                 <svg viewBox="0 0 15 13" fill="none">
+                                    <path
+                                       d="M14.7803 1.21187C14.4875 0.91896 14.0126 0.91896 13.7197 1.21187L4.73421 10.1974L1.28035 6.74356C0.987466 6.45065 0.512622 6.45068 0.219683 6.74356C-0.0732275 7.03644 -0.0732275 7.51128 0.219683 7.80419L4.20388 11.7883C4.49668 12.0812 4.97187 12.081 5.26455 11.7883L14.7803 2.27253C15.0733 1.97965 15.0732 1.50478 14.7803 1.21187Z"
+                                       fill="white" />
+                                 </svg>
+                              </span>
+                           </span>
+                        </span>
+                     </label>
+                     <label>
+                        <input type="checkbox" class="color-filter__input">
+                        <span class="color-filter__checkbox">
+                           <span class="color-filter__check" style="background-color: #F6CB00;">
+                              <span class="color-filter__checked">
+                                 <svg viewBox="0 0 15 13" fill="none">
+                                    <path
+                                       d="M14.7803 1.21187C14.4875 0.91896 14.0126 0.91896 13.7197 1.21187L4.73421 10.1974L1.28035 6.74356C0.987466 6.45065 0.512622 6.45068 0.219683 6.74356C-0.0732275 7.03644 -0.0732275 7.51128 0.219683 7.80419L4.20388 11.7883C4.49668 12.0812 4.97187 12.081 5.26455 11.7883L14.7803 2.27253C15.0733 1.97965 15.0732 1.50478 14.7803 1.21187Z"
+                                       fill="white" />
+                                 </svg>
+                              </span>
+                           </span>
+                        </span>
+                     </label>
+                     <label>
+                        <input type="checkbox" class="color-filter__input">
+                        <span class="color-filter__checkbox">
+                           <span class="color-filter__check" style="background-color: #FF0000;">
+                              <span class="color-filter__checked">
+                                 <svg viewBox="0 0 15 13" fill="none">
+                                    <path
+                                       d="M14.7803 1.21187C14.4875 0.91896 14.0126 0.91896 13.7197 1.21187L4.73421 10.1974L1.28035 6.74356C0.987466 6.45065 0.512622 6.45068 0.219683 6.74356C-0.0732275 7.03644 -0.0732275 7.51128 0.219683 7.80419L4.20388 11.7883C4.49668 12.0812 4.97187 12.081 5.26455 11.7883L14.7803 2.27253C15.0733 1.97965 15.0732 1.50478 14.7803 1.21187Z"
+                                       fill="white" />
+                                 </svg>
+                              </span>
+                           </span>
+                        </span>
+                     </label>
+                  </div>
+               </div>
+
+               <div class="card__info-block">
+                  <h3 class="card__info-title">РАЗМЕР И ТИРАЖ</h3>
+
+                  <div class="card-editions">
+                     <div class="card-edition">
+                        <span class="card-edition__size">S:</span>
+                        <div class="card-edition__counts">
+                           <div class="card-edition__count card-edition__count-minus icon-minus"></div>
+                           <input type="number" placeholder="0" class="card-edition__count-input">
+                           <div class="card-edition__count card-edition__count-plus icon-plus"></div>
+                        </div>
+                     </div>
+                     <div class="card-edition">
+                        <span class="card-edition__size">M:</span>
+                        <div class="card-edition__counts">
+                           <div class="card-edition__count card-edition__count-minus icon-minus"></div>
+                           <input type="number" placeholder="0" class="card-edition__count-input">
+                           <div class="card-edition__count card-edition__count-plus icon-plus"></div>
+                        </div>
+                     </div>
+                     <div class="card-edition">
+                        <span class="card-edition__size">L:</span>
+                        <div class="card-edition__counts">
+                           <div class="card-edition__count card-edition__count-minus icon-minus"></div>
+                           <input type="number" placeholder="0" class="card-edition__count-input">
+                           <div class="card-edition__count card-edition__count-plus icon-plus"></div>
+                        </div>
+                     </div>
+                     <div class="card-edition">
+                        <span class="card-edition__size">XL:</span>
+                        <div class="card-edition__counts">
+                           <div class="card-edition__count card-edition__count-minus icon-minus"></div>
+                           <input type="number" placeholder="0" class="card-edition__count-input">
+                           <div class="card-edition__count card-edition__count-plus icon-plus"></div>
+                        </div>
+                     </div>
+                     <div class="card-edition">
+                        <span class="card-edition__size">XXL:</span>
+                        <div class="card-edition__counts">
+                           <div class="card-edition__count card-edition__count-minus icon-minus"></div>
+                           <input type="number" placeholder="0" class="card-edition__count-input">
+                           <div class="card-edition__count card-edition__count-plus icon-plus"></div>
+                        </div>
+                     </div>
+                  </div>
+
+               </div>
+               <div class="card__info-block">
+                  <div class="card__price">
+                     <span class="card__price-new">5090 Р</span>
+                     <span class="card__price-old">7090 Р</span>
+                  </div>
+               </div>
+
+               <a href="#" class="btn btn-amethyst card__btn">Оформить заказ</a>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+         <section class="section info">
+   <div class='container info__container'>
+      <div class="info-block">
+         <h3>ОСОБЕННОСТИ УХОДА</h3>
+         <p class="info-block__text"><img src="img/icons/machine-wash.svg" alt="" />Обычная стирка при температуре воды
+            до 30°C вывернутыми на изнанку</p>
+
+         <p class="info-block__text">
+            <img src="img/icons/tumble-dry.svg" alt="" />
+            Барабанная сушка запрещена</p>
+
+         <p class="info-block__text">
+            <img src="img/icons/ironing.svg" alt="" />
+
+            Глажка при температуре подошвы утюга до 110°C — соответствует символу в виде одной
+            точки на терморегуляторе утюга. Глажение с паром может вызвать необратимые повреждения обрабатываемого
+            материала</p>
+
+         <p class="info-block__text">
+            <img src="img/icons/bleach.svg" alt="" />
+
+            Отбеливание запрещено</p>
+      </div>
+      <div class="info-block">
+         <h3>Оплата и цены</h3>
+         <p class="info-block__text">Информация, указанная на сайте не является публичной офертой. Наличие товаров,
+            итоговая стоимости продукции, нанесения и сроков поставки подтверждается специалистом отдела продаж.
+         </p>
+         <h4>Способы оплаты:</h4>
+         <ul>
+            <li>Безналичный расчет по реквизитам, указанным в разделе "Реквизиты" (укажите в назначении платежа
+               платежного поручения номер и дату вашего заказа). Данный способ оплаты рекомендуется при отсутствии в
+               вашем заказе услуги по персонализации продукции;</li>
+            <li>Безналичный расчет на основании выставленного счета и оформленного договора на поставку товара и услуги
+               по персонализации продукции;</li>
+            <li>Оплата картой онлайн через платежные системы Мир, MasterCard, Visa. Сервис доступен при оформлении
+               заказа.</li>
+         </ul>
+         <p>
+            <span><strong>Внимание!</strong> Для каждого отдельного заказа возможен только один способ оплаты на ваш
+               выбор.
+               Оплата заказа по частям невозможна.</span>
+         </p>
+      </div>
+      <div class="info-block">
+         <h3>Доставка</h3>
+         <h4>Стоимость услуг по доставке:</h4>
+         <ul>
+            <li>Для доставки в Москве любом другом регионе, вы можете воспользоваться услугами наших партнеров -
+               курьерской службой «Достависта»;</li>
+            <li>Так же вы можете использовать любую удобную для вас курьерскую службу;</li>
+            <li>Стоимость доставки рассчитывается индивидуально на сайте партнеров, зависит от адреса, веса и габаритов
+               груза;</li>
+            <li>Стоимость доставки в регионы РФ оговаривается заранее с вашим менеджером в индивидуальном порядке.</li>
+         </ul>
+
+         <h4>Самовывоз</h4>
+
+         <p>При совершении покупки в компании «Positive» вы можете забрать свой заказ с нашего
+            склада самостоятельно.
+         </p>
+         <p>Мы находимся по адресу: г. Москва, бизнес-центр «Капитал», Остаповский проезд, д.
+            3,
+            стр.29, 1 этаж.
+            Уточнить, как проехать к нашему складу, вы можете в любое удобное время у наших менеджеров по телефону:
+            +7 (499) 769-37-28.
+         </p>
+         <p>Мы отгружаем заказы с нашего склада в Москве по рабочим дням с 10:00 до 19:00.
+         </p>
+
+      </div>
+   </div>
+</section>
+         <section class="section product-related">
+   <div class='container product-related__container'>
+
+
+      <div class="product-related__inner">
+         <h1 class="section-title product-related__title">С ЭТИМ ТОВАРОМ ПОКУПАЮТ</h1>
+         <div class="product-related__slider">
+            <div class="product-related__wrapper swiper-wrapper">
+               <div class="product-related__slide swiper-slide">
+                  <div class="catalog-card">
+                     <div class="catalog-card__label">-17%</div>
+
+                     <div class="catalog-card__colors">
+                        <div class="catalog-card__color"></div>
+                        <div class="catalog-card__color" style="background-color: #F9A000;"></div>
+                        <div class="catalog-card__color" style="background-color: #A557C7;"></div>
+                     </div>
+
+                     <div class="catalog-card__img ibg">
+                        <img src="img/page-catalog/catalog-img.jpg" alt="catalog-img" />
+                     </div>
+
+                     <div class="catalog-card__title">Футболка мужская
+                        с&nbsp;логотипом</div>
+
+                     <div class="catalog-card__price">
+                        <div class="catalog-card__price-new">2500 ₽</div>
+                        <div class="catalog-card__price-old">2900 ₽</div>
+                     </div>
+
+                     <div class="catalog-card__btns">
+                        <a href="#" class="btn catalog-card__btn">В корзину</a>
+                        <a href="#" class="btn catalog-card__btn-go icon-arrow"></a>
+                     </div>
+
+                  </div>
+               </div>
+               <div class="product-related__slide swiper-slide">
+                  <div class="catalog-card">
+                     <div class="catalog-card__label">-17%</div>
+
+                     <div class="catalog-card__colors">
+                        <div class="catalog-card__color"></div>
+                        <div class="catalog-card__color" style="background-color: #F9A000;"></div>
+                        <div class="catalog-card__color" style="background-color: #A557C7;"></div>
+                     </div>
+
+                     <div class="catalog-card__img ibg">
+                        <img src="img/page-catalog/catalog-img.jpg" alt="catalog-img" />
+                     </div>
+
+                     <div class="catalog-card__title">Футболка мужская
+                        с&nbsp;логотипом</div>
+
+                     <div class="catalog-card__price">
+                        <div class="catalog-card__price-new">2500 ₽</div>
+                        <div class="catalog-card__price-old">2900 ₽</div>
+                     </div>
+
+                     <div class="catalog-card__btns">
+                        <a href="#" class="btn catalog-card__btn">В корзину</a>
+                        <a href="#" class="btn catalog-card__btn-go icon-arrow"></a>
+                     </div>
+
+                  </div>
+               </div>
+               <div class="product-related__slide swiper-slide">
+                  <div class="catalog-card">
+                     <div class="catalog-card__label">-17%</div>
+
+                     <div class="catalog-card__colors">
+                        <div class="catalog-card__color"></div>
+                        <div class="catalog-card__color" style="background-color: #F9A000;"></div>
+                        <div class="catalog-card__color" style="background-color: #A557C7;"></div>
+                     </div>
+
+                     <div class="catalog-card__img ibg">
+                        <img src="img/page-catalog/catalog-img.jpg" alt="catalog-img" />
+                     </div>
+
+                     <div class="catalog-card__title">Футболка мужская
+                        с&nbsp;логотипом</div>
+
+                     <div class="catalog-card__price">
+                        <div class="catalog-card__price-new">2500 ₽</div>
+                        <div class="catalog-card__price-old">2900 ₽</div>
+                     </div>
+
+                     <div class="catalog-card__btns">
+                        <a href="#" class="btn catalog-card__btn">В корзину</a>
+                        <a href="#" class="btn catalog-card__btn-go icon-arrow"></a>
+                     </div>
+
+                  </div>
+               </div>
+               <div class="product-related__slide swiper-slide">
+                  <div class="catalog-card">
+                     <div class="catalog-card__label">-17%</div>
+
+                     <div class="catalog-card__colors">
+                        <div class="catalog-card__color"></div>
+                        <div class="catalog-card__color" style="background-color: #F9A000;"></div>
+                        <div class="catalog-card__color" style="background-color: #A557C7;"></div>
+                     </div>
+
+                     <div class="catalog-card__img ibg">
+                        <img src="img/page-catalog/catalog-img.jpg" alt="catalog-img" />
+                     </div>
+
+                     <div class="catalog-card__title">Футболка мужская
+                        с&nbsp;логотипом</div>
+
+                     <div class="catalog-card__price">
+                        <div class="catalog-card__price-new">2500 ₽</div>
+                        <div class="catalog-card__price-old">2900 ₽</div>
+                     </div>
+
+                     <div class="catalog-card__btns">
+                        <a href="#" class="btn catalog-card__btn">В корзину</a>
+                        <a href="#" class="btn catalog-card__btn-go icon-arrow"></a>
+                     </div>
+
+                  </div>
+               </div>
+               <div class="product-related__slide swiper-slide">
+                  <div class="catalog-card">
+                     <div class="catalog-card__label">-17%</div>
+
+                     <div class="catalog-card__colors">
+                        <div class="catalog-card__color"></div>
+                        <div class="catalog-card__color" style="background-color: #F9A000;"></div>
+                        <div class="catalog-card__color" style="background-color: #A557C7;"></div>
+                     </div>
+
+                     <div class="catalog-card__img ibg">
+                        <img src="img/page-catalog/catalog-img.jpg" alt="catalog-img" />
+                     </div>
+
+                     <div class="catalog-card__title">Футболка мужская
+                        с&nbsp;логотипом</div>
+
+                     <div class="catalog-card__price">
+                        <div class="catalog-card__price-new">2500 ₽</div>
+                        <div class="catalog-card__price-old">2900 ₽</div>
+                     </div>
+
+                     <div class="catalog-card__btns">
+                        <a href="#" class="btn catalog-card__btn">В корзину</a>
+                        <a href="#" class="btn catalog-card__btn-go icon-arrow"></a>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+            <div class="product-related__controls">
+               <button class="product-related__control product-related__control-prev icon-arrow"></button>
+               <button class="product-related__control product-related__control-next icon-arrow"></button>
+            </div>
+         </div>
+      </div>
+
+   </div>
+</section>
+
+
+      </main>
+      <footer id="footer" class="footer">
+   <div class='container'>
+      <div class="footer__body">
+         <div class="footer__map"></div>
+         <div class="footer__content">
+            <a href="#" class="footer__logo">
+               <img src="img/footer-logo.png" alt="Логотип" />
+            </a>
+            <div class="footer__content-inner">
+               <div class="footer__col">
+                  <div class="footer__item">
+                     <h3 class="footer__item-title">АДРЕС</h3>
+                     <p>г. Москва, Остаповский проезд 3, стр. 29, 1 этаж</p>
+                  </div>
+                  <div class="footer__item">
+                     <h3 class="footer__item-title">ТЕЛЕФОН</h3>
+                     <a href="tel:+74997693728">+7 (499) 769-37-28 </a>
+                     <a href="tel:+78007773728">+7 (800) 777-37-28 </a>
+                  </div>
+                  <div class="footer__item">
+                     <h3 class="footer__item-title">E-mail</h3>
+                     <a href="mailto:tstarkhov@mail.ru">forma297@yandex.ru</a>
+                  </div>
+               </div>
+               <div class="footer__col">
+                  <div class="footer__item">
+                     <h3 class="footer__item-title">СТРАНИЦЫ</h3>
+                     <nav class="footer__nav">
+                        <ul class="footer__nav-list">
+                           <li class="footer__nav-item"><a href="" class="footer__nav-link">О компании</a></li>
+                           <li class="footer__nav-item"><a href="" class="footer__nav-link">Каталог</a></li>
+                           <li class="footer__nav-item"><a href="" class="footer__nav-link">Печать</a></li>
+                           <li class="footer__nav-item"><a href="" class="footer__nav-link">Пошив</a></li>
+                           <li class="footer__nav-item"><a href="" class="footer__nav-link">Прайс</a></li>
+                           <li class="footer__nav-item"><a href="" class="footer__nav-link">Контакты</a></li>
+                        </ul>
+                     </nav>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+      </div>
+      <p class="footer__copyright"> © Сайт разработан 2021 </p>
+   </div>
+</footer>
+   </div>
+
+   <script src="js/jquery.min.js"></script>
+<script src="js/vendors.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+
+</html>

@@ -218,6 +218,18 @@
          padding: 8px 0 8px 0;
       }
    }
+
+
+
+   &-card {
+      background: #fff;
+      padding-top: 102px;
+
+      @media (max-width:$md3+px) {
+         padding-top: 49px;
+         margin-bottom: 0;
+      }
+   }
 }
 
 .page-hero__single {
