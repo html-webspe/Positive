@@ -316,6 +316,8 @@
    }
 
    &__control-prev {
+      transform: rotate(180deg);
+
       @media (max-width:$md2+px) {
          margin-left: 10px;
       }
@@ -326,7 +328,6 @@
    }
 
    &__control-next {
-      transform: rotate(180deg);
 
       @media (max-width:$md2+px) {
          margin-right: 10px;
