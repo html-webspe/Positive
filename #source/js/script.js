@@ -67,13 +67,37 @@ const printSlider = new Swiper('.slider-print__container', {
    parallax: true
 });
 
-const printSliderImg = new Swiper('.print-img__container', {
-   slidesPerView: 1,
-   navigation: {
-      nextEl: ".print-img__control-next",
-      prevEl: ".print-img__control-prev",
-   },
-});
+
+
+const printSliderImg = document.querySelectorAll('.print-img__container'),
+   printSliderImgItem = document.querySelectorAll('.print-img__item'),
+   printSliderImgWrapper = document.querySelectorAll('.print-img__wrapper');
+
+if (printSliderImg.length > 0) {
+
+   printSliderImgWrapper.forEach((el) => {
+      el.classList.add('swiper-wrapper');
+   })
+   printSliderImgItem.forEach((el) => {
+      el.classList.add('swiper-slide');
+   })
+
+   printSliderImg.forEach((el) => {
+
+      el.classList.add('swiper-container');
+
+      new Swiper(el, {
+         slidesPerView: 1,
+         navigation: {
+            nextEl: el.closest('.print__slider-img').querySelector(".print-img__control-next"),
+            prevEl: el.closest('.print__slider-img').querySelector(".print-img__control-prev"),
+         },
+      });
+   })
+}
+
+
+
 /*==================== <!-- PRINT SWIPE -->  ====================*/
 
 const productSlider = document.querySelector('.product__slider')

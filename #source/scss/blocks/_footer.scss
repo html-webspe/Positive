@@ -119,6 +119,10 @@
             line-height: 27px;
          }
       }
+
+      a {
+         margin-bottom: 4px;
+      }
    }
 
    &__item-title {
@@ -126,6 +130,7 @@
       font-weight: 600;
       letter-spacing: 0.05em;
       color: #CA4EFF;
+      text-transform: uppercase;
 
       @media (max-width:$md2+px) {
          font-size: 14px;
@@ -138,6 +143,8 @@
          line-height: 33px;
          margin-bottom: 21px;
       }
+
+
    }
 
    &__nav-item {

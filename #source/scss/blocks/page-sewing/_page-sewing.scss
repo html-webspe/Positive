@@ -4,6 +4,12 @@
       &:after {
          content: '';
          background-image: url("../img/page-sewing/page-hero-img.png");
+
+
+         @media (min-width:$md3+px) and (max-width:$md2+px) {
+            top: 27px;
+            left: -225px;
+         }
       }
    }
 
@@ -22,17 +28,18 @@
    .product__content {
       .swiper-container {
          @media (max-width:$md2+px) {
-            height: 544px;
+            height: 604px;
          }
 
          @media (min-width:$md2+px) {
-            height: 730px;
+            height: 790px;
          }
       }
 
       .swiper-slide {
          height: calc((100% - 30px) / 2);
          overflow: hidden;
+         margin-bottom: 30px;
       }
    }
 

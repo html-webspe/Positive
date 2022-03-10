@@ -88,6 +88,15 @@
    -moz-osx-font-smoothing: grayscale;
 }
 
+
+.icon-checked:before {
+   content: "\e908";
+}
+
+.icon-play:before {
+   content: "\e907";
+}
+
 .icon-minus:before {
    content: "\e903";
 }

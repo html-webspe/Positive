@@ -224,10 +224,11 @@
    &-card {
       background: #fff;
       padding-top: 102px;
+      margin-bottom: 0;
 
       @media (max-width:$md3+px) {
          padding-top: 49px;
-         margin-bottom: 0;
+
       }
    }
 }

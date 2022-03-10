@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'icons';
+  src:  url('fonts/icons.eot?ubl383');
+  src:  url('fonts/icons.eot?ubl383#iefix') format('embedded-opentype'),
+    url('fonts/icons.ttf?ubl383') format('truetype'),
+    url('fonts/icons.woff?ubl383') format('woff'),
+    url('fonts/icons.svg?ubl383#icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-checked:before {
+  content: "\e908";
+}
+.icon-play:before {
+  content: "\e907";
+}
+.icon-minus:before {
+  content: "\e903";
+}
+.icon-plus:before {
+  content: "\e906";
+}
+.icon-arrow:before {
+  content: "\e900";
+}
+.icon-arrow-down:before {
+  content: "\e901";
+}
+.icon-bus:before {
+  content: "\e902";
+}
+.icon-percent:before {
+  content: "\e904";
+}
+.icon-search:before {
+  content: "\e905";
+}
